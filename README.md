@@ -1,57 +1,100 @@
-# Focus-On
+# Focus On
 
-Focus-On is a web application designed to help users focus and get tasks done in a cute and engaging way. The app features a to-do list, a Pomodoro timer, and an embedded media player for listening to lofi music.
+A web application designed to help users boost productivity and maintain focus through a set of simple yet effective tools. This app combines a to-do list, a Pomodoro timer, and an embedded media player for lofi music, all wrapped in a clean, modern interface with light and dark mode options.
 
 ## Features
 
-- **To-Do List**: Manage your tasks efficiently with the ability to add, remove, and view tasks.
-- **Pomodoro Timer**: Stay productive with a timer that helps you work in focused intervals followed by short breaks.
-- **Media Embed**: Listen to your favorite lofi music while you work, with easy access to YouTube or Spotify.
+- **📝 To-Do List**: Easily add, manage, and track your tasks.
+- **🍅 Pomodoro Timer**: Work in focused 25-minute intervals with short breaks, customizable to your workflow.
+- **🎧 Lofi Music Player**: Embed your favorite Spotify playlists (or other media) to create a relaxing work atmosphere.
+- **☀️/🌙 Light & Dark Mode**: Switch between light and dark themes for optimal viewing comfort at any time of day.
+- **🎨 Modern UI**: Aesthetically pleasing and intuitive user interface.
+
+## Tech Stack
+
+- **Frontend**: HTML, CSS, Vanilla JavaScript
+- **Development Server**: `live-server` (via npm scripts)
 
 ## Project Structure
 
-```
-focus-on
+```text
+focus-on/
 ├── src/
-│   ├── index.html
-│   ├── js/
-│   │   ├── app.js
-│   │   ├── components/
-│   │   │   ├── todoList.js
-│   │   │   ├── pomodoroTimer.js
-│   │   │   └── mediaEmbed.js
+│   ├── index.html          # Main HTML structure
 │   ├── css/
-│   │   └── style.css
-├── package.json
-└── README.md
+│   │   └── style.css       # Stylesheets, including theme variables
+│   ├── js/
+│   │   ├── app.js          # Main application logic, theme toggling
+│   │   └── components/
+│   │       ├── todoList.js       # To-Do list functionality
+│   │       ├── pomodoroTimer.js  # Pomodoro timer logic
+│   │       └── mediaEmbed.js     # Media player embedding
+├── package.json            # Project metadata and dependencies
+└── README.md               # This file
 ```
 
-## Installation
+## Getting Started
 
-1. Clone the repository:
-   ```
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (which includes npm) installed on your machine.
+
+### Installation
+
+1. **Clone the repository:**
+   ```bash
    git clone https://github.com/yourusername/focus-on.git
    ```
-2. Navigate to the project directory:
-   ```
+   (Replace `yourusername` with your actual GitHub username or the correct repository URL if it's hosted elsewhere.)
+
+2. **Navigate to the project directory:**
+   ```bash
    cd focus-on
    ```
-3. Install the dependencies:
-   ```
+
+3. **Install the dependencies:**
+   (This project uses `live-server` as a devDependency, as specified in `package.json`.)
+   ```bash
    npm install
    ```
 
-## Usage
+### Running the Application
 
-1. Open `src/index.html` in your web browser.
-2. Use the to-do list to add and manage your tasks.
-3. Start the Pomodoro timer to enhance your productivity.
-4. Enjoy lofi music through the embedded media player.
+1. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   This command will execute the `start` script defined in `package.json` (which is `live-server src`). It will typically open the application in your default web browser, often at `http://127.0.0.1:8080`.
+
+2. **Alternatively, you can open `src/index.html` directly in your web browser.** However, using `npm start` is recommended to take advantage of `live-server`'s features like automatic reloading.
+
+## How to Use
+
+- **Toggle Theme**: Click the "Alternar Tema" (Toggle Theme) button, usually found at the top-right of the page, to switch between light and dark modes.
+- **Manage Tasks**: In the "To-Do List" section, type your task into the input field and click the "Add Task" button.
+- **Use Pomodoro Timer**: In the "Pomodoro Timer" section, click "Start" to begin a focus session. Use the "Stop" and "Reset" buttons as needed.
+- **Listen to Music**: The embedded media player in the "Listen to Lofi" section should be ready to play.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any suggestions or improvements.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+Distributed under the MIT License. See the `LICENSE` file (you may need to create one if it doesn't exist) for more information.
+
+## Author
+
+- **Your Name** - *Initial work* - (e.g., `Pachicodes` or your GitHub profile link)
+
+---
+
+*Remember to replace placeholders like `yourusername`, `Your Name`, and potentially add a `LICENSE` file if you intend to distribute this project more formally.*
