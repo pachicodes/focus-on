@@ -41,10 +41,11 @@ console.log("app.js loaded");
 // Import and initialize components
 // import { initPomodoroTimer } from './components/pomodoroTimer.js';
 // import { initTodoList } from './components/todoList.js';
-// import { initMediaEmbed } from './components/mediaEmbed.js';
+// import { initMediaEmbed } from './components/mediaEmbed.js;
 
 // document.addEventListener('DOMContentLoaded', () => {
-//     initPomodoroTimer();
-//     initTodoList();
-//     initMediaEmbed();
+//     // initPomodoroTimer();
+//     // initTodoList();
+//     // initMediaEmbed();
 // });
+```

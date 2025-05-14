@@ -30,5 +30,10 @@
         </section>
     </div>
     <script src="js/app.js"></script>
+    <script src="js/todoList.js"></script>
+    <script>
+        import { initTodoList } from './js/todoList.js';
+        document.addEventListener('DOMContentLoaded', initTodoList);
+    </script>
 </body>
 </html>
