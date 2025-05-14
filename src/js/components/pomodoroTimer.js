@@ -185,4 +185,3 @@ function initPomodoroTimer() {
 
 // Auto-inicializar quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', initPomodoroTimer);
-</html>

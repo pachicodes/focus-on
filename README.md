@@ -55,18 +55,22 @@ focus-on/
 ### Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/yourusername/focus-on.git
    ```
+
    (Replace `yourusername` with your actual GitHub username or the correct repository URL if it's hosted elsewhere.)
 
 2. **Navigate to the project directory:**
+
    ```bash
    cd focus-on
    ```
 
 3. **Install the dependencies:**
    (This project uses `live-server` as a devDependency, as specified in `package.json`.)
+
    ```bash
    npm install
    ```
@@ -74,9 +78,11 @@ focus-on/
 ### Running the Application
 
 1. **Start the development server:**
+
    ```bash
    npm start
    ```
+
    This command will execute the `start` script defined in `package.json` (which is `live-server src`). It will typically open the application in your default web browser, often at `http://127.0.0.1:8080`.
 
 2. **Alternatively, you can open `src/index.html` directly in your web browser.** However, using `npm start` is recommended to take advantage of `live-server`'s features like automatic reloading.

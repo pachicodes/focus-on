@@ -127,6 +127,4 @@ function initMediaEmbed() {
 
 // Auto-inicializar quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', initMediaEmbed);
-    <script src="js/app.js"></script>
-</body>
-</html>
+// Ensure no extraneous HTML is included in this JavaScript file
