@@ -654,6 +654,19 @@ body.dark-mode #theme-toggle {
 
 .task-buttons button, .edit-controls button {
     margin-left: 5px;
+    font-size: 0.8em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.task-buttons button:hover, .edit-controls button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .edit-input-field {
@@ -707,14 +720,22 @@ body.dark-mode #theme-toggle {
 
 .edit-btn {
     color: var(--secondary-color);
+    border-color: var(--secondary-color) !important;
 }
 
 .delete-btn {
     color: var(--error-color);
+    border-color: var(--error-color) !important;
+    opacity: 0.7;
+}
+
+.delete-btn:hover {
+    opacity: 1;
 }
 
 .save-btn {
     color: var(--success-color);
+    border-color: var(--success-color) !important;
 }
 
 .cancel-btn {
