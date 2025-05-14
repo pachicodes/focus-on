@@ -19,6 +19,19 @@ A web application designed to help users boost productivity and maintain focus t
 
 ```text
 focus-on/
+├── manifest.json        # Configuração para extensão do Chrome
+├── icons/               # Ícones da aplicação
+├── src/                 # Código-fonte principal
+│   ├── index.html       # Estrutura HTML principal
+│   ├── css/             # Estilos CSS
+│   │   └── style.css    # Estilos principais + temas claro/escuro
+│   └── js/              # Lógica JavaScript
+│       ├── app.js       # Lógica principal da aplicação
+│       ├── todoList.js  # Funcionalidade da lista de tarefas
+│       └── components/  # Componentes reutilizáveis
+│           ├── mediaEmbed.js     # Player de música
+│           ├── pomodoroTimer.js  # Timer Pomodoro
+│           └── todoList.js       # Componente de lista de tarefas (legado)
 ├── src/
 │   ├── index.html          # Main HTML structure
 │   ├── css/

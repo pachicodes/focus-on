@@ -1,51 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus On</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Focus On</h1>
-        <section id="todo-list">
-            <h2>To-Do List</h2>
-            <div id="task-input">
-                <input type="text" id="task" placeholder="Add a new task...">
-                <button id="add-task">Add Task</button>
-            </div>
-            <ul id="tasks"></ul>
-        </section>
-        <section id="pomodoro-timer">
-            <h2>Pomodoro Timer</h2>
-            <div id="timer-display">25:00</div>
-            <button id="start-timer">Start</button>
-            <button id="stop-timer">Stop</button>
-            <button id="reset-timer">Reset</button>
-        </section>
-        <section id="media-embed">
-            <h2>Listen to Lofi</h2>
-            <div id="media-player"></div>
-        </section>
-    </div>
-    <script src="js/app.js"></script>
-</body>
-</html>
-```
-
-```javascript
-// Main application logic will go here
+// Main application logic
 console.log("app.js loaded");
 
-// Import and initialize components
-// import { initPomodoroTimer } from './components/pomodoroTimer.js';
-// import { initTodoList } from './components/todoList.js';
-// import { initMediaEmbed } from './components/mediaEmbed.js;
+// Sem imports - os componentes são carregados diretamente pelo HTML
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     // initPomodoroTimer();
-//     // initTodoList();
-//     // initMediaEmbed();
-// });
-```
+document.addEventListener('DOMContentLoaded', () => {
+    // Inicialização dos componentes
+    // Verifica se cada componente foi inicializado corretamente
+    if (typeof initTodoList === 'function' && !window.todoListInitialized) {
+        initTodoList();
+        window.todoListInitialized = true;
+    }
+    
+    if (typeof initPomodoroTimer === 'function' && !window.pomodoroTimerInitialized) {
+        initPomodoroTimer();
+        window.pomodoroTimerInitialized = true;
+    }
+    
+    if (typeof initMediaEmbed === 'function' && !window.mediaEmbedInitialized) {
+        initMediaEmbed();
+        window.mediaEmbedInitialized = true;
+    }
+    
+    // Contador de tarefas
+    updateTasksCounter();
+    
+    // Theme Toggler Logic
+    const themeToggleButton = document.getElementById('theme-toggle');
+    if (themeToggleButton) {
+        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
+        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        themeToggleButton.textContent = currentTheme === 'dark' ? 'Tema Claro' : 'Tema Escuro';
+
+        themeToggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('focusOnTheme', theme);
+            themeToggleButton.textContent = theme === 'dark' ? 'Tema Claro' : 'Tema Escuro';
+        });
+    }
+    
+    // Toggle para mostrar/esconder o campo de entrada de tarefas
+    const addTaskButton = document.getElementById('show-add-task');
+    const taskInputContainer = document.getElementById('task-input');
+    
+    if (addTaskButton && taskInputContainer) {
+        addTaskButton.addEventListener('click', () => {
+            taskInputContainer.classList.toggle('active');
+            if (taskInputContainer.classList.contains('active')) {
+                document.getElementById('task').focus();
+            }
+        });
+    }
+});
+
+// Função para atualizar o contador de tarefas
+function updateTasksCounter() {
+    const tasksCounter = document.getElementById('tasks-count');
+    const tasksList = document.getElementById('tasks');
+    
+    if (tasksCounter && tasksList) {
+        // Ignorar a mensagem de "nenhuma tarefa" na contagem
+        const emptyMessage = tasksList.querySelector('.empty-tasks-message');
+        const totalTasks = emptyMessage ? 0 : tasksList.children.length;
+        const completedTasks = tasksList.querySelectorAll('.completed').length;
+        
+        tasksCounter.textContent = totalTasks === 0 
+            ? 'Nenhuma tarefa' 
+            : totalTasks === 1 
+                ? '1 tarefa' 
+                : `${totalTasks} tarefas (${completedTasks} completas)`;
+    }
+}
+
+// Função global para ser chamada do todoList.js quando tarefas são atualizadas
+window.updateTasksCounter = updateTasksCounter;
