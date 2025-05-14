@@ -14,12 +14,40 @@ function initTodoList() {
     
     // Função para disparar confetes quando uma tarefa é concluída
     function triggerConfetti() {
+        // Primeiro disparo - mais concentrado
         confetti({
-            particleCount: 100,
-            spread: 70,
+            particleCount: 50,
+            spread: 60,
             origin: { y: 0.6 },
-            colors: ['#6200ee', '#03dac6', '#bb86fc']
+            colors: ['#6200ee', '#03dac6', '#bb86fc'],
+            scalar: 0.7,
+            shapes: ['circle', 'square']
         });
+        
+        // Segundo disparo - mais disperso, com pequeno atraso
+        setTimeout(() => {
+            confetti({
+                particleCount: 70,
+                spread: 100,
+                origin: { y: 0.7 },
+                colors: ['#6200ee', '#03dac6', '#bb86fc', '#4caf50'],
+                scalar: 1,
+                gravity: 0.6,
+                drift: 1
+            });
+        }, 150);
+        
+        // Exibir uma mensagem de parabéns temporária
+        const tasksCount = document.getElementById('tasks-count');
+        const originalText = tasksCount.textContent;
+        
+        tasksCount.textContent = "🎉 Ótimo trabalho! 🎉";
+        tasksCount.style.color = 'var(--success-color)';
+        
+        setTimeout(() => {
+            tasksCount.textContent = originalText;
+            tasksCount.style.color = '';
+        }, 2000);
     }
 
     // Carregar tarefas do localStorage (se houver)
@@ -83,6 +111,7 @@ function initTodoList() {
             // Botão de editar
             const editButton = document.createElement('button');
             editButton.textContent = 'Editar';
+            editButton.title = 'Editar tarefa';
             editButton.classList.add('edit-btn');
             editButton.addEventListener('click', (e) => {
                 e.stopPropagation(); 
@@ -91,7 +120,8 @@ function initTodoList() {
 
             // Botão de deletar
             const deleteButton = document.createElement('button');
-            deleteButton.textContent = 'Deletar';
+            deleteButton.textContent = '✕';
+            deleteButton.title = 'Deletar tarefa';
             deleteButton.classList.add('delete-btn');
             deleteButton.addEventListener('click', (e) => {
                 e.stopPropagation();

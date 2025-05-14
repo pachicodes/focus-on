@@ -29,13 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (themeToggleButton) {
         const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
         document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-        themeToggleButton.textContent = currentTheme === 'dark' ? 'Tema Claro' : 'Tema Escuro';
 
         themeToggleButton.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
             const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
             localStorage.setItem('focusOnTheme', theme);
-            themeToggleButton.textContent = theme === 'dark' ? 'Tema Claro' : 'Tema Escuro';
         });
     }
     
