@@ -63,7 +63,7 @@ function initTodoList() {
     }
 
     function renderTasks() {
-        tasksList.innerHTML = ''; // Limpa a lista atual para renderizar do zero
+        tasksList.innerHTML = '';
 
         if (tasks.length === 0) {
             const emptyMessage = document.createElement('li');
@@ -73,7 +73,16 @@ function initTodoList() {
             return;
         }
 
-        tasks.forEach((task, index) => {
+        // Separar tarefas não concluídas e concluídas
+        const incompleteTasks = tasks
+            .map((task, idx) => ({ ...task, _idx: idx }))
+            .filter(task => !task.completed);
+        const completedTasks = tasks
+            .map((task, idx) => ({ ...task, _idx: idx }))
+            .filter(task => task.completed);
+        const orderedTasks = [...incompleteTasks, ...completedTasks];
+
+        orderedTasks.forEach((task, index) => {
             const listItem = document.createElement('li');
             listItem.classList.add('task-item');
             if (task.completed) {
@@ -83,7 +92,6 @@ function initTodoList() {
             // Container para o checkbox e texto
             const taskContentDiv = document.createElement('div');
             taskContentDiv.classList.add('task-content');
-            
             // Checkbox personalizado
             const checkbox = document.createElement('div');
             checkbox.classList.add('task-checkbox');
@@ -92,32 +100,27 @@ function initTodoList() {
             }
             checkbox.addEventListener('click', (e) => {
                 e.stopPropagation();
-                toggleTaskCompleted(index);
+                toggleTaskCompleted(task._idx);
             });
-
             // Texto da tarefa
             const taskTextSpan = document.createElement('span');
             taskTextSpan.textContent = task.text;
             taskTextSpan.classList.add('task-text');
-            
             // Adicionando elementos ao container de conteúdo
             taskContentDiv.appendChild(checkbox);
             taskContentDiv.appendChild(taskTextSpan);
-            
             // Div para os botões
             const buttonsDiv = document.createElement('div');
             buttonsDiv.classList.add('task-buttons');
-
             // Botão de editar
             const editButton = document.createElement('button');
-            editButton.textContent = '✏️';
+            editButton.textContent = 'Edit';
             editButton.title = 'Edit task';
             editButton.classList.add('edit-btn');
             editButton.addEventListener('click', (e) => {
-                e.stopPropagation(); 
-                editTask(index);
+                e.stopPropagation();
+                editTask(task._idx);
             });
-
             // Botão de deletar
             const deleteButton = document.createElement('button');
             deleteButton.textContent = '✕';
@@ -125,13 +128,11 @@ function initTodoList() {
             deleteButton.classList.add('delete-btn');
             deleteButton.addEventListener('click', (e) => {
                 e.stopPropagation();
-                deleteTask(index);
+                deleteTask(task._idx);
             });
-
             // Adicionando os botões à div de botões
             buttonsDiv.appendChild(editButton);
             buttonsDiv.appendChild(deleteButton);
-
             // Adicionando os elementos principais à lista
             listItem.appendChild(taskContentDiv);
             listItem.appendChild(buttonsDiv);
