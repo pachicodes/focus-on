@@ -342,7 +342,7 @@ button:active {
 }
 
 #tasks li button:hover {
-    background-color: darkred; /* Ou uma variação mais escura de --error-color */
+    border-width: 2px;
 }
 
 /* Pomodoro Timer Específico */
