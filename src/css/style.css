@@ -290,6 +290,8 @@ button:active {
 .task-input-container.active {
     height: 50px;
     opacity: 1;
+    padding: 4px 10px;
+
 }
 
 .task-input-container input[type="text"] {
@@ -300,6 +302,7 @@ button:active {
     border-radius: 20px;
     background-color: var(--input-bg);
     color: var(--text-color);
+    margin-top: 12px;
 }
 
 .add-task-button {

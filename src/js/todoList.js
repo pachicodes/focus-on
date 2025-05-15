@@ -141,10 +141,6 @@ function initTodoList() {
 
     function addTask() {
         const taskText = taskInput.value.trim();
-        if (taskText === '') {
-            alert('Por favor, insira o nome da tarefa.');
-            return;
-        }
         console.log('Adicionando tarefa:', taskText);
         tasks.push({ text: taskText, completed: false });
         taskInput.value = ''; 
