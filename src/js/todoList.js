@@ -1,11 +1,7 @@
 console.log('todoList.js loaded');
 
 // Marcador para evitar carregamento duplicado
-window.todoListMainLoaded =            // Botão de editar
-            const editButton = document.createElement('button');
-            editButton.textContent = 'Edit';
-            editButton.title = 'Edit task';
-            editButton.classList.add('edit-btn');;
+window.todoListMainLoaded = true;;
 
 // Sem export para evitar problemas com módulos
 function initTodoList() {
@@ -45,7 +41,7 @@ function initTodoList() {
         const tasksCount = document.getElementById('tasks-count');
         const originalText = tasksCount.textContent;
         
-        tasksCount.textContent = "🎉 Ótimo trabalho! 🎉";
+        tasksCount.textContent = "🎉 Great job! 🎉";
         tasksCount.style.color = 'var(--success-color)';
         
         setTimeout(() => {
@@ -145,7 +141,7 @@ function initTodoList() {
 
     function addTask() {
         const taskText = taskInput.value.trim();
-        console.log('Adicionando tarefa:', taskText);
+        console.log('Adding task:', taskText);
         tasks.push({ text: taskText, completed: false });
         taskInput.value = ''; 
         saveTasks();
@@ -193,11 +189,11 @@ function initTodoList() {
         editInput.focus();
 
         const saveButton = document.createElement('button');
-        saveButton.textContent = 'Salvar';
+        saveButton.textContent = 'Save';
         saveButton.classList.add('save-btn');
 
         const cancelEditButton = document.createElement('button');
-        cancelEditButton.textContent = 'Cancelar';
+        cancelEditButton.textContent = 'Cancel';
         cancelEditButton.classList.add('cancel-edit-btn');
 
         const editControlsDiv = document.createElement('div');
@@ -211,7 +207,7 @@ function initTodoList() {
             if (saveChanges) {
                 const newTaskText = editInput.value.trim();
                 if (newTaskText === '') {
-                    alert('A tarefa não pode ficar vazia.');
+                    alert('Task cannot be empty.');
                     editInput.focus(); 
                     return false; 
                 }
@@ -253,14 +249,14 @@ function initTodoList() {
 
     // Adiciona os event listeners para os elementos do DOM
     if (addTaskButton) {
-        console.log('Adicionando event listener ao botão add-task');
+        console.log('Adding event listener to add-task button');
         addTaskButton.addEventListener('click', addTask);
     } else {
-        console.error('Botão de adicionar tarefa não encontrado no DOM');
+        console.error('Add task button not found in DOM');
     }
     
     if (taskInput) {
-        console.log('Adicionando event listener ao input task');
+        console.log('Adding event listener to task input');
         taskInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 addTask();
