@@ -114,7 +114,7 @@ function initTodoList() {
             buttonsDiv.classList.add('task-buttons');
             // Botão de editar
             const editButton = document.createElement('button');
-            editButton.textContent = 'Edit';
+            editButton.textContent = '✏️';
             editButton.title = 'Edit task';
             editButton.classList.add('edit-btn');
             editButton.addEventListener('click', (e) => {
