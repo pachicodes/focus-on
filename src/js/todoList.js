@@ -1,7 +1,11 @@
 console.log('todoList.js loaded');
 
 // Marcador para evitar carregamento duplicado
-window.todoListMainLoaded = true;
+window.todoListMainLoaded =            // Botão de editar
+            const editButton = document.createElement('button');
+            editButton.textContent = 'Edit';
+            editButton.title = 'Edit task';
+            editButton.classList.add('edit-btn');;
 
 // Sem export para evitar problemas com módulos
 function initTodoList() {
@@ -67,7 +71,7 @@ function initTodoList() {
 
         if (tasks.length === 0) {
             const emptyMessage = document.createElement('li');
-            emptyMessage.textContent = 'Nenhuma tarefa ainda. Adicione uma!';
+            emptyMessage.textContent = 'No tasks yet. Add one!';
             emptyMessage.classList.add('empty-tasks-message');
             tasksList.appendChild(emptyMessage);
             return;
@@ -110,7 +114,7 @@ function initTodoList() {
 
             // Botão de editar
             const editButton = document.createElement('button');
-            editButton.textContent = 'Editar';
+            editButton.textContent = '✏️';
             editButton.title = 'Editar tarefa';
             editButton.classList.add('edit-btn');
             editButton.addEventListener('click', (e) => {
@@ -121,7 +125,7 @@ function initTodoList() {
             // Botão de deletar
             const deleteButton = document.createElement('button');
             deleteButton.textContent = '✕';
-            deleteButton.title = 'Deletar tarefa';
+            deleteButton.title = 'Delete task';
             deleteButton.classList.add('delete-btn');
             deleteButton.addEventListener('click', (e) => {
                 e.stopPropagation();
