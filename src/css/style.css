@@ -341,11 +341,6 @@ button:active {
     background-color: var(--input-bg); /* Um pouco de destaque no hover */
 }
 
-#tasks li button {
-    background-color: var(--error-color);
-    color: var(--on-primary-color); /* Assumindo que on-primary funciona bem com error color */
-}
-
 #tasks li button:hover {
     background-color: darkred; /* Ou uma variação mais escura de --error-color */
 }
