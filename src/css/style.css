@@ -343,8 +343,6 @@ button:active {
 
 #tasks li button:hover {
     border-width: 2px;  
-    border-color: var(--primary-color);
-    background-color: var(--hover-bg-light);
 }
 
 /* Pomodoro Timer Específico */
