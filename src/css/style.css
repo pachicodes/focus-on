@@ -106,6 +106,89 @@ body.dark-mode {
     color: var(--text-color);
 }
 
+/* Tema Hacker */
+body.hacker-mode {
+    --primary-color: #00ff41;
+    --primary-variant-color: #00b33c;
+    --secondary-color: #00bfff;
+    --background-color: #0d0d0d;
+    --surface-color: #161616;
+    --error-color: #ff1744;
+    --success-color: #00ff41;
+    --on-primary-color: #0d0d0d;
+    --on-secondary-color: #0d0d0d;
+    --on-background-color: #00ff41;
+    --on-surface-color: #00ff41;
+    --text-color: #00ff41;
+    --text-secondary: #00bfff;
+    --border-color: #00ff41;
+    --input-bg: #161616;
+    --card-shadow: 0 4px 12px rgba(0,255,65,0.15);
+    --hover-bg: #1a1a1a;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.hacker-mode .card-icon,
+body.hacker-mode .primary-button,
+body.hacker-mode .add-task-button {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+}
+
+body.hacker-mode .card,
+body.hacker-mode section {
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+body.hacker-mode .app-footer,
+body.hacker-mode .subtitle {
+    color: var(--text-secondary);
+}
+
+body.hacker-mode .task-item.completed {
+    background-color: rgba(0,255,65,0.07);
+    border-left: 3px solid var(--success-color);
+}
+
+body.hacker-mode .task-checkbox {
+    border-color: var(--primary-color);
+}
+
+body.hacker-mode .task-checkbox.checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+body.hacker-mode .edit-btn {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color) !important;
+}
+
+body.hacker-mode .delete-btn {
+    color: var(--error-color);
+    border-color: var(--error-color) !important;
+}
+
+body.hacker-mode .save-btn {
+    color: var(--success-color);
+    border-color: var(--success-color) !important;
+}
+
+body.hacker-mode #theme-toggle {
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+    box-shadow: var(--card-shadow);
+}
+
+body.hacker-mode .media-notification {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    box-shadow: var(--card-shadow);
+}
 
 /* Layout principal */
 .app-body {

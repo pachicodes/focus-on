@@ -27,14 +27,48 @@ document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
     if (themeToggleButton) {
-        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        // Suporte a três temas: light, dark, hacker
+        const themes = ['light', 'dark', 'hacker'];
+        let currentTheme = localStorage.getItem('focusOnTheme') || 'light';
+        setTheme(currentTheme);
 
         themeToggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('focusOnTheme', theme);
+            // Alterna entre os temas
+            let idx = themes.indexOf(currentTheme);
+            idx = (idx + 1) % themes.length;
+            currentTheme = themes[idx];
+            setTheme(currentTheme);
+            localStorage.setItem('focusOnTheme', currentTheme);
         });
+    }
+
+    function setTheme(theme) {
+        document.body.classList.remove('dark-mode', 'hacker-mode');
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
+        } else if (theme === 'hacker') {
+            document.body.classList.add('hacker-mode');
+        }
+        // Atualiza ícones do botão
+        updateThemeToggleIcon(theme);
+    }
+
+    function updateThemeToggleIcon(theme) {
+        const lightIcon = document.querySelector('.theme-toggle-icon.light-icon');
+        const darkIcon = document.querySelector('.theme-toggle-icon.dark-icon');
+        let hackerIcon = document.querySelector('.theme-toggle-icon.hacker-icon');
+        if (!hackerIcon) {
+            hackerIcon = document.createElement('span');
+            hackerIcon.className = 'theme-toggle-icon hacker-icon';
+            hackerIcon.textContent = '💻';
+            themeToggleButton.appendChild(hackerIcon);
+        }
+        lightIcon.style.opacity = theme === 'light' ? '1' : '0';
+        darkIcon.style.opacity = theme === 'dark' ? '1' : '0';
+        hackerIcon.style.opacity = theme === 'hacker' ? '1' : '0';
+        lightIcon.style.transform = theme === 'light' ? 'translateY(0)' : 'translateY(-20px)';
+        darkIcon.style.transform = theme === 'dark' ? 'translateY(0)' : 'translateY(20px)';
+        hackerIcon.style.transform = theme === 'hacker' ? 'translateY(0)' : 'translateY(20px)';
     }
     
     // Toggle para mostrar/esconder o campo de entrada de tarefas
