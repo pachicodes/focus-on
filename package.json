@@ -4,6 +4,7 @@
   "description": "A cute web app to help focus and get tasks done.",
   "main": "src/js/app.js",
   "scripts": {
+    "dev": "live-server src",
     "start": "live-server src",
     "build": "echo 'Build step not defined'",
     "test": "echo 'No tests defined'"
