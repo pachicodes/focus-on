@@ -6,7 +6,8 @@
   "scripts": {
     "start": "live-server src",
     "build": "echo 'Build step not defined'",
-    "test": "echo 'No tests defined'"
+    "test": "echo 'No tests defined'",
+    "dev": "live-server src"
   },
   "keywords": [
     "focus",
