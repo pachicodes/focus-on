@@ -7,7 +7,10 @@
     "dev": "live-server src",
     "start": "live-server src",
     "build": "echo 'Build step not defined'",
-    "test": "echo 'No tests defined'"
+    "test": "echo 'No tests defined yet - great opportunity for contributions!'",
+    "lint": "echo 'ESLint not configured yet - could be a workshop issue!'",
+    "format": "echo 'Prettier not configured yet - could be a workshop issue!'",
+    "workshop-setup": "echo 'Welcome to the Focus On workshop! Run npm run dev to start coding!'"
   },
   "keywords": [
     "focus",

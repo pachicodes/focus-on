@@ -1,0 +1,78 @@
+name: 🐛 Bug Report
+description: Report a bug in the Focus On app
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug! This helps make the project better for everyone.
+        
+        🎯 **Workshop participants**: This could be a great learning opportunity!
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: What happened?
+      placeholder: Describe what you expected vs what actually happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: Describe the expected behavior...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Browser
+      description: What browser are you using?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+
+  - type: dropdown
+    id: theme
+    attributes:
+      label: Theme
+      description: Which theme were you using?
+      options:
+        - Light mode
+        - Dark mode
+        - Both
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Screenshots, console errors, or other helpful information
+      placeholder: Add any screenshots or additional context...
+
+  - type: checkboxes
+    id: workshop-suitable
+    attributes:
+      label: Workshop Potential
+      options:
+        - label: This bug could be a good learning issue for workshop participants
+        - label: Fixing this would demonstrate debugging with GitHub Copilot Agent
