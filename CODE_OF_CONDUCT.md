@@ -1,44 +1,44 @@
-# Code of Conduct
+# Código de Conduta
 
-## Our Pledge
+## Nosso Compromisso
 
-In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
+No interesse de promover um ambiente aberto e acolhedor, nós, como contribuidores e mantenedores, nos comprometemos a tornar a participação em nosso projeto e nossa comunidade uma experiência livre de assédio para todos, independentemente de idade, tamanho do corpo, deficiência, etnia, características sexuais, identidade e expressão de gênero, nível de experiência, educação, status socioeconômico, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
 
-## Our Standards
+## Nossos Padrões
 
-Examples of behavior that contributes to creating a positive environment include:
+Exemplos de comportamentos que contribuem para criar um ambiente positivo incluem:
 
-- Using welcoming and inclusive language
-- Being respectful of differing viewpoints and experiences
-- Gracefully accepting constructive criticism
-- Focusing on what is best for the community
-- Showing empathy towards other community members
-- Helping newcomers and workshop participants learn
-- Being patient with questions and learning processes
+- Usar linguagem acolhedora e inclusiva
+- Respeitar diferentes pontos de vista e experiências
+- Aceitar graciosamente críticas construtivas
+- Focar no que é melhor para a comunidade
+- Mostrar empatia com outros membros da comunidade
+- Ajudar novatos e participantes do workshop a aprender
+- Ser paciente com perguntas e processos de aprendizagem
 
-Examples of unacceptable behavior by participants include:
+Exemplos de comportamentos inaceitáveis pelos participantes incluem:
 
-- The use of sexualized language or imagery and unwelcome sexual attention or advances
-- Trolling, insulting/derogatory comments, and personal or political attacks
-- Public or private harassment
-- Publishing others' private information without explicit permission
-- Other conduct which could reasonably be considered inappropriate in a professional setting
+- Uso de linguagem ou imagens sexualizadas e atenção sexual indesejada ou avanços
+- Trolling, comentários insultuosos/depreciativos e ataques pessoais ou políticos
+- Assédio público ou privado
+- Publicar informações privadas de outros sem permissão explícita
+- Outras condutas que poderiam razoavelmente ser consideradas inadequadas em um ambiente profissional
 
-## Workshop-Specific Guidelines
+## Diretrizes Específicas do Workshop
 
-Since this project is used for educational workshops:
+Como este projeto é usado para workshops educacionais:
 
-- **Be patient with learners**: Remember that everyone is at different skill levels
-- **Encourage questions**: No question is too basic or silly
-- **Share knowledge freely**: Help others understand concepts and code
-- **Celebrate small wins**: Acknowledge when someone solves a problem or makes their first contribution
-- **Foster collaboration**: Work together and learn from each other
+- **Seja paciente com os aprendizes**: Lembre-se de que todos estão em níveis de habilidade diferentes
+- **Incentive perguntas**: Nenhuma pergunta é muito básica ou boba
+- **Compartilhe conhecimento livremente**: Ajude outros a entender conceitos e código
+- **Celebre pequenas vitórias**: Reconheça quando alguém resolve um problema ou faz sua primeira contribuição
+- **Promova colaboração**: Trabalhem juntos e aprendam uns com os outros
 
-## Our Responsibilities
+## Nossas Responsabilidades
 
-Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
+Os mantenedores do projeto são responsáveis por esclarecer os padrões de comportamento aceitável e devem tomar ações corretivas apropriadas e justas em resposta a qualquer instância de comportamento inaceitável.
 
-Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
+Os mantenedores do projeto têm o direito e a responsabilidade de remover, editar ou rejeitar comentários, commits, código, edições na wiki, issues e outras contribuições que não estejam alinhadas com este Código de Conduta, ou banir temporária ou permanentemente qualquer contribuidor por outros comportamentos que considerem inadequados, ameaçadores, ofensivos ou prejudiciais.
 
 ## Scope
 
