@@ -1,18 +1,18 @@
 # Focus On
 
-> 🎯 **Workshop Project**: Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)
+> 🎯 **Projeto Workshop**: Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)
 
-A web application designed to help users boost productivity and maintain focus through a set of simple yet effective tools. This app combines a to-do list, a Pomodoro timer, and an embedded media player for lofi music, all wrapped in a clean, modern interface with light and dark mode options.
+Uma aplicação web projetada para ajudar os usuários a aumentar a produtividade e manter o foco através de um conjunto de ferramentas simples e eficazes. Este app combina uma lista de tarefas, um timer Pomodoro e um player de música lofi embutido, tudo em uma interface limpa e moderna com opções de modo claro e escuro.
 
 **Este projeto é usado como exemplo prático para ensinar contribuições Open Source com GitHub Copilot Agent.**
 
 ## 🎯 Workshop: Contribuindo com Open Source
 
-Este projeto é especialmente preparado para o workshop **"Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)"**.
+Este projeto foi especialmente preparado para o workshop **"Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)"**.
 
 ### Para Participantes do Workshop
 
-1. **Fork este repositório** para sua conta GitHub
+1. **Faça um fork deste repositório** para sua conta GitHub
 2. **Clone seu fork** para sua máquina local
 3. **Escolha uma issue** marcada com `good-first-issue` ou `workshop`
 4. **Use o GitHub Copilot Agent** para entender o código e implementar melhorias
@@ -21,23 +21,24 @@ Este projeto é especialmente preparado para o workshop **"Contribuindo com Open
 ### Issues Disponíveis
 
 Criamos issues de diferentes níveis de dificuldade:
+
 - 🟢 **Iniciante**: Issues marcadas com `good-first-issue`
 - 🟡 **Intermediário**: Issues de complexidade média
 - 🔴 **Avançado**: Issues que requerem mais experiência
 - 🎨 **Design/UX**: Melhorias visuais e de experiência do usuário
 
-## Features
+## Funcionalidades
 
-- **📝 To-Do List**: Easily add, manage, and track your tasks.
-- **🍅 Pomodoro Timer**: Work in focused 25-minute intervals with short breaks, customizable to your workflow.
-- **🎧 Lofi Music Player**: Embed your favorite Spotify playlists (or other media) to create a relaxing work atmosphere.
-- **☀️/🌙 Light & Dark Mode**: Switch between light and dark themes for optimal viewing comfort at any time of day.
-- **🎨 Modern UI**: Aesthetically pleasing and intuitive user interface.
+- **📝 Lista de Tarefas**: Adicione, gerencie e acompanhe suas tarefas facilmente.
+- **🍅 Timer Pomodoro**: Trabalhe em intervalos focados de 25 minutos com pausas curtas, personalizável para seu fluxo de trabalho.
+- **🎧 Player de Música Lofi**: Incorpore suas playlists favoritas do Spotify (ou outras mídias) para criar uma atmosfera relaxante de trabalho.
+- **☀️/🌙 Modo Claro e Escuro**: Alterne entre temas claro e escuro para conforto visual ideal a qualquer hora do dia.
+- **🎨 Interface Moderna**: Interface de usuário esteticamente agradável e intuitiva.
 
-## Tech Stack
+## Tecnologias Utilizadas
 
-- **Frontend**: HTML, CSS, Vanilla JavaScript
-- **Development Server**: `live-server` (via npm scripts)
+- **Frontend**: HTML, CSS, JavaScript Vanilla
+- **Servidor de Desenvolvimento**: `live-server` (via scripts npm)
 
 ## Project Structure
 
