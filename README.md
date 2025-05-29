@@ -109,43 +109,43 @@ focus-on/
 - **Usar Timer Pomodoro**: Na seção "Timer Pomodoro", clique em "Iniciar" para começar uma sessão de foco. Use os botões "Pausar" e "Reiniciar" conforme necessário.
 - **Ouvir Música**: O player de mídia incorporado na seção "Música Lofi" deve estar pronto para reproduzir.
 
-## Contributing
+## Contribuindo
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+As contribuições são o que tornam a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
 
-### For Workshop Participants
+### Para Participantes do Workshop
 
-This project is specifically designed for learning how to contribute to Open Source projects using GitHub Copilot Agent as your intelligent partner.
+Este projeto foi especificamente projetado para ensinar como contribuir com projetos Open Source usando o GitHub Copilot Agent como seu parceiro inteligente.
 
-#### How to Contribute
+#### Como Contribuir
 
-1. **Fork the Project**
-2. **Clone your fork**: `git clone https://github.com/yourusername/focus-on.git`
-3. **Create your Feature Branch**: `git checkout -b feature/AmazingFeature`
-4. **Choose an Issue**: Look for issues labeled `good-first-issue`, `help-wanted`, or `workshop`
-5. **Use GitHub Copilot Agent**: Let AI help you understand the codebase and implement features
-6. **Commit your Changes**: `git commit -m 'Add some AmazingFeature'`
-7. **Push to the Branch**: `git push origin feature/AmazingFeature`
-8. **Open a Pull Request**
+1. **Faça um Fork do Projeto**
+2. **Clone seu fork**: `git clone https://github.com/seuusuario/focus-on.git`
+3. **Crie sua Feature Branch**: `git checkout -b feature/FuncionalidadeIncrivel`
+4. **Escolha uma Issue**: Procure por issues rotuladas como `good-first-issue`, `help-wanted`, ou `workshop`
+5. **Use o GitHub Copilot Agent**: Deixe a IA ajudar você a entender a base de código e implementar funcionalidades
+6. **Commit suas Mudanças**: `git commit -m 'Add: alguma FuncionalidadeIncrivel'`
+7. **Push para a Branch**: `git push origin feature/FuncionalidadeIncrivel`
+8. **Abra um Pull Request**
 
-### Issue Labels
+### Labels das Issues
 
-- 🟢 `good-first-issue` - Perfect for beginners
-- 🆘 `help-wanted` - We need community help
-- 🎓 `workshop` - Designed for workshop participants
-- 🐛 `bug` - Something isn't working
-- ✨ `enhancement` - New feature or request
-- 📚 `documentation` - Improvements to docs
-- 🎨 `design` - Design and UX improvements
+- 🟢 `good-first-issue` - Perfeito para iniciantes
+- 🆘 `help-wanted` - Precisamos de ajuda da comunidade
+- 🎓 `workshop` - Projetado para participantes do workshop
+- 🐛 `bug` - Algo não está funcionando
+- ✨ `enhancement` - Nova funcionalidade ou solicitação
+- 📚 `documentation` - Melhorias na documentação
+- 🎨 `design` - Melhorias de design e UX
 
-### Getting Help
+### Obtendo Ajuda
 
-- Use **GitHub Copilot Agent** to understand code and get implementation suggestions
-- Ask questions in the issue comments
-- Check out the [Code of Conduct](CODE_OF_CONDUCT.md)
-- Read our [Contributing Guidelines](CONTRIBUTING.md)
+- Use o **GitHub Copilot Agent** para entender código e obter sugestões de implementação
+- Faça perguntas nos comentários das issues
+- Confira o [Código de Conduta](CODE_OF_CONDUCT.md)
+- Leia nossas [Diretrizes de Contribuição](CONTRIBUTING.md)
 
-## License
+## Licença
 
 Distributed under the MIT License. See the `LICENSE` file (you may need to create one if it doesn't exist) for more information.
 
