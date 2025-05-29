@@ -1,6 +1,30 @@
 # Focus On
 
+> 🎯 **Workshop Project**: Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)
+
 A web application designed to help users boost productivity and maintain focus through a set of simple yet effective tools. This app combines a to-do list, a Pomodoro timer, and an embedded media player for lofi music, all wrapped in a clean, modern interface with light and dark mode options.
+
+**Este projeto é usado como exemplo prático para ensinar contribuições Open Source com GitHub Copilot Agent.**
+
+## 🎯 Workshop: Contribuindo com Open Source
+
+Este projeto é especialmente preparado para o workshop **"Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)"**.
+
+### Para Participantes do Workshop
+
+1. **Fork este repositório** para sua conta GitHub
+2. **Clone seu fork** para sua máquina local
+3. **Escolha uma issue** marcada com `good-first-issue` ou `workshop`
+4. **Use o GitHub Copilot Agent** para entender o código e implementar melhorias
+5. **Abra um Pull Request** com suas contribuições
+
+### Issues Disponíveis
+
+Criamos issues de diferentes níveis de dificuldade:
+- 🟢 **Iniciante**: Issues marcadas com `good-first-issue`
+- 🟡 **Intermediário**: Issues de complexidade média
+- 🔴 **Avançado**: Issues que requerem mais experiência
+- 🎨 **Design/UX**: Melhorias visuais e de experiência do usuário
 
 ## Features
 
@@ -98,13 +122,37 @@ focus-on/
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+### For Workshop Participants
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+This project is specifically designed for learning how to contribute to Open Source projects using GitHub Copilot Agent as your intelligent partner.
+
+#### How to Contribute
+
+1. **Fork the Project**
+2. **Clone your fork**: `git clone https://github.com/yourusername/focus-on.git`
+3. **Create your Feature Branch**: `git checkout -b feature/AmazingFeature`
+4. **Choose an Issue**: Look for issues labeled `good-first-issue`, `help-wanted`, or `workshop`
+5. **Use GitHub Copilot Agent**: Let AI help you understand the codebase and implement features
+6. **Commit your Changes**: `git commit -m 'Add some AmazingFeature'`
+7. **Push to the Branch**: `git push origin feature/AmazingFeature`
+8. **Open a Pull Request**
+
+### Issue Labels
+
+- 🟢 `good-first-issue` - Perfect for beginners
+- 🆘 `help-wanted` - We need community help
+- 🎓 `workshop` - Designed for workshop participants
+- 🐛 `bug` - Something isn't working
+- ✨ `enhancement` - New feature or request
+- 📚 `documentation` - Improvements to docs
+- 🎨 `design` - Design and UX improvements
+
+### Getting Help
+
+- Use **GitHub Copilot Agent** to understand code and get implementation suggestions
+- Ask questions in the issue comments
+- Check out the [Code of Conduct](CODE_OF_CONDUCT.md)
+- Read our [Contributing Guidelines](CONTRIBUTING.md)
 
 ## License
 
