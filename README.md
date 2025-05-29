@@ -1,7 +1,7 @@
 # Focus On
 
 A web application designed to help users boost productivity and maintain focus through a set of simple yet effective tools. This app combines a to-do list, a Pomodoro timer, and an embedded media player for lofi music, all wrapped in a clean, modern interface with light and dark mode options.
-
+ssssss
 ## Features
 
 - **📝 To-Do List**: Easily add, manage, and track your tasks.
