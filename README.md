@@ -40,7 +40,7 @@ Criamos issues de diferentes níveis de dificuldade:
 - **Frontend**: HTML, CSS, JavaScript Vanilla
 - **Servidor de Desenvolvimento**: `live-server` (via scripts npm)
 
-## Project Structure
+## Estrutura do Projeto
 
 ```text
 focus-on/
@@ -57,67 +57,57 @@ focus-on/
 │           ├── mediaEmbed.js     # Player de música
 │           ├── pomodoroTimer.js  # Timer Pomodoro
 │           └── todoList.js       # Componente de lista de tarefas (legado)
-├── src/
-│   ├── index.html          # Main HTML structure
-│   ├── css/
-│   │   └── style.css       # Stylesheets, including theme variables
-│   ├── js/
-│   │   ├── app.js          # Main application logic, theme toggling
-│   │   └── components/
-│   │       ├── todoList.js       # To-Do list functionality
-│   │       ├── pomodoroTimer.js  # Pomodoro timer logic
-│   │       └── mediaEmbed.js     # Media player embedding
-├── package.json            # Project metadata and dependencies
-└── README.md               # This file
+├── package.json            # Metadados do projeto e dependências
+└── README.md               # Este arquivo
 ```
 
-## Getting Started
+## Começando
 
-### Prerequisites
+### Pré-requisitos
 
-- [Node.js](https://nodejs.org/) (which includes npm) installed on your machine.
+- [Node.js](https://nodejs.org/) (que inclui npm) instalado em sua máquina.
 
-### Installation
+### Instalação
 
-1. **Clone the repository:**
+1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/yourusername/focus-on.git
+   git clone https://github.com/seuusuario/focus-on.git
    ```
 
-   (Replace `yourusername` with your actual GitHub username or the correct repository URL if it's hosted elsewhere.)
+   (Substitua `seuusuario` pelo seu nome de usuário real do GitHub ou a URL correta do repositório se estiver hospedado em outro lugar.)
 
-2. **Navigate to the project directory:**
+2. **Navegue até o diretório do projeto:**
 
    ```bash
    cd focus-on
    ```
 
-3. **Install the dependencies:**
-   (This project uses `live-server` as a devDependency, as specified in `package.json`.)
+3. **Instale as dependências:**
+   (Este projeto usa `live-server` como devDependency, conforme especificado no `package.json`.)
 
    ```bash
    npm install
    ```
 
-### Running the Application
+### Executando a Aplicação
 
-1. **Start the development server:**
+1. **Inicie o servidor de desenvolvimento:**
 
    ```bash
    npm start
    ```
 
-   This command will execute the `start` script defined in `package.json` (which is `live-server src`). It will typically open the application in your default web browser, often at `http://127.0.0.1:8080`.
+   Este comando executará o script `start` definido no `package.json` (que é `live-server src`). Normalmente abrirá a aplicação em seu navegador padrão, geralmente em `http://127.0.0.1:8080`.
 
-2. **Alternatively, you can open `src/index.html` directly in your web browser.** However, using `npm start` is recommended to take advantage of `live-server`'s features like automatic reloading.
+2. **Alternativamente, você pode abrir `src/index.html` diretamente em seu navegador.** No entanto, usar `npm start` é recomendado para aproveitar os recursos do `live-server` como recarregamento automático.
 
-## How to Use
+## Como Usar
 
-- **Toggle Theme**: Click the "Alternar Tema" (Toggle Theme) button, usually found at the top-right of the page, to switch between light and dark modes.
-- **Manage Tasks**: In the "To-Do List" section, type your task into the input field and click the "Add Task" button.
-- **Use Pomodoro Timer**: In the "Pomodoro Timer" section, click "Start" to begin a focus session. Use the "Stop" and "Reset" buttons as needed.
-- **Listen to Music**: The embedded media player in the "Listen to Lofi" section should be ready to play.
+- **Alternar Tema**: Clique no botão "☀️/🌙" (Alternar Tema), geralmente localizado no canto superior direito da página, para alternar entre os modos claro e escuro.
+- **Gerenciar Tarefas**: Na seção "Lista de Tarefas", digite sua tarefa no campo de entrada e clique no botão "Adicionar Tarefa".
+- **Usar Timer Pomodoro**: Na seção "Timer Pomodoro", clique em "Iniciar" para começar uma sessão de foco. Use os botões "Pausar" e "Reiniciar" conforme necessário.
+- **Ouvir Música**: O player de mídia incorporado na seção "Música Lofi" deve estar pronto para reproduzir.
 
 ## Contributing
 
