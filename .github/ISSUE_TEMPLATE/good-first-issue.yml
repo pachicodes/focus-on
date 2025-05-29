@@ -1,0 +1,66 @@
+name: 🟢 Good First Issue
+description: Perfect for newcomers and workshop participants
+title: "[GOOD FIRST ISSUE] "
+labels: ["good-first-issue", "help-wanted", "workshop"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in contributing! This issue is designed to be beginner-friendly.
+        
+        🎯 **Perfect for**: Workshop participants and first-time contributors
+        ⏱️ **Estimated time**: 30-60 minutes
+        💡 **Tip**: Use GitHub Copilot Agent to help you understand the code and implement the solution!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done?
+      placeholder: Describe the task or improvement needed...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know this is complete?
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Criterion 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: helpful-resources
+    attributes:
+      label: Helpful Resources
+      description: Links, documentation, or hints that might help
+      placeholder: |
+        - Link to relevant documentation
+        - Specific files to look at
+        - Hints or suggestions
+
+  - type: textarea
+    id: copilot-prompts
+    attributes:
+      label: Suggested Copilot Agent Prompts
+      description: Prompts to help you get started with GitHub Copilot Agent
+      placeholder: |
+        - "Explain how [specific component] works in this codebase"
+        - "How can I implement [specific feature]?"
+        - "Show me examples of [specific pattern] in JavaScript"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Before You Start
+      options:
+        - label: I have read the [Contributing Guidelines](../CONTRIBUTING.md)
+          required: true
+        - label: I understand this is a workshop/learning project
+          required: true
+        - label: I'm ready to use GitHub Copilot Agent to help me learn
+          required: false
