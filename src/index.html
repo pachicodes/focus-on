@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus On</title>
+    <title>Focus On - Gerencie Tarefas e Tempo</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body class="app-body">
-    <button id="theme-toggle" aria-label="Toggle between light and dark theme">
+    <button id="theme-toggle" aria-label="Alternar entre tema claro e escuro">
         <span class="theme-toggle-icon light-icon">☀️</span>
         <span class="theme-toggle-icon dark-icon">🌙</span>
     </button>
     
     <header class="app-header">
         <h1>Focus On</h1>
-        <p class="subtitle">Manage tasks, control your time, and relax with music - all in one place</p>
+        <p class="subtitle">Gerencie tarefas, controle seu tempo e relaxe com música - tudo em um só lugar</p>
     </header>
     
     <div class="cards-container">
@@ -24,18 +24,18 @@
             <div class="card-header">
                 <div class="card-title">
                     <i class="card-icon todo-icon">✓</i>
-                    <h2>Todo List</h2>
+                    <h2>Lista de Tarefas</h2>
                 </div>
-                <button class="icon-button add-button" id="show-add-task" title="Add New Task">+</button>
+                <button class="icon-button add-button" id="show-add-task" title="Adicionar Nova Tarefa">+</button>
             </div>
             
             <div id="task-input" class="task-input-container">
-                <input type="text" id="task" placeholder="Add a new task...">
-                <button id="add-task" class="add-task-button">Add</button>
+                <input type="text" id="task" placeholder="Adicionar uma nova tarefa...">
+                <button id="add-task" class="add-task-button">Adicionar</button>
             </div>
             <ul id="tasks" class="tasks-list"></ul>
             <div class="card-footer">
-                <span id="tasks-count">0 tasks</span>
+                <span id="tasks-count">0 tarefas</span>
             </div>
         </section>
 
@@ -46,7 +46,7 @@
                     <i class="card-icon timer-icon">🍅</i>
                     <h2>Pomodoro</h2>
                 </div>
-                <button class="icon-button settings-button" id="timer-settings" title="Timer Settings">⚙️</button>
+                <button class="icon-button settings-button" id="timer-settings" title="Configurações do Timer">⚙️</button>
             </div>
             
             <div class="timer-container">
@@ -54,8 +54,8 @@
             </div>
             
             <div class="timer-controls">
-                <button id="start-timer" class="primary-button">Start</button>
-                <button id="reset-timer" class="secondary-button">Reset</button>
+                <button id="start-timer" class="primary-button">Iniciar</button>
+                <button id="reset-timer" class="secondary-button">Zerar</button>
             </div>
             
             <div class="timer-modes">
@@ -63,10 +63,10 @@
                     <span class="timer-mode-label">Pomodoro</span>
                 </div>
                 <div class="timer-mode-item">
-                    <span class="timer-mode-label">Short Break</span>
+                    <span class="timer-mode-label">Pausa Curta</span>
                 </div>
                 <div class="timer-mode-item">
-                    <span class="timer-mode-label">Long Break</span>
+                    <span class="timer-mode-label">Pausa Longa</span>
                 </div>
             </div>
         </section>
@@ -76,9 +76,9 @@
             <div class="card-header">
                 <div class="card-title">
                     <i class="card-icon music-icon">🎵</i>
-                    <h2>Music Player</h2>
+                    <h2>Player de Música</h2>
                 </div>
-                <button class="icon-button playlist-button" id="playlist-button" title="Manage Playlist">≡</button>
+                <button class="icon-button playlist-button" id="playlist-button" title="Gerenciar Playlist">≡</button>
             </div>
             
             <div class="media-container">
@@ -91,7 +91,7 @@
     </div>
     
     <footer class="app-footer">
-        <p>Focus On © 2025 - Stay organized and productive</p>
+        <p>Focus On © 2025 - Mantenha-se organizado e produtivo</p>
     </footer>
     
     <!-- Scripts -->
