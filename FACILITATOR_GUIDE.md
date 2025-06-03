@@ -1,10 +1,10 @@
-# Workshop Facilitator Guide
+# Guia do Facilitador do Workshop
 
-## 📋 Pré-Workshop Checklist
+## 📋 Checklist Pré-Workshop
 
-### Setup do Repositório (1 semana antes)
+### Configuração do Repositório (1 semana antes)
 
-- [ ] Criar issues do arquivo `WORKSHOP_ISSUES.md` (escolher 8-12 issues variadas)
+- [ ] Criar issues do arquivo `WORKSHOP_ISSUES.md` (escolher de 8 a 12 issues variadas)
 - [ ] Adicionar labels apropriadas:
   - [ ] `good-first-issue` (verde)
   - [ ] `help-wanted` (azul)
@@ -13,21 +13,21 @@
   - [ ] `bug` (vermelho)
   - [ ] `documentation` (cinza)
   - [ ] `design` (rosa)
-- [ ] Criar milestone "Workshop" 
+- [ ] Criar marco "Workshop" 
 - [ ] Testar que o projeto roda com `npm run dev`
 - [ ] Preparar branches de exemplo (opcional)
 
 ### Preparação Técnica (2-3 dias antes)
 
-- [ ] Verificar que GitHub Copilot está funcionando
-- [ ] Preparar exemplos de prompts eficazes para Copilot Agent
-- [ ] Testar workflow completo: fork → clone → branch → commit → PR
+- [ ] Verificar se o GitHub Copilot está funcionando
+- [ ] Preparar exemplos de prompts eficazes para o Copilot Agent
+- [ ] Testar o fluxo de trabalho completo: fork → clone → branch → commit → PR
 - [ ] Preparar slides de apresentação (se aplicável)
 
-### Material para Participantes
+### Material para os Participantes
 
 - [ ] Link do repositório
-- [ ] Instruções de setup (Node.js, Git, GitHub account)
+- [ ] Instruções de configuração (Node.js, Git, conta do GitHub)
 - [ ] Lista de extensões recomendadas do VS Code
 - [ ] Guia rápido de comandos Git
 
@@ -37,32 +37,32 @@
 1. **Apresentações** (5 min)
    - Quem são os participantes
    - Nível de experiência com Git/GitHub
-   - Experiência prévia com Open Source
+   - Experiência prévia com Código Aberto
 
-2. **Overview do Projeto** (10 min)
+2. **Visão Geral do Projeto** (10 min)
    - Demonstrar o Focus On funcionando
    - Explicar a estrutura do código
-   - Mostrar diferentes componentes (todo, timer, music)
+   - Mostrar diferentes componentes (tarefas, timer, música)
 
-### Demo: GitHub Copilot Agent (20 min)
+### Demonstração: GitHub Copilot Agent (20 min)
 
 3. **Demonstração ao Vivo** (15 min)
    - Abrir o projeto no VS Code
-   - Mostrar como ativar Copilot Agent
+   - Mostrar como ativar o Copilot Agent
    - Exemplos de prompts eficazes:
      ```
-     "Explain how the Pomodoro timer component works"
-     "How can I add a new feature to save user preferences?"
-     "What does this CSS class do and how can I improve it?"
-     "Help me understand the task completion animation"
+     "Explique como o componente do timer Pomodoro funciona"
+     "Como posso adicionar uma nova funcionalidade para salvar as preferências do usuário?"
+     "O que esta classe CSS faz e como posso melhorá-la?"
+     "Ajude-me a entender a animação de conclusão da tarefa"
      ```
-   - Mostrar diferentes tipos de ajuda: explicação, implementação, debugging
+   - Mostrar diferentes tipos de ajuda: explicação, implementação, depuração
 
-4. **Q&A sobre Copilot** (5 min)
+4. **Perguntas e Respostas sobre o Copilot** (5 min)
 
-### Hands-on: Setup (15 min)
+### Prática: Configuração (15 min)
 
-5. **Setup dos Participantes**
+5. **Configuração dos Participantes**
    - Fork do repositório
    - Clone local
    - `npm install` e `npm run dev`
@@ -72,64 +72,64 @@
 
 6. **Explicação do Processo** (10 min)
    - Como escolher uma issue
-   - Workflow: branch → code → commit → push → PR
-   - Como usar Copilot Agent eficazmente
+   - Fluxo de trabalho: branch → código → commit → push → PR
+   - Como usar o Copilot Agent eficazmente
    - Quando pedir ajuda
 
 7. **Desenvolvimento** (45 min)
    - Participantes escolhem issues
    - Trabalho individual ou em pares
    - Facilitadores circulam ajudando
-   - Encorajar uso do Copilot Agent
+   - Incentivar o uso do Copilot Agent
 
 8. **Check-in** (5 min)
    - Status de cada participante
    - Dificuldades encontradas
    - Sucessos até agora
 
-### Review e Fechamento (25 min)
+### Revisão e Fechamento (25 min)
 
 9. **Apresentação de Resultados** (15 min)
    - Cada participante/dupla mostra brevemente o que fez
-   - Review de alguns PRs em conjunto
+   - Revisão de alguns PRs em conjunto
    - Celebrar todas as contribuições
 
-10. **Wrap-up** (10 min)
+10. **Conclusão** (10 min)
     - Próximos passos para continuar contribuindo
     - Recursos para aprender mais
-    - Como encontrar outros projetos Open Source
+    - Como encontrar outros projetos de Código Aberto
     - Feedback sobre o workshop
 
 ## 🎯 Prompts Recomendados para Demonstração
 
 ### Para Entendimento do Código
 ```
-"Explain how the task completion animation works in this project"
-"What does the dark mode implementation do and how does it work?"
-"Walk me through the Pomodoro timer logic step by step"
-"How does localStorage work in this application?"
+"Explique como funciona a animação de conclusão de tarefa neste projeto"
+"O que a implementação do modo escuro faz e como ela funciona?"
+"Me guie pela lógica do timer Pomodoro passo a passo"
+"Como o localStorage funciona nesta aplicação?"
 ```
 
 ### Para Implementação
 ```
-"How would I add a feature to categorize tasks?"
-"Show me how to implement keyboard shortcuts for this todo app"
-"Help me add sound notifications when the timer ends"
-"How can I make this component more accessible?"
+"Como eu adicionaria uma funcionalidade para categorizar tarefas?"
+"Mostre-me como implementar atalhos de teclado para este aplicativo de tarefas"
+"Ajude-me a adicionar notificações sonoras quando o timer terminar"
+"Como posso tornar este componente mais acessível?"
 ```
 
-### Para Debugging
+### Para Depuração
 ```
-"Why might the timer not reset properly after completion?"
-"What could cause tasks to not save to localStorage?"
-"Help me debug this CSS layout issue"
+"Por que o timer pode não reiniciar corretamente após a conclusão?"
+"O que poderia fazer com que as tarefas não fossem salvas no localStorage?"
+"Ajude-me a depurar este problema de layout CSS"
 ```
 
 ### Para Melhorias
 ```
-"How can I improve the performance of this task rendering function?"
-"What are best practices for this type of component?"
-"Review this code and suggest improvements"
+"Como posso melhorar o desempenho desta função de renderização de tarefas?"
+"Quais são as melhores práticas para este tipo de componente?"
+"Revise este código e sugira melhorias"
 ```
 
 ## 🎯 Distribuição de Issues por Nível
@@ -142,80 +142,80 @@
 
 ### Para Intermediários (40% dos participantes)
 - Novas funcionalidades simples
-- Melhorias de UX
+- Melhorias de UX (Experiência do Usuário)
 - Implementação de notificações
 - Categorias para tarefas
 
 ### Para Avançados (20% dos participantes)
-- Drag & drop
-- PWA features
+- Funcionalidade de Arrastar e Soltar (Drag & drop)
+- Funcionalidades de PWA (Progressive Web App)
 - Sistema de estatísticas
 - Testes unitários
 
 ## 🛠️ Dicas para Facilitadores
 
 ### Durante as Apresentações
-- Mantenha energia alta e seja entusiasmado
-- Use exemplos práticos e relatable
-- Encoraje perguntas a qualquer momento
-- Mostre que erros são normais e part of the process
+- Mantenha a energia alta e seja entusiasmado
+- Use exemplos práticos e com os quais os participantes possam se identificar
+- Incentive perguntas a qualquer momento
+- Mostre que erros são normais e fazem parte do processo
 
 ### Durante o Desenvolvimento
 - Circule constantemente entre os participantes
 - Faça perguntas abertas: "Como está indo?" "O que você descobriu?"
-- Ajude com problemas técnicos, mas encoraje uso do Copilot primeiro
-- Celebrate small wins: "Great job getting that working!"
+- Ajude com problemas técnicos, mas incentive o uso do Copilot primeiro
+- Celebre pequenas vitórias: "Ótimo trabalho ao fazer isso funcionar!"
 
 ### Gerenciando Diferentes Níveis
-- Pair up beginners with more experienced developers
+- Forme duplas de iniciantes com desenvolvedores mais experientes
 - Tenha issues extras preparadas para quem terminar rápido
-- Help beginners choose appropriate issues
-- Don't let anyone struggle alone for more than 5-10 minutes
+- Ajude os iniciantes a escolherem issues apropriadas
+- Não deixe ninguém com dificuldades sozinho por mais de 5-10 minutos
 
-### Usando Copilot Eficazmente
+### Usando o Copilot Eficazmente
 - Demonstre diferentes tipos de prompts
 - Mostre como iterar e refinar prompts
 - Ensine quando confiar vs. quando questionar as sugestões
-- Emphasize que Copilot é um assistente, não um replacement para thinking
+- Enfatize que o Copilot é um assistente, não um substituto para o pensamento crítico
 
 ## ⚠️ Problemas Comuns e Soluções
 
 ### Problemas Técnicos
 - **Node.js não instalado**: Tenha links para instalação prontos
 - **Git não configurado**: Ajude com `git config --global user.name/email`
-- **Fork/clone confusion**: Demonstre o processo visualmente
-- **Merge conflicts**: Use como teaching opportunity
+- **Confusão com Fork/Clone**: Demonstre o processo visualmente
+- **Conflitos de Merge**: Use como uma oportunidade de aprendizado
 
-### Issues com Copilot
-- **Sugestões não relevantes**: Ensine como refinar prompts
-- **Código não funciona**: Demonstre debugging process
-- **Overreliance**: Encoraje understanding do que o código faz
+### Issues com o Copilot
+- **Sugestões não relevantes**: Ensine como refinar os prompts
+- **Código não funciona**: Demonstre o processo de depuração
+- **Dependência excessiva**: Incentive o entendimento do que o código faz
 
 ### Dinâmica do Grupo
-- **Participantes muito tímidos**: Faça perguntas diretas, encoraje sharing
-- **Participantes dominando**: Gentilmente redirect atenção para outros
-- **Nível muito diferentes**: Use pair programming strategically
+- **Participantes muito tímidos**: Faça perguntas diretas, incentive o compartilhamento
+- **Participantes dominando a conversa**: Gentilmente redirecione a atenção para outros
+- **Níveis muito diferentes**: Use a programação em par estrategicamente
 
 ## 📊 Métricas de Sucesso
 
 ### Durante o Workshop
-- [ ] Todos conseguem fazer setup e rodar o projeto
-- [ ] Pelo menos 80% dos participantes criam uma branch e fazem commit
+- [ ] Todos conseguem fazer a configuração e rodar o projeto
+- [ ] Pelo menos 80% dos participantes criam uma branch e fazem um commit
 - [ ] Pelo menos 60% dos participantes abrem um PR
-- [ ] Todos os participantes usam Copilot Agent pelo menos uma vez
+- [ ] Todos os participantes usam o Copilot Agent pelo menos uma vez
 
 ### Pós Workshop
-- [ ] Número de PRs merged
+- [ ] Número de PRs que receberam merge
 - [ ] Feedback positivo dos participantes
 - [ ] Participantes continuam contribuindo após o workshop
-- [ ] Participantes reportam confidence increase em contribuir para Open Source
+- [ ] Participantes relatam aumento de confiança em contribuir para Código Aberto
 
-## 📝 Material de Follow-up
+## 📝 Material de Acompanhamento
 
 ### Para Enviar Após o Workshop
-- Links para projetos Open Source beginner-friendly
+- Links para projetos de Código Aberto amigáveis para iniciantes
 - Lista de recursos para aprender Git/GitHub
-- Guia de como usar GitHub Copilot eficazmente
+- Guia de como usar o GitHub Copilot eficazmente
 - Comunidades para continuar aprendendo
 
 ### Projetos Recomendados para Próximas Contribuições
@@ -224,10 +224,10 @@
 - [CodeTriage](https://www.codetriage.com/)
 - [Up For Grabs](https://up-for-grabs.net/)
 
-## 🎉 Celebration Ideas
+## 🎉 Ideias para Celebração
 
-- Take group photo with laptops showing contributions
-- Create a "Wall of Fame" slide with all contributors
-- Share accomplishments on social media (with permission)
-- Plan follow-up meetup or advanced workshop
-- Send certificates of participation (digital)
+- Tire uma foto em grupo com os laptops mostrando as contribuições
+- Crie um slide de "Mural da Fama" com todos os contribuidores
+- Compartilhe as conquistas nas redes sociais (com permissão)
+- Planeje um meetup de acompanhamento ou workshop avançado
+- Envie certificados de participação (digitais)
