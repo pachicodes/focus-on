@@ -49,46 +49,138 @@ Muitos desenvolvedores esperam que `npm run dev` inicie o servidor de desenvolvi
 
 ---
 
-### 3. Remover arquivos duplicados
-**Labels**: `good-first-issue`, `workshop`, `cleanup`
-**Título**: [BOA PRIMEIRA ISSUE] Limpar arquivos .new duplicados
+### 3. Traduzir mensagens de sistema
+**Labels**: `good-first-issue`, `workshop`, `i18n`
+**Título**: [BOA PRIMEIRA ISSUE] Traduzir mensagens de sistema para português
 
 **Descrição**:
-Existem vários arquivos `.new` no repositório que parecem ser artefatos de desenvolvimento e devem ser removidos.
+Existem mensagens em inglês no código do sistema que precisam ser traduzidas para português para manter a consistência com o restante da interface.
 
 **Critérios de Aceitação**:
-- [ ] Remover todos os arquivos `.new` do projeto
-- [ ] Garantir que a remoção não quebre funcionalidades
-- [ ] Atualizar o .gitignore para evitar futuros arquivos .new, se necessário
+- [ ] Traduzir a mensagem "No tasks yet. Add one!" no todoList.js
+- [ ] Traduzir mensagens de botões como "Save", "Cancel" etc.
+- [ ] Traduzir mensagens de celebração ao concluir tarefas
+- [ ] Garantir que as mensagens estejam gramaticalmente corretas
 
 **Arquivos para verificar**:
-- `src/js/app.js.new`
-- `src/js/todoList.js.new`
-- `src/js/components/todoList.js.new`
+- `src/js/todoList.js`
 
 **Sugestões para o Copilot Agent**:
-- "O que são esses arquivos .new e é seguro deletá-los?"
-- "Como verificar se a remoção de arquivos vai quebrar a aplicação?"
+- "Localizar todas as strings em inglês nos arquivos JavaScript"
+- "Como fazer internacionalização básica em JavaScript"
 
 ---
 
-### 4. Melhorar o README com screenshots
-**Labels**: `good-first-issue`, `workshop`, `documentation`
-**Título**: [BOA PRIMEIRA ISSUE] Adicionar screenshots e melhorar o README
+### 4. Corrigir ícones ausentes no manifesto
+**Labels**: `good-first-issue`, `workshop`, `bug`
+**Título**: [BOA PRIMEIRA ISSUE] Corrigir referências a ícones ausentes no manifesto
 
 **Descrição**:
-O README pode ser mais atrativo com screenshots mostrando o app em funcionamento.
+O arquivo manifest.json faz referência a vários tamanhos de ícones que não existem no diretório `/icons`.
 
 **Critérios de Aceitação**:
-- [ ] Tirar screenshots do app (modos claro e escuro)
-- [ ] Adicionar screenshots ao README
-- [ ] Melhorar a seção de funcionalidades com mais detalhes
-- [ ] Adicionar uma seção "Demo"
+- [ ] Verificar quais ícones estão faltando
+- [ ] Criar os ícones nos tamanhos adequados ou ajustar o manifesto
+- [ ] Testar se o manifesto está válido
+
+**Arquivos para verificar**:
+- `manifest.json`
+- Diretório `/icons`
 
 **Sugestões para o Copilot Agent**:
-- "Como tirar bons screenshots para documentação?"
-- "Quais seções um bom README deve ter?"
-- "Exemplos de READMEs envolventes"
+- "Como criar ícones em diferentes tamanhos a partir de um SVG"
+- "O que é necessário em um web app manifest válido"
+
+---
+
+### 5. Melhorar título das páginas
+**Labels**: `good-first-issue`, `workshop`, `seo`
+**Título**: [BOA PRIMEIRA ISSUE] Melhorar título e meta tags para SEO
+
+**Descrição**:
+O título da página e as meta tags podem ser melhorados para otimização de mecanismos de busca (SEO) e compartilhamento em redes sociais.
+
+**Critérios de Aceitação**:
+- [ ] Adicionar meta tags de descrição apropriadas
+- [ ] Adicionar meta tags para compartilhamento em redes sociais (Open Graph)
+- [ ] Verificar se o título da página é descritivo e envolvente
+- [ ] Adicionar meta tags para dispositivos móveis
+
+**Arquivos para verificar**:
+- `src/index.html`
+
+**Sugestões para o Copilot Agent**:
+- "Quais meta tags são importantes para SEO"
+- "Como implementar Open Graph para compartilhamento em redes sociais"
+
+---
+
+### 6. Adicionar favicon personalizado
+**Labels**: `good-first-issue`, `workshop`, `enhancement`
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar favicon personalizado para o site
+
+**Descrição**:
+O site precisa de um favicon personalizado para melhorar a identidade visual nas abas do navegador.
+
+**Critérios de Aceitação**:
+- [ ] Criar um favicon a partir do logo/ícone existente
+- [ ] Adicionar as referências aos diferentes tamanhos de favicon no HTML
+- [ ] Testar em diferentes navegadores
+- [ ] Verificar suporte a diferentes dispositivos (desktop, mobile)
+
+**Arquivos para verificar**:
+- `src/index.html`
+- `icons/`
+
+**Sugestões para o Copilot Agent**:
+- "Como adicionar favicons modernos em um site HTML"
+- "Quais são os tamanhos recomendados para favicons em 2023?"
+
+---
+
+### 7. Adicionar animação simples de carregamento
+**Labels**: `good-first-issue`, `workshop`, `enhancement`, `css`
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar animação de carregamento inicial
+
+**Descrição**:
+Adicionar uma animação de carregamento simples enquanto os recursos do site são carregados (especialmente o embed de música).
+
+**Critérios de Aceitação**:
+- [ ] Criar uma animação de loading simples em CSS
+- [ ] Mostrar a animação enquanto os recursos estão carregando
+- [ ] Esconder elegantemente a animação quando o carregamento for concluído
+- [ ] A animação deve funcionar em temas claro/escuro
+
+**Arquivos para verificar**:
+- `src/css/style.css`
+- `src/index.html`
+- `src/js/app.js`
+
+**Sugestões para o Copilot Agent**:
+- "Como criar uma animação de loading simples em CSS"
+- "Como detectar quando uma página terminou de carregar em JavaScript"
+
+---
+
+### 8. Adicionar atributos de acessibilidade
+**Labels**: `good-first-issue`, `workshop`, `a11y`
+**Título**: [BOA PRIMEIRA ISSUE] Melhorar acessibilidade com atributos ARIA
+
+**Descrição**:
+Melhorar a acessibilidade da aplicação adicionando atributos ARIA apropriados para usuários de leitores de tela.
+
+**Critérios de Aceitação**:
+- [ ] Adicionar roles ARIA apropriadas aos elementos interativos
+- [ ] Adicionar aria-label onde necessário
+- [ ] Garantir que todos os elementos interativos sejam acessíveis via teclado
+- [ ] Verificar ordem de tabulação lógica
+
+**Arquivos para verificar**:
+- `src/index.html`
+
+**Sugestões para o Copilot Agent**:
+- "Quais atributos ARIA são recomendados para botões de ação?"
+- "Como tornar uma lista de tarefas acessível para leitores de tela"
 
 ---
 
