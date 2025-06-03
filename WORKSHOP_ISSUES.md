@@ -1,94 +1,94 @@
-# Workshop Issues - Ready to Create
+# Issues do Workshop - Prontas para Criar
 
 Este arquivo contém uma lista de issues prontas para serem criadas no GitHub antes do workshop. Copie e cole o conteúdo de cada issue no GitHub.
 
-## 🟢 Issues para Iniciantes (Good First Issue)
+## 🟢 Issues para Iniciantes
 
 ### 1. Melhorar mensagens de placeholder
 **Labels**: `good-first-issue`, `workshop`, `documentation`
-**Título**: [GOOD FIRST ISSUE] Improve placeholder texts throughout the app
+**Título**: [BOA PRIMEIRA ISSUE] Melhorar textos de placeholder em toda a aplicação
 
 **Descrição**:
-The current placeholder texts could be more engaging and helpful. Update placeholders to be more descriptive and encouraging.
+Os textos de placeholder atuais podem ser mais envolventes e úteis. Atualize os placeholders para serem mais descritivos e encorajadores.
 
-**Acceptance Criteria**:
-- [ ] Update task input placeholder to be more encouraging
-- [ ] Add helpful hints in placeholders
-- [ ] Ensure placeholders work in both light and dark themes
-- [ ] Test that placeholders are accessible
+**Critérios de Aceitação**:
+- [ ] Atualizar o placeholder do campo de tarefa para ser mais motivador
+- [ ] Adicionar dicas úteis nos placeholders
+- [ ] Garantir que os placeholders funcionem nos temas claro e escuro
+- [ ] Testar se os placeholders são acessíveis
 
-**Files to look at**:
+**Arquivos para verificar**:
 - `src/index.html`
 - `src/js/todoList.js`
 
-**Copilot Agent Prompts**:
-- "Show me all placeholder texts in this project"
-- "What are best practices for writing helpful placeholder text?"
-- "How can I make placeholders more engaging for productivity apps?"
+**Sugestões para o Copilot Agent**:
+- "Mostre todos os textos de placeholder neste projeto"
+- "Quais são as melhores práticas para escrever textos de placeholder úteis?"
+- "Como tornar placeholders mais envolventes em apps de produtividade?"
 
 ---
 
 ### 2. Adicionar um script dev ao package.json
 **Labels**: `good-first-issue`, `workshop`, `tooling`
-**Título**: [GOOD FIRST ISSUE] Add 'dev' script alias to package.json
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar alias 'dev' ao package.json
 
 **Descrição**:
-Many developers expect `npm run dev` to start development servers. Currently we only have `npm start`.
+Muitos desenvolvedores esperam que `npm run dev` inicie o servidor de desenvolvimento. Atualmente só temos `npm start`.
 
-**Acceptance Criteria**:
-- [ ] Add a "dev" script that does the same as "start"
-- [ ] Test that `npm run dev` works correctly
-- [ ] Update README if needed
+**Critérios de Aceitação**:
+- [ ] Adicionar um script "dev" que faça o mesmo que "start"
+- [ ] Testar se `npm run dev` funciona corretamente
+- [ ] Atualizar o README se necessário
 
-**Files to look at**:
+**Arquivos para verificar**:
 - `package.json`
 
-**Copilot Agent Prompts**:
-- "What's the difference between npm start and npm run dev?"
-- "Show me how to add scripts to package.json"
+**Sugestões para o Copilot Agent**:
+- "Qual a diferença entre npm start e npm run dev?"
+- "Como adicionar scripts ao package.json"
 
 ---
 
 ### 3. Remover arquivos duplicados
 **Labels**: `good-first-issue`, `workshop`, `cleanup`
-**Título**: [GOOD FIRST ISSUE] Clean up duplicate .new files
+**Título**: [BOA PRIMEIRA ISSUE] Limpar arquivos .new duplicados
 
 **Descrição**:
-There are several `.new` files in the codebase that appear to be development artifacts and should be removed.
+Existem vários arquivos `.new` no repositório que parecem ser artefatos de desenvolvimento e devem ser removidos.
 
-**Acceptance Criteria**:
-- [ ] Remove all `.new` files from the project
-- [ ] Ensure removing these files doesn't break functionality
-- [ ] Update .gitignore to prevent future .new files if appropriate
+**Critérios de Aceitação**:
+- [ ] Remover todos os arquivos `.new` do projeto
+- [ ] Garantir que a remoção não quebre funcionalidades
+- [ ] Atualizar o .gitignore para evitar futuros arquivos .new, se necessário
 
-**Files to check**:
+**Arquivos para verificar**:
 - `src/js/app.js.new`
 - `src/js/todoList.js.new`
 - `src/js/components/todoList.js.new`
 
-**Copilot Agent Prompts**:
-- "What are these .new files and are they safe to delete?"
-- "How do I check if removing files will break the application?"
+**Sugestões para o Copilot Agent**:
+- "O que são esses arquivos .new e é seguro deletá-los?"
+- "Como verificar se a remoção de arquivos vai quebrar a aplicação?"
 
 ---
 
 ### 4. Melhorar o README com screenshots
 **Labels**: `good-first-issue`, `workshop`, `documentation`
-**Título**: [GOOD FIRST ISSUE] Add screenshots and improve README
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar screenshots e melhorar o README
 
 **Descrição**:
-The README could be more engaging with screenshots showing the app in action.
+O README pode ser mais atrativo com screenshots mostrando o app em funcionamento.
 
-**Acceptance Criteria**:
-- [ ] Take screenshots of the app (light and dark modes)
-- [ ] Add screenshots to README
-- [ ] Improve the features section with more details
-- [ ] Add a "Demo" section
+**Critérios de Aceitação**:
+- [ ] Tirar screenshots do app (modos claro e escuro)
+- [ ] Adicionar screenshots ao README
+- [ ] Melhorar a seção de funcionalidades com mais detalhes
+- [ ] Adicionar uma seção "Demo"
 
-**Copilot Agent Prompts**:
-- "How do I take good screenshots for project documentation?"
-- "What sections should a good README have?"
-- "Show me examples of engaging README files"
+**Sugestões para o Copilot Agent**:
+- "Como tirar bons screenshots para documentação?"
+- "Quais seções um bom README deve ter?"
+- "Exemplos de READMEs envolventes"
 
 ---
 
@@ -96,64 +96,64 @@ The README could be more engaging with screenshots showing the app in action.
 
 ### 5. Implementar categorias para tarefas
 **Labels**: `enhancement`, `intermediate`, `workshop`
-**Título**: [FEATURE] Add task categories with color coding
+**Título**: [FUNCIONALIDADE] Adicionar categorias de tarefas com cores
 
 **Descrição**:
-Users should be able to categorize their tasks (work, personal, urgent) with different colors.
+Usuários devem poder categorizar tarefas (trabalho, pessoal, urgente) com cores diferentes.
 
-**Acceptance Criteria**:
-- [ ] Add category dropdown to task input
-- [ ] Implement color coding for different categories
-- [ ] Save categories in localStorage
-- [ ] Add category filter functionality
-- [ ] Ensure accessibility with proper contrast
+**Critérios de Aceitação**:
+- [ ] Adicionar dropdown de categoria no campo de tarefa
+- [ ] Implementar cores para cada categoria
+- [ ] Salvar categorias no localStorage
+- [ ] Adicionar filtro por categoria
+- [ ] Garantir acessibilidade com contraste adequado
 
-**Copilot Agent Prompts**:
-- "How can I add a dropdown to the task input form?"
-- "What's the best way to implement color coding for categories?"
-- "How do I filter tasks by category in JavaScript?"
+**Sugestões para o Copilot Agent**:
+- "Como adicionar um dropdown ao formulário de tarefas?"
+- "Qual a melhor forma de implementar cores para categorias?"
+- "Como filtrar tarefas por categoria em JavaScript?"
 
 ---
 
 ### 6. Adicionar notificações do timer
 **Labels**: `enhancement`, `intermediate`, `workshop`
-**Título**: [FEATURE] Add browser notifications when Pomodoro timer ends
+**Título**: [FUNCIONALIDADE] Adicionar notificações do navegador ao fim do Pomodoro
 
 **Descrição**:
-When the Pomodoro timer completes, show a browser notification to alert the user.
+Quando o timer Pomodoro terminar, mostrar uma notificação no navegador para avisar o usuário.
 
-**Acceptance Criteria**:
-- [ ] Request notification permission
-- [ ] Show notification when timer ends
-- [ ] Include appropriate message and icon
-- [ ] Handle permission denied gracefully
-- [ ] Add settings to enable/disable notifications
+**Critérios de Aceitação**:
+- [ ] Solicitar permissão de notificação
+- [ ] Exibir notificação ao fim do timer
+- [ ] Incluir mensagem e ícone apropriados
+- [ ] Lidar com permissão negada de forma amigável
+- [ ] Adicionar opção para ativar/desativar notificações
 
-**Copilot Agent Prompts**:
-- "How do I implement browser notifications in JavaScript?"
-- "What's the Notification API and how do I use it?"
-- "How do I handle notification permissions properly?"
+**Sugestões para o Copilot Agent**:
+- "Como implementar notificações do navegador em JavaScript?"
+- "O que é a Notification API e como usar?"
+- "Como lidar com permissões de notificação?"
 
 ---
 
 ### 7. Melhorar animações de feedback
 **Labels**: `enhancement`, `design`, `intermediate`, `workshop`
-**Título**: [ENHANCEMENT] Add subtle animations for task interactions
+**Título**: [MELHORIA] Adicionar animações sutis para interações com tarefas
 
 **Descrição**:
-Add smooth animations when tasks are added, completed, or removed to improve user experience.
+Adicionar animações suaves ao adicionar, completar ou remover tarefas para melhorar a experiência do usuário.
 
-**Acceptance Criteria**:
-- [ ] Add fade-in animation for new tasks
-- [ ] Add completion celebration animation
-- [ ] Add smooth removal animation
-- [ ] Ensure animations don't impact performance
-- [ ] Make animations respectful of user preferences
+**Critérios de Aceitação**:
+- [ ] Animação de fade-in para novas tarefas
+- [ ] Animação de celebração ao completar tarefa
+- [ ] Animação suave ao remover tarefa
+- [ ] Garantir que as animações não impactem a performance
+- [ ] Respeitar preferências de movimento do usuário
 
-**Copilot Agent Prompts**:
-- "How do I add smooth CSS animations to list items?"
-- "What are best practices for web animations?"
-- "How do I respect user motion preferences?"
+**Sugestões para o Copilot Agent**:
+- "Como adicionar animações CSS suaves em listas?"
+- "Boas práticas para animações web"
+- "Como respeitar preferências de movimento do usuário?"
 
 ---
 
@@ -161,64 +161,64 @@ Add smooth animations when tasks are added, completed, or removed to improve use
 
 ### 8. Implementar drag & drop para reordenar tarefas
 **Labels**: `enhancement`, `advanced`, `workshop`
-**Título**: [FEATURE] Add drag and drop functionality to reorder tasks
+**Título**: [FUNCIONALIDADE] Adicionar funcionalidade de arrastar e soltar para reordenar tarefas
 
 **Descrição**:
-Users should be able to drag and drop tasks to reorder them according to priority.
+Usuários devem poder arrastar e soltar tarefas para reordená-las conforme prioridade.
 
-**Acceptance Criteria**:
-- [ ] Implement HTML5 drag and drop API
-- [ ] Add visual feedback during dragging
-- [ ] Save new order in localStorage
-- [ ] Ensure accessibility with keyboard navigation
-- [ ] Work on both desktop and touch devices
+**Critérios de Aceitação**:
+- [ ] Implementar API de drag and drop do HTML5
+- [ ] Adicionar feedback visual durante o arraste
+- [ ] Salvar nova ordem no localStorage
+- [ ] Garantir acessibilidade com navegação por teclado
+- [ ] Funcionar em desktop e dispositivos touch
 
-**Copilot Agent Prompts**:
-- "How do I implement drag and drop with vanilla JavaScript?"
-- "What's the HTML5 Drag API and how do I use it?"
-- "How do I make drag and drop accessible?"
+**Sugestões para o Copilot Agent**:
+- "Como implementar drag and drop com JavaScript puro?"
+- "O que é a API de Drag do HTML5?"
+- "Como tornar drag and drop acessível?"
 
 ---
 
 ### 9. Adicionar sistema de estatísticas
 **Labels**: `enhancement`, `advanced`, `data-visualization`, `workshop`
-**Título**: [FEATURE] Add productivity statistics dashboard
+**Título**: [FUNCIONALIDADE] Adicionar painel de estatísticas de produtividade
 
 **Descrição**:
-Create a statistics view showing productivity metrics like tasks completed, time focused, etc.
+Criar uma visualização de estatísticas mostrando métricas como tarefas concluídas, tempo focado, etc.
 
-**Acceptance Criteria**:
-- [ ] Track task completion over time
-- [ ] Track Pomodoro sessions completed
-- [ ] Create simple charts/visualizations
-- [ ] Add export functionality
-- [ ] Store historical data in localStorage
+**Critérios de Aceitação**:
+- [ ] Rastrear conclusão de tarefas ao longo do tempo
+- [ ] Rastrear sessões Pomodoro concluídas
+- [ ] Criar gráficos/visualizações simples
+- [ ] Adicionar funcionalidade de exportação
+- [ ] Armazenar dados históricos no localStorage
 
-**Copilot Agent Prompts**:
-- "How do I create simple charts with vanilla JavaScript?"
-- "What data should I track for productivity statistics?"
-- "How do I store and retrieve historical data efficiently?"
+**Sugestões para o Copilot Agent**:
+- "Como criar gráficos simples com JavaScript puro?"
+- "Quais dados rastrear para estatísticas de produtividade?"
+- "Como armazenar e recuperar dados históricos de forma eficiente?"
 
 ---
 
 ### 10. Converter para PWA
 **Labels**: `enhancement`, `advanced`, `pwa`, `workshop`
-**Título**: [FEATURE] Convert app to Progressive Web App
+**Título**: [FUNCIONALIDADE] Converter app para Progressive Web App
 
 **Descrição**:
-Make the app installable and work offline as a PWA.
+Tornar o app instalável e funcional offline como PWA.
 
-**Acceptance Criteria**:
-- [ ] Create service worker for offline functionality
-- [ ] Add web app manifest
-- [ ] Implement caching strategies
-- [ ] Add install prompt
-- [ ] Ensure offline functionality works
+**Critérios de Aceitação**:
+- [ ] Criar service worker para funcionalidade offline
+- [ ] Adicionar web app manifest
+- [ ] Implementar estratégias de cache
+- [ ] Adicionar prompt de instalação
+- [ ] Garantir funcionamento offline
 
-**Copilot Agent Prompts**:
-- "How do I create a service worker for a productivity app?"
-- "What should be included in a web app manifest?"
-- "How do I implement offline-first functionality?"
+**Sugestões para o Copilot Agent**:
+- "Como criar um service worker para app de produtividade?"
+- "O que incluir em um web app manifest?"
+- "Como implementar funcionalidade offline-first?"
 
 ---
 
@@ -226,36 +226,36 @@ Make the app installable and work offline as a PWA.
 
 ### 11. Criar guia de contribuição
 **Labels**: `documentation`, `good-first-issue`, `workshop`
-**Título**: [DOCS] Expand contributing guidelines with examples
+**Título**: [DOCS] Expandir guia de contribuição com exemplos
 
 **Descrição**:
-Enhance the CONTRIBUTING.md with specific examples and more detailed guidelines.
+Melhorar o CONTRIBUTING.md com exemplos específicos e diretrizes detalhadas.
 
-**Acceptance Criteria**:
-- [ ] Add code style examples
-- [ ] Include testing guidelines
-- [ ] Add troubleshooting section
-- [ ] Include Copilot Agent usage tips
+**Critérios de Aceitação**:
+- [ ] Adicionar exemplos de estilo de código
+- [ ] Incluir diretrizes de testes
+- [ ] Adicionar seção de resolução de problemas
+- [ ] Incluir dicas de uso do Copilot Agent
 
 ---
 
-### 12. Adicionar JSDoc comments
+### 12. Adicionar comentários JSDoc
 **Labels**: `documentation`, `intermediate`, `workshop`
-**Título**: [DOCS] Add JSDoc comments to all functions
+**Título**: [DOCS] Adicionar comentários JSDoc em todas as funções
 
 **Descrição**:
-Add comprehensive JSDoc comments to improve code documentation and IDE support.
+Adicionar comentários JSDoc abrangentes para melhorar a documentação do código e o suporte da IDE.
 
-**Acceptance Criteria**:
-- [ ] Add JSDoc to all public functions
-- [ ] Include parameter and return type information
-- [ ] Add usage examples where helpful
-- [ ] Ensure consistency across all files
+**Critérios de Aceitação**:
+- [ ] Adicionar JSDoc a todas as funções públicas
+- [ ] Incluir informações de parâmetro e tipo de retorno
+- [ ] Adicionar exemplos de uso quando útil
+- [ ] Garantir consistência em todos os arquivos
 
-**Copilot Agent Prompts**:
-- "How do I write good JSDoc comments?"
-- "Generate JSDoc comments for this function"
-- "What are JSDoc best practices?"
+**Sugestões para o Copilot Agent**:
+- "Como escrever bons comentários JSDoc?"
+- "Gerar comentários JSDoc para esta função"
+- "Quais são as melhores práticas para JSDoc?"
 
 ---
 
@@ -263,47 +263,47 @@ Add comprehensive JSDoc comments to improve code documentation and IDE support.
 
 ### 13. Implementar temas personalizáveis
 **Labels**: `enhancement`, `design`, `intermediate`, `workshop`
-**Título**: [DESIGN] Add custom color themes beyond light/dark
+**Título**: [DESIGN] Adicionar temas de cores personalizados além de claro/escuro
 
 **Descrição**:
-Allow users to choose from multiple color themes (blue, green, purple, etc.).
+Permitir que os usuários escolham entre vários temas de cores (azul, verde, roxo, etc.).
 
-**Acceptance Criteria**:
-- [ ] Create additional color themes
-- [ ] Add theme selector UI
-- [ ] Save theme preference
-- [ ] Ensure accessibility compliance
-- [ ] Smooth theme transitions
+**Critérios de Aceitação**:
+- [ ] Criar temas de cores adicionais
+- [ ] Adicionar interface de seleção de tema
+- [ ] Salvar preferência de tema
+- [ ] Garantir conformidade com acessibilidade
+- [ ] Transições de tema suaves
 
 ---
 
 ### 14. Melhorar responsividade para tablets
 **Labels**: `enhancement`, `design`, `responsive`, `workshop`
-**Título**: [DESIGN] Improve responsive design for tablet devices
+**Título**: [DESIGN] Melhorar design responsivo para tablets
 
 **Descrição**:
-Optimize the layout and user experience for tablet-sized screens (768px - 1024px).
+Otimizar o layout e a experiência do usuário para telas do tamanho de tablets (768px - 1024px).
 
-**Acceptance Criteria**:
-- [ ] Test and improve layout on tablet sizes
-- [ ] Optimize touch interactions
-- [ ] Adjust spacing and sizing
-- [ ] Test on various tablet devices/orientations
+**Critérios de Aceitação**:
+- [ ] Testar e melhorar o layout em tamanhos de tablet
+- [ ] Otimizar interações de toque
+- [ ] Ajustar espaçamento e dimensionamento
+- [ ] Testar em vários dispositivos/orientações de tablet
 
 ---
 
 ## Como Usar Este Arquivo
 
 1. **Antes do workshop**: Crie 8-12 issues selecionadas desta lista no GitHub
-2. **Durante o workshop**: Participants can choose issues based on their skill level
+2. **Durante o workshop**: Os participantes podem escolher issues com base no seu nível de habilidade
 3. **Adicione labels apropriadas**: `good-first-issue`, `workshop`, `help-wanted`, etc.
-4. **Assignees**: Don't assign initially, let participants self-assign
-5. **Milestones**: Consider creating a "Workshop" milestone
+4. **Responsáveis**: Não atribua inicialmente, deixe os participantes se auto-atribuírem
+5. **Marcos**: Considere criar um marco "Workshop"
 
 ## Dicas para Facilitadores
 
 - Comece demonstrando como resolver uma issue fácil
 - Mostre como usar GitHub Copilot Agent para entender o código
 - Encoraje participantes a fazer perguntas nas issues
-- Pair programming é bem-vindo
+- Programação em par é bem-vinda
 - Celebre cada contribuição, não importa o tamanho!
