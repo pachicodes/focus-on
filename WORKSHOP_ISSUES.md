@@ -4,32 +4,9 @@ Este arquivo contém uma lista de issues prontas para serem criadas no GitHub an
 
 ## 🟢 Issues para Iniciantes
 
-### 1. Melhorar mensagens de placeholder
-**Labels**: `good-first-issue`, `workshop`, `documentation`
-**Título**: [BOA PRIMEIRA ISSUE] Melhorar textos de placeholder em toda a aplicação
 
-**Descrição**:
-Os textos de placeholder atuais podem ser mais envolventes e úteis. Atualize os placeholders para serem mais descritivos e encorajadores.
-
-**Critérios de Aceitação**:
-- [ ] Atualizar o placeholder do campo de tarefa para ser mais motivador
-- [ ] Adicionar dicas úteis nos placeholders
-- [ ] Garantir que os placeholders funcionem nos temas claro e escuro
-- [ ] Testar se os placeholders são acessíveis
-
-**Arquivos para verificar**:
-- `src/index.html`
-- `src/js/todoList.js`
-
-**Sugestões para o Copilot Agent**:
-- "Mostre todos os textos de placeholder neste projeto"
-- "Quais são as melhores práticas para escrever textos de placeholder úteis?"
-- "Como tornar placeholders mais envolventes em apps de produtividade?"
-
----
 
 ### 2. Adicionar contador de tarefas pendentes e concluídas
-**Labels**: `good-first-issue`, `workshop`, `enhancement`
 **Título**: [BOA PRIMEIRA ISSUE] Adicionar contador de tarefas pendentes e concluídas
 
 **Descrição**:
@@ -44,14 +21,9 @@ Adicionar um contador visual que mostra quantas tarefas estão pendentes e quant
 - `src/index.html`
 - `src/js/todoList.js`
 
-**Sugestões para o Copilot Agent**:
-- "Como contar elementos de uma lista em JavaScript?"
-- "Como atualizar dinamicamente um elemento HTML com JavaScript?"
-
 ---
 
 ### 3. Adicionar filtro de tarefas (todas, pendentes, concluídas)
-**Labels**: `good-first-issue`, `workshop`, `enhancement`
 **Título**: [BOA PRIMEIRA ISSUE] Adicionar filtro de tarefas (todas, pendentes, concluídas)
 
 **Descrição**:
@@ -66,14 +38,9 @@ Permitir que o usuário filtre a lista de tarefas para exibir todas, apenas pend
 - `src/index.html`
 - `src/js/todoList.js`
 
-**Sugestões para o Copilot Agent**:
-- "Como filtrar uma lista de itens em JavaScript?"
-- "Como alternar classes CSS para botões ativos?"
-
 ---
 
 ### 4. Adicionar atalhos de teclado para ações principais
-**Labels**: `good-first-issue`, `workshop`, `a11y`
 **Título**: [BOA PRIMEIRA ISSUE] Adicionar atalhos de teclado para ações principais
 
 **Descrição**:
@@ -89,14 +56,9 @@ Adicionar atalhos de teclado para facilitar a navegação e uso do app, como adi
 - `src/js/todoList.js`
 - `src/js/components/pomodoroTimer.js`
 
-**Sugestões para o Copilot Agent**:
-- "Como adicionar eventos de teclado em JavaScript?"
-- "Como mostrar dicas de atalhos na interface?"
-
 ---
 
 ### 5. Adicionar tooltips de ajuda nos botões
-**Labels**: `good-first-issue`, `workshop`, `ux`
 **Título**: [BOA PRIMEIRA ISSUE] Adicionar tooltips de ajuda nos botões
 
 **Descrição**:
@@ -111,14 +73,9 @@ Adicionar tooltips (dicas de ajuda) nos botões principais para melhorar a usabi
 - `src/index.html`
 - `src/css/style.css`
 
-**Sugestões para o Copilot Agent**:
-- "Como criar tooltips acessíveis em HTML/CSS?"
-- "Como adicionar dicas de uso em botões HTML?"
-
 ---
 
 ### 6. Melhorar título das páginas
-**Labels**: `good-first-issue`, `workshop`, `seo`
 **Título**: [BOA PRIMEIRA ISSUE] Melhorar título e meta tags para SEO
 
 **Descrição**:
@@ -133,14 +90,9 @@ O título da página e as meta tags podem ser melhorados para otimização de me
 **Arquivos para verificar**:
 - `src/index.html`
 
-**Sugestões para o Copilot Agent**:
-- "Quais meta tags são importantes para SEO"
-- "Como implementar Open Graph para compartilhamento em redes sociais"
-
 ---
 
 ### 7. Adicionar animação simples de carregamento
-**Labels**: `good-first-issue`, `workshop`, `enhancement`, `css`
 **Título**: [BOA PRIMEIRA ISSUE] Adicionar animação de carregamento inicial
 
 **Descrição**:
@@ -157,14 +109,9 @@ Adicionar uma animação de carregamento simples enquanto os recursos do site s�
 - `src/index.html`
 - `src/js/app.js`
 
-**Sugestões para o Copilot Agent**:
-- "Como criar uma animação de loading simples em CSS"
-- "Como detectar quando uma página terminou de carregar em JavaScript"
-
 ---
 
 ### 8. Adicionar atributos de acessibilidade
-**Labels**: `good-first-issue`, `workshop`, `a11y`
 **Título**: [BOA PRIMEIRA ISSUE] Melhorar acessibilidade com atributos ARIA
 
 **Descrição**:
@@ -179,16 +126,11 @@ Melhorar a acessibilidade da aplicação adicionando atributos ARIA apropriados 
 **Arquivos para verificar**:
 - `src/index.html`
 
-**Sugestões para o Copilot Agent**:
-- "Quais atributos ARIA são recomendados para botões de ação?"
-- "Como tornar uma lista de tarefas acessível para leitores de tela"
-
 ---
 
 ## 🟡 Issues Intermediárias
 
 ### 5. Implementar categorias para tarefas
-**Labels**: `enhancement`, `intermediate`, `workshop`
 **Título**: [FUNCIONALIDADE] Adicionar categorias de tarefas com cores
 
 **Descrição**:
@@ -201,15 +143,9 @@ Usuários devem poder categorizar tarefas (trabalho, pessoal, urgente) com cores
 - [ ] Adicionar filtro por categoria
 - [ ] Garantir acessibilidade com contraste adequado
 
-**Sugestões para o Copilot Agent**:
-- "Como adicionar um dropdown ao formulário de tarefas?"
-- "Qual a melhor forma de implementar cores para categorias?"
-- "Como filtrar tarefas por categoria em JavaScript?"
-
 ---
 
 ### 6. Adicionar notificações do timer
-**Labels**: `enhancement`, `intermediate`, `workshop`
 **Título**: [FUNCIONALIDADE] Adicionar notificações do navegador ao fim do Pomodoro
 
 **Descrição**:
@@ -222,15 +158,9 @@ Quando o timer Pomodoro terminar, mostrar uma notificação no navegador para av
 - [ ] Lidar com permissão negada de forma amigável
 - [ ] Adicionar opção para ativar/desativar notificações
 
-**Sugestões para o Copilot Agent**:
-- "Como implementar notificações do navegador em JavaScript?"
-- "O que é a Notification API e como usar?"
-- "Como lidar com permissões de notificação?"
-
 ---
 
 ### 7. Melhorar animações de feedback
-**Labels**: `enhancement`, `design`, `intermediate`, `workshop`
 **Título**: [MELHORIA] Adicionar animações sutis para interações com tarefas
 
 **Descrição**:
@@ -243,17 +173,11 @@ Adicionar animações suaves ao adicionar, completar ou remover tarefas para mel
 - [ ] Garantir que as animações não impactem a performance
 - [ ] Respeitar preferências de movimento do usuário
 
-**Sugestões para o Copilot Agent**:
-- "Como adicionar animações CSS suaves em listas?"
-- "Boas práticas para animações web"
-- "Como respeitar preferências de movimento do usuário?"
-
 ---
 
 ## 🔴 Issues Avançadas
 
 ### 8. Implementar drag & drop para reordenar tarefas
-**Labels**: `enhancement`, `advanced`, `workshop`
 **Título**: [FUNCIONALIDADE] Adicionar funcionalidade de arrastar e soltar para reordenar tarefas
 
 **Descrição**:
@@ -266,15 +190,9 @@ Usuários devem poder arrastar e soltar tarefas para reordená-las conforme prio
 - [ ] Garantir acessibilidade com navegação por teclado
 - [ ] Funcionar em desktop e dispositivos touch
 
-**Sugestões para o Copilot Agent**:
-- "Como implementar drag and drop com JavaScript puro?"
-- "O que é a API de Drag do HTML5?"
-- "Como tornar drag and drop acessível?"
-
 ---
 
 ### 9. Adicionar sistema de estatísticas
-**Labels**: `enhancement`, `advanced`, `data-visualization`, `workshop`
 **Título**: [FUNCIONALIDADE] Adicionar painel de estatísticas de produtividade
 
 **Descrição**:
@@ -287,15 +205,9 @@ Criar uma visualização de estatísticas mostrando métricas como tarefas concl
 - [ ] Adicionar funcionalidade de exportação
 - [ ] Armazenar dados históricos no localStorage
 
-**Sugestões para o Copilot Agent**:
-- "Como criar gráficos simples com JavaScript puro?"
-- "Quais dados rastrear para estatísticas de produtividade?"
-- "Como armazenar e recuperar dados históricos de forma eficiente?"
-
 ---
 
 ### 10. Converter para PWA
-**Labels**: `enhancement`, `advanced`, `pwa`, `workshop`
 **Título**: [FUNCIONALIDADE] Converter app para Progressive Web App
 
 **Descrição**:
@@ -308,17 +220,11 @@ Tornar o app instalável e funcional offline como PWA.
 - [ ] Adicionar prompt de instalação
 - [ ] Garantir funcionamento offline
 
-**Sugestões para o Copilot Agent**:
-- "Como criar um service worker para app de produtividade?"
-- "O que incluir em um web app manifest?"
-- "Como implementar funcionalidade offline-first?"
-
 ---
 
 ## 📝 Issues de Documentação
 
 ### 11. Criar guia de contribuição
-**Labels**: `documentation`, `good-first-issue`, `workshop`
 **Título**: [DOCS] Expandir guia de contribuição com exemplos
 
 **Descrição**:
@@ -333,7 +239,6 @@ Melhorar o CONTRIBUTING.md com exemplos específicos e diretrizes detalhadas.
 ---
 
 ### 12. Adicionar comentários JSDoc
-**Labels**: `documentation`, `intermediate`, `workshop`
 **Título**: [DOCS] Adicionar comentários JSDoc em todas as funções
 
 **Descrição**:
@@ -345,17 +250,11 @@ Adicionar comentários JSDoc abrangentes para melhorar a documentação do códi
 - [ ] Adicionar exemplos de uso quando útil
 - [ ] Garantir consistência em todos os arquivos
 
-**Sugestões para o Copilot Agent**:
-- "Como escrever bons comentários JSDoc?"
-- "Gerar comentários JSDoc para esta função"
-- "Quais são as melhores práticas para JSDoc?"
-
 ---
 
 ## 🎨 Issues de Design/UX
 
 ### 13. Implementar temas personalizáveis
-**Labels**: `enhancement`, `design`, `intermediate`, `workshop`
 **Título**: [DESIGN] Adicionar temas de cores personalizados além de claro/escuro
 
 **Descrição**:
@@ -371,7 +270,6 @@ Permitir que os usuários escolham entre vários temas de cores (azul, verde, ro
 ---
 
 ### 14. Melhorar responsividade para tablets
-**Labels**: `enhancement`, `design`, `responsive`, `workshop`
 **Título**: [DESIGN] Melhorar design responsivo para tablets
 
 **Descrição**:
