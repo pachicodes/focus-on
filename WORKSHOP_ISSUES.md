@@ -28,26 +28,7 @@ Os textos de placeholder atuais podem ser mais envolventes e úteis. Atualize os
 
 ---
 
-### 2. Adicionar um script dev ao package.json
-**Labels**: `good-first-issue`, `workshop`, `tooling`
-**Título**: [BOA PRIMEIRA ISSUE] Adicionar alias 'dev' ao package.json
 
-**Descrição**:
-Muitos desenvolvedores esperam que `npm run dev` inicie o servidor de desenvolvimento. Atualmente só temos `npm start`.
-
-**Critérios de Aceitação**:
-- [ ] Adicionar um script "dev" que faça o mesmo que "start"
-- [ ] Testar se `npm run dev` funciona corretamente
-- [ ] Atualizar o README se necessário
-
-**Arquivos para verificar**:
-- `package.json`
-
-**Sugestões para o Copilot Agent**:
-- "Qual a diferença entre npm start e npm run dev?"
-- "Como adicionar scripts ao package.json"
-
----
 
 ### 3. Traduzir mensagens de sistema
 **Labels**: `good-first-issue`, `workshop`, `i18n`
