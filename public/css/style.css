@@ -37,6 +37,25 @@
     --card-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.2);
     --hover-bg-dark: #252525;
     
+    /* Tema Kawaii */
+    --primary-color-kawaii: #ffb7d5; /* rosa pastel */
+    --primary-variant-color-kawaii: #ffd6ec; /* rosa mais claro */
+    --secondary-color-kawaii: #b5ead7; /* verde menta pastel */
+    --background-color-kawaii: #fffafc; /* branco rosado */
+    --surface-color-kawaii: #fff1f7; /* rosa muito claro */
+    --error-color-kawaii: #ffb3ba; /* vermelho pastel */
+    --success-color-kawaii: #baffc9; /* verde claro pastel */
+    --on-primary-color-kawaii: #fff;
+    --on-secondary-color-kawaii: #fff;
+    --on-background-color-kawaii: #a390bc; /* lilás suave */
+    --on-surface-color-kawaii: #a390bc;
+    --text-color-kawaii: #a390bc; /* lilás suave */
+    --text-secondary-kawaii: #ffdac1; /* amarelo pastel */
+    --border-color-kawaii: #ffe0f7; /* rosa clarinho */
+    --input-bg-kawaii: #ffe0f7; /* rosa clarinho */
+    --card-shadow-kawaii: 0 4px 12px rgba(255, 183, 213, 0.15);
+    --hover-bg-kawaii: #ffe0f7;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -101,6 +120,30 @@ body.dark-mode {
     --input-bg: var(--input-bg-dark);
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema kawaii */
+body.kawaii-mode {
+    --primary-color: var(--primary-color-kawaii);
+    --primary-variant-color: var(--primary-variant-color-kawaii);
+    --secondary-color: var(--secondary-color-kawaii);
+    --background-color: var(--background-color-kawaii);
+    --surface-color: var(--surface-color-kawaii);
+    --error-color: var(--error-color-kawaii);
+    --success-color: var(--success-color-kawaii);
+    --on-primary-color: var(--on-primary-color-kawaii);
+    --on-secondary-color: var(--on-secondary-color-kawaii);
+    --on-background-color: var(--on-background-color-kawaii);
+    --on-surface-color: var(--on-surface-color-kawaii);
+    --text-color: var(--text-color-kawaii);
+    --text-secondary: var(--text-secondary-kawaii);
+    --border-color: var(--border-color-kawaii);
+    --input-bg: var(--input-bg-kawaii);
+    --card-shadow: var(--card-shadow-kawaii);
+    --hover-bg: var(--hover-bg-kawaii);
 
     background-color: var(--background-color);
     color: var(--text-color);

@@ -26,14 +26,37 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
-    if (themeToggleButton) {
-        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+    const kawaiiToggleButton = document.getElementById('kawaii-toggle');
+    
+    function applyTheme(theme) {
+        document.body.classList.remove('dark-mode', 'kawaii-mode');
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
+        } else if (theme === 'kawaii') {
+            document.body.classList.add('kawaii-mode');
+        }
+        localStorage.setItem('focusOnTheme', theme);
+    }
 
+    // Inicializa tema salvo
+    const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
+    applyTheme(currentTheme);
+
+    if (themeToggleButton) {
         themeToggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('focusOnTheme', theme);
+            let theme = localStorage.getItem('focusOnTheme') || 'light';
+            if (theme === 'light') theme = 'dark';
+            else if (theme === 'dark') theme = 'light';
+            else if (theme === 'kawaii') theme = 'dark'; // alterna kawaii -> dark
+            applyTheme(theme);
+        });
+    }
+    if (kawaiiToggleButton) {
+        kawaiiToggleButton.addEventListener('click', () => {
+            let theme = localStorage.getItem('focusOnTheme');
+            if (theme === 'kawaii') theme = 'light';
+            else theme = 'kawaii';
+            applyTheme(theme);
         });
     }
     
