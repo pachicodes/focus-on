@@ -127,6 +127,58 @@ Otimizar o layout e a experiência do usuário para telas do tamanho de tablets 
 
 ---
 
+## 🟢 Novas Issues para Iniciantes
+
+### 15. Adicionar botão "Limpar tarefas concluídas"
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar botão para limpar tarefas concluídas
+
+**Descrição**:
+Adicionar um botão que remove todas as tarefas marcadas como concluídas da lista com um clique.
+
+**Critérios de Aceitação**:
+- [ ] Exibir botão "Limpar concluídas" visível quando houver tarefas concluídas
+- [ ] Remover todas as tarefas concluídas ao clicar no botão
+- [ ] Atualizar contadores e interface após a limpeza
+
+**Arquivos para verificar**:
+- `public/index.html`
+- `public/js/todoList.js`
+
+---
+
+### 16. Permitir editar o texto de uma tarefa
+**Título**: [BOA PRIMEIRA ISSUE] Permitir edição do texto de uma tarefa
+
+**Descrição**:
+Permitir que o usuário edite o texto de uma tarefa já criada, clicando em um ícone de editar ou dando duplo clique.
+
+**Critérios de Aceitação**:
+- [ ] Adicionar ícone ou ação de editar em cada tarefa
+- [ ] Permitir salvar ou cancelar a edição
+- [ ] Garantir que a edição atualize corretamente a lista
+
+**Arquivos para verificar**:
+- `public/index.html`
+- `public/js/todoList.js`
+
+---
+
+### 17. Adicionar confirmação ao remover tarefa
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar confirmação ao remover tarefa
+
+**Descrição**:
+Exibir um alerta de confirmação antes de remover uma tarefa, evitando exclusões acidentais.
+
+**Critérios de Aceitação**:
+- [ ] Exibir confirmação ao tentar remover uma tarefa
+- [ ] Remover apenas se o usuário confirmar
+- [ ] Garantir que a interface permaneça responsiva
+
+**Arquivos para verificar**:
+- `public/js/todoList.js`
+
+---
+
 ## Como Usar Este Arquivo
 
 1. **Antes do workshop**: Crie 8-12 issues selecionadas desta lista no GitHub
