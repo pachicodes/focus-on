@@ -37,6 +37,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
+    // Kawaii Theme Toggle
+    const kawaiiToggleButton = document.getElementById('kawaii-toggle');
+    if (kawaiiToggleButton) {
+        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
+        document.body.classList.toggle('kawaii-mode', currentTheme === 'kawaii');
+
+        kawaiiToggleButton.addEventListener('click', () => {
+            // Remove dark-mode se estiver ativo
+            document.body.classList.remove('dark-mode');
+            // Alterna kawaii-mode
+            const isKawaii = document.body.classList.toggle('kawaii-mode');
+            localStorage.setItem('focusOnTheme', isKawaii ? 'kawaii' : 'light');
+        });
+    }
+    
     // Toggle para mostrar/esconder o campo de entrada de tarefas
     const addTaskButton = document.getElementById('show-add-task');
     const taskInputContainer = document.getElementById('task-input');

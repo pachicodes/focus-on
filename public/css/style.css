@@ -37,6 +37,24 @@
     --card-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.2);
     --hover-bg-dark: #252525;
     
+    /* Tema Kawaii */
+    --kawaii-primary: #ffb7ce; /* Rosa claro */
+    --kawaii-secondary: #b5ead7; /* Verde menta */
+    --kawaii-accent: #c7ceea; /* Lilás pastel */
+    --kawaii-yellow: #fff5ba; /* Amarelo claro */
+    --kawaii-blue: #a2d5f2; /* Azul bebê */
+    --kawaii-background: #fff0f6; /* Fundo rosa muito claro */
+    --kawaii-surface: #ffffff; /* Branco para cartões/superfícies */
+    --kawaii-error: #ffb3b3; /* Vermelho pastel */
+    --kawaii-success: #baffc9; /* Verde pastel */
+    --kawaii-on-primary: #fff; /* Texto sobre primário */
+    --kawaii-on-secondary: #fff; /* Texto sobre secundário */
+    --kawaii-on-background: #a18cd1; /* Roxo claro para contraste */
+    --kawaii-text: #a18cd1; /* Roxo claro */
+    --kawaii-text-secondary: #ffdac1; /* Rosa pêssego claro */
+    --kawaii-border: #ffe0f7; /* Rosa clarinho para bordas */
+    --kawaii-hover: #ffe3ec; /* Rosa hover */
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -106,6 +124,29 @@ body.dark-mode {
     color: var(--text-color);
 }
 
+/* Tema kawaii */
+body.kawaii-mode {
+    --primary-color: var(--kawaii-primary);
+    --primary-variant-color: var(--kawaii-accent);
+    --secondary-color: var(--kawaii-secondary);
+    --background-color: var(--kawaii-background);
+    --surface-color: var(--kawaii-surface);
+    --error-color: var(--kawaii-error);
+    --success-color: var(--kawaii-success);
+    --on-primary-color: var(--kawaii-on-primary);
+    --on-secondary-color: var(--kawaii-on-secondary);
+    --on-background-color: var(--kawaii-on-background);
+    --on-surface-color: var(--kawaii-on-background);
+    --text-color: var(--kawaii-text);
+    --text-secondary: var(--kawaii-text-secondary);
+    --border-color: var(--kawaii-border);
+    --input-bg: var(--kawaii-yellow);
+    --card-shadow: 0 4px 12px rgba(255, 183, 206, 0.15);
+    --hover-bg: var(--kawaii-hover);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
 
 /* Layout principal */
 .app-body {
