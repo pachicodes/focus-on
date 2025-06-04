@@ -26,13 +26,30 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
+    const partyThemeToggleButton = document.getElementById('party-theme-toggle');
     if (themeToggleButton) {
         const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
         document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        document.body.classList.toggle('party-mode', currentTheme === 'party');
 
         themeToggleButton.addEventListener('click', () => {
+            // Se estiver em party, volta para claro
+            if (document.body.classList.contains('party-mode')) {
+                document.body.classList.remove('party-mode');
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('focusOnTheme', 'light');
+                return;
+            }
             document.body.classList.toggle('dark-mode');
             const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('focusOnTheme', theme);
+        });
+    }
+    if (partyThemeToggleButton) {
+        partyThemeToggleButton.addEventListener('click', () => {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.toggle('party-mode');
+            const theme = document.body.classList.contains('party-mode') ? 'party' : 'light';
             localStorage.setItem('focusOnTheme', theme);
         });
     }

@@ -18,25 +18,44 @@
     --card-shadow-light: 0 4px 12px rgba(0, 0, 0, 0.05);
     --hover-bg-light: #f9f9f9;
 
-    /* Tema Escuro */
-    --primary-color-dark: #bb86fc;
-    --primary-variant-color-dark: #3700b3;
-    --secondary-color-dark: #03dac6;
-    --background-color-dark: #121212;
-    --surface-color-dark: #1e1e1e;
-    --error-color-dark: #cf6679;
-    --success-color-dark: #81c784;
-    --on-primary-color-dark: #000000;
-    --on-secondary-color-dark: #000000;
-    --on-background-color-dark: #e0e0e0;
-    --on-surface-color-dark: #e0e0e0;
-    --text-color-dark: #f5f5f5;
-    --text-secondary-dark: #a0a0a0;
-    --border-color-dark: #333333;
-    --input-bg-dark: #2c2c2c;
-    --card-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.2);
-    --hover-bg-dark: #252525;
+    /* Tema Escuro - Dark Moderno */
+    --primary-color-dark: #96cdfb;
+    --primary-variant-color-dark: #f5c2e7;
+    --secondary-color-dark: #abe9b3;
+    --background-color-dark: #181825;
+    --surface-color-dark: #232136;
+    --error-color-dark: #f28fad;
+    --success-color-dark: #abe9b3;
+    --on-primary-color-dark: #181825;
+    --on-secondary-color-dark: #181825;
+    --on-background-color-dark: #e0def4;
+    --on-surface-color-dark: #e0def4;
+    --text-color-dark: #e0def4;
+    --text-secondary-dark: #6e6a86;
+    --border-color-dark: #393552;
+    --input-bg-dark: #232136;
+    --card-shadow-dark: 0 4px 12px rgba(20, 20, 30, 0.4);
+    --hover-bg-dark: #26233a;
     
+    /* Tema Party */
+    --primary-color-party: #ff00cc; /* rosa neon */
+    --primary-variant-color-party: #fffb00; /* amarelo neon */
+    --secondary-color-party: #00ffe7; /* azul neon */
+    --background-color-party: #2d0036; /* roxo escuro */
+    --surface-color-party: #3a006a; /* roxo médio */
+    --error-color-party: #ff3c6a; /* rosa avermelhado */
+    --success-color-party: #39ff14; /* verde neon */
+    --on-primary-color-party: #fff;
+    --on-secondary-color-party: #2d0036;
+    --on-background-color-party: #fff;
+    --on-surface-color-party: #fff;
+    --text-color-party: #fff;
+    --text-secondary-party: #ffe0fa;
+    --border-color-party: #fffb00;
+    --input-bg-party: #4e007a;
+    --card-shadow-party: 0 4px 16px rgba(255,0,204,0.2);
+    --hover-bg-party: #ff00cc22;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -101,6 +120,30 @@ body.dark-mode {
     --input-bg: var(--input-bg-dark);
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema party */
+body.party-mode {
+    --primary-color: var(--primary-color-party);
+    --primary-variant-color: var(--primary-variant-color-party);
+    --secondary-color: var(--secondary-color-party);
+    --background-color: var(--background-color-party);
+    --surface-color: var(--surface-color-party);
+    --error-color: var(--error-color-party);
+    --success-color: var(--success-color-party);
+    --on-primary-color: var(--on-primary-color-party);
+    --on-secondary-color: var(--on-secondary-color-party);
+    --on-background-color: var(--on-background-color-party);
+    --on-surface-color: var(--on-surface-color-party);
+    --text-color: var(--text-color-party);
+    --text-secondary: var(--text-secondary-party);
+    --border-color: var(--border-color-party);
+    --input-bg: var(--input-bg-party);
+    --card-shadow: var(--card-shadow-party);
+    --hover-bg: var(--hover-bg-party);
 
     background-color: var(--background-color);
     color: var(--text-color);
