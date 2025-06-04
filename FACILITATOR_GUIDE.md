@@ -34,16 +34,18 @@
 ### Prática: Configuração (15 min)
 
 5. **Configuração dos Participantes**
+   - Escolher uma issue no repositório principal do projeto e se atribuir a ela (assign)
    - Fork do repositório
-   - Clone local
-   - `npm install` e `npm run dev`
-   - Teste básico de funcionamento
+   - Abrir o fork diretamente no GitHub Codespaces (sem necessidade de clone local)
+   - Esperar o ambiente Codespaces inicializar (Node.js já estará disponível)
+   - Rodar `npm install` e `npm run dev` no terminal do Codespaces
+   - Teste básico de funcionamento no Codespaces
 
 ### Atividade Prática: Contribuições (60 min)
 
 6. **Explicação do Processo** (10 min)
    - Como escolher uma issue
-   - Fluxo de trabalho: branch → código → commit → push → PR
+   - Fluxo de trabalho: branch → código → commit → push → PR (tudo pelo Codespaces)
    - Como usar o Copilot Agent eficazmente
    - Quando pedir ajuda
 
