@@ -50,29 +50,6 @@ O título da página e as meta tags podem ser melhorados para otimização de me
 
 ---
 
-### 6. Adicionar favicon personalizado
-**Labels**: `good-first-issue`, `workshop`, `enhancement`
-**Título**: [BOA PRIMEIRA ISSUE] Adicionar favicon personalizado para o site
-
-**Descrição**:
-O site precisa de um favicon personalizado para melhorar a identidade visual nas abas do navegador.
-
-**Critérios de Aceitação**:
-- [ ] Criar um favicon a partir do logo/ícone existente
-- [ ] Adicionar as referências aos diferentes tamanhos de favicon no HTML
-- [ ] Testar em diferentes navegadores
-- [ ] Verificar suporte a diferentes dispositivos (desktop, mobile)
-
-**Arquivos para verificar**:
-- `src/index.html`
-- `icons/`
-
-**Sugestões para o Copilot Agent**:
-- "Como adicionar favicons modernos em um site HTML"
-- "Quais são os tamanhos recomendados para favicons em 2023?"
-
----
-
 ### 7. Adicionar animação simples de carregamento
 **Labels**: `good-first-issue`, `workshop`, `enhancement`, `css`
 **Título**: [BOA PRIMEIRA ISSUE] Adicionar animação de carregamento inicial
