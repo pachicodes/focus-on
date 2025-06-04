@@ -28,30 +28,6 @@ Os textos de placeholder atuais podem ser mais envolventes e úteis. Atualize os
 
 ---
 
-
-
-### 4. Corrigir ícones ausentes no manifesto
-**Labels**: `good-first-issue`, `workshop`, `bug`
-**Título**: [BOA PRIMEIRA ISSUE] Corrigir referências a ícones ausentes no manifesto
-
-**Descrição**:
-O arquivo manifest.json faz referência a vários tamanhos de ícones que não existem no diretório `/icons`.
-
-**Critérios de Aceitação**:
-- [ ] Verificar quais ícones estão faltando
-- [ ] Criar os ícones nos tamanhos adequados ou ajustar o manifesto
-- [ ] Testar se o manifesto está válido
-
-**Arquivos para verificar**:
-- `manifest.json`
-- Diretório `/icons`
-
-**Sugestões para o Copilot Agent**:
-- "Como criar ícones em diferentes tamanhos a partir de um SVG"
-- "O que é necessário em um web app manifest válido"
-
----
-
 ### 5. Melhorar título das páginas
 **Labels**: `good-first-issue`, `workshop`, `seo`
 **Título**: [BOA PRIMEIRA ISSUE] Melhorar título e meta tags para SEO
