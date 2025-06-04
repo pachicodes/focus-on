@@ -62,6 +62,35 @@ focus-on/
 - **Usar Timer Pomodoro**: Na seção "Timer Pomodoro", clique em "Iniciar" para começar uma sessão de foco. Use os botões "Pausar" e "Reiniciar" conforme necessário.
 - **Ouvir Música**: O player de mídia incorporado na seção "Música Lofi" deve estar pronto para reproduzir.
 
+## Como rodar o projeto localmente (evite o erro 'Cannot GET /')
+
+Para rodar o projeto corretamente e evitar o erro "Cannot GET /", **NÃO abra o arquivo index.html diretamente** no navegador. Use um servidor HTTP simples. Você pode:
+
+### Opção 1: Usar o comando pronto (recomendado)
+
+```bash
+npm install
+npm start
+```
+
+Isso irá rodar o projeto na pasta correta usando o `live-server`.
+
+### Opção 2: Usar http-server (Node.js)
+
+```bash
+npx http-server ./public -p 3000
+```
+Acesse http://localhost:3000
+
+### Opção 3: Usar a extensão Live Server do VS Code
+- Clique com o botão direito no arquivo `index.html` dentro da pasta `public/` e escolha **Open with Live Server**.
+
+---
+
+> **Importante:** Sempre rode o servidor na pasta `public/` para que o arquivo `index.html` seja encontrado corretamente.
+
+---
+
 ## Contribuindo
 
 As contribuições são o que tornam a comunidade open source um lugar incrível para aprender, inspirar e criar. Qualquer contribuição que você fizer será **muito apreciada**.
