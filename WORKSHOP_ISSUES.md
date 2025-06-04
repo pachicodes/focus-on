@@ -28,7 +28,96 @@ Os textos de placeholder atuais podem ser mais envolventes e úteis. Atualize os
 
 ---
 
-### 5. Melhorar título das páginas
+### 2. Adicionar contador de tarefas pendentes e concluídas
+**Labels**: `good-first-issue`, `workshop`, `enhancement`
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar contador de tarefas pendentes e concluídas
+
+**Descrição**:
+Adicionar um contador visual que mostra quantas tarefas estão pendentes e quantas já foram concluídas.
+
+**Critérios de Aceitação**:
+- [ ] Exibir o número de tarefas pendentes e concluídas na interface
+- [ ] Atualizar o contador automaticamente ao adicionar, concluir ou remover tarefas
+- [ ] Garantir que o contador funcione em ambos os temas (claro/escuro)
+
+**Arquivos para verificar**:
+- `src/index.html`
+- `src/js/todoList.js`
+
+**Sugestões para o Copilot Agent**:
+- "Como contar elementos de uma lista em JavaScript?"
+- "Como atualizar dinamicamente um elemento HTML com JavaScript?"
+
+---
+
+### 3. Adicionar filtro de tarefas (todas, pendentes, concluídas)
+**Labels**: `good-first-issue`, `workshop`, `enhancement`
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar filtro de tarefas (todas, pendentes, concluídas)
+
+**Descrição**:
+Permitir que o usuário filtre a lista de tarefas para exibir todas, apenas pendentes ou apenas concluídas.
+
+**Critérios de Aceitação**:
+- [ ] Adicionar botões ou um dropdown para selecionar o filtro
+- [ ] Implementar a lógica de filtragem no JavaScript
+- [ ] Garantir que o filtro funcione corretamente ao adicionar/concluir/remover tarefas
+
+**Arquivos para verificar**:
+- `src/index.html`
+- `src/js/todoList.js`
+
+**Sugestões para o Copilot Agent**:
+- "Como filtrar uma lista de itens em JavaScript?"
+- "Como alternar classes CSS para botões ativos?"
+
+---
+
+### 4. Adicionar atalhos de teclado para ações principais
+**Labels**: `good-first-issue`, `workshop`, `a11y`
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar atalhos de teclado para ações principais
+
+**Descrição**:
+Adicionar atalhos de teclado para facilitar a navegação e uso do app, como adicionar tarefa (ex: Enter), iniciar/pausar timer (ex: barra de espaço), etc.
+
+**Critérios de Aceitação**:
+- [ ] Implementar pelo menos dois atalhos de teclado úteis
+- [ ] Documentar os atalhos na interface (ex: tooltip ou legenda)
+- [ ] Garantir que os atalhos não entrem em conflito com atalhos do navegador
+
+**Arquivos para verificar**:
+- `src/js/app.js`
+- `src/js/todoList.js`
+- `src/js/components/pomodoroTimer.js`
+
+**Sugestões para o Copilot Agent**:
+- "Como adicionar eventos de teclado em JavaScript?"
+- "Como mostrar dicas de atalhos na interface?"
+
+---
+
+### 5. Adicionar tooltips de ajuda nos botões
+**Labels**: `good-first-issue`, `workshop`, `ux`
+**Título**: [BOA PRIMEIRA ISSUE] Adicionar tooltips de ajuda nos botões
+
+**Descrição**:
+Adicionar tooltips (dicas de ajuda) nos botões principais para melhorar a usabilidade, explicando a função de cada botão ao passar o mouse.
+
+**Critérios de Aceitação**:
+- [ ] Adicionar atributo `title` ou criar tooltips customizados em CSS/JS
+- [ ] Garantir que todos os botões principais tenham uma dica de uso
+- [ ] Garantir acessibilidade dos tooltips
+
+**Arquivos para verificar**:
+- `src/index.html`
+- `src/css/style.css`
+
+**Sugestões para o Copilot Agent**:
+- "Como criar tooltips acessíveis em HTML/CSS?"
+- "Como adicionar dicas de uso em botões HTML?"
+
+---
+
+### 6. Melhorar título das páginas
 **Labels**: `good-first-issue`, `workshop`, `seo`
 **Título**: [BOA PRIMEIRA ISSUE] Melhorar título e meta tags para SEO
 

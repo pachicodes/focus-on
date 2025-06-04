@@ -2,28 +2,6 @@
 
 ## 📋 Checklist Pré-Workshop
 
-### Configuração do Repositório (1 semana antes)
-
-- [ ] Criar issues do arquivo `WORKSHOP_ISSUES.md` (escolher de 8 a 12 issues variadas)
-- [ ] Adicionar labels apropriadas:
-  - [ ] `good-first-issue` (verde)
-  - [ ] `help-wanted` (azul)
-  - [ ] `workshop` (roxo)
-  - [ ] `enhancement` (azul claro)
-  - [ ] `bug` (vermelho)
-  - [ ] `documentation` (cinza)
-  - [ ] `design` (rosa)
-- [ ] Criar marco "Workshop" 
-- [ ] Testar que o projeto roda com `npm run dev`
-- [ ] Preparar branches de exemplo (opcional)
-
-### Preparação Técnica (2-3 dias antes)
-
-- [ ] Verificar se o GitHub Copilot está funcionando
-- [ ] Preparar exemplos de prompts eficazes para o Copilot Agent
-- [ ] Testar o fluxo de trabalho completo: fork → clone → branch → commit → PR
-- [ ] Preparar slides de apresentação (se aplicável)
-
 ### Material para os Participantes
 
 - [ ] Link do repositório
@@ -34,12 +12,7 @@
 ## 🎯 Estrutura do Workshop (2 horas)
 
 ### Abertura (15 min)
-1. **Apresentações** (5 min)
-   - Quem são os participantes
-   - Nível de experiência com Git/GitHub
-   - Experiência prévia com Código Aberto
-
-2. **Visão Geral do Projeto** (10 min)
+1. **Visão Geral do Projeto** (10 min)
    - Demonstrar o Focus On funcionando
    - Explicar a estrutura do código
    - Mostrar diferentes componentes (tarefas, timer, música)
@@ -57,8 +30,6 @@
      "Ajude-me a entender a animação de conclusão da tarefa"
      ```
    - Mostrar diferentes tipos de ajuda: explicação, implementação, depuração
-
-4. **Perguntas e Respostas sobre o Copilot** (5 min)
 
 ### Prática: Configuração (15 min)
 
