@@ -30,28 +30,6 @@ Os textos de placeholder atuais podem ser mais envolventes e úteis. Atualize os
 
 
 
-### 3. Traduzir mensagens de sistema
-**Labels**: `good-first-issue`, `workshop`, `i18n`
-**Título**: [BOA PRIMEIRA ISSUE] Traduzir mensagens de sistema para português
-
-**Descrição**:
-Existem mensagens em inglês no código do sistema que precisam ser traduzidas para português para manter a consistência com o restante da interface.
-
-**Critérios de Aceitação**:
-- [ ] Traduzir a mensagem "No tasks yet. Add one!" no todoList.js
-- [ ] Traduzir mensagens de botões como "Save", "Cancel" etc.
-- [ ] Traduzir mensagens de celebração ao concluir tarefas
-- [ ] Garantir que as mensagens estejam gramaticalmente corretas
-
-**Arquivos para verificar**:
-- `src/js/todoList.js`
-
-**Sugestões para o Copilot Agent**:
-- "Localizar todas as strings em inglês nos arquivos JavaScript"
-- "Como fazer internacionalização básica em JavaScript"
-
----
-
 ### 4. Corrigir ícones ausentes no manifesto
 **Labels**: `good-first-issue`, `workshop`, `bug`
 **Título**: [BOA PRIMEIRA ISSUE] Corrigir referências a ícones ausentes no manifesto
