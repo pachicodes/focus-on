@@ -1,4 +1,4 @@
-# Focus On
+# Focus On - Kelly 
 
 > 🎯 **Projeto Workshop**: Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)
 
