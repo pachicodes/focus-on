@@ -56,68 +56,68 @@
     --card-shadow-purple: 0 4px 12px rgba(124, 58, 237, 0.10);
     --hover-bg-purple: #ede9fe;
 
-    /* Tamanhos */
-    --border-radius: 12px;
-    --card-spacing: 16px;
-}
+    /* Tema Mint Chocolate */
+    --primary-color-mint: #4ade80;
+    --primary-variant-color-mint: #22c55e;
+    --secondary-color-mint: #dcfce7;
+    --background-color-mint: #052e16;
+    --surface-color-mint: #064e3b;
+    --error-color-mint: #f87171;
+    --success-color-mint: #34d399;
+    --on-primary-color-mint: #052e16;
+    --on-secondary-color-mint: #065f46;
+    --on-background-color-mint: #4ade80;
+    --on-surface-color-mint: #4ade80;
+    --text-color-mint: #86efac;
+    --text-secondary-mint: #6ee7b7;
+    --border-color-mint: #059669;
+    --input-bg-mint: #065f46;
+    --card-shadow-mint: 0 4px 12px rgba(74, 222, 128, 0.15);
+    --hover-bg-mint: #064e3b;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+    /* Tema Ocean Wave */
+    --primary-color-ocean: #38bdf8;
+    --primary-variant-color-ocean: #0284c7;
+    --secondary-color-ocean: #e0f2fe;
+    --background-color-ocean: #082f49;
+    --surface-color-ocean: #0c4a6e;
+    --error-color-ocean: #f87171;
+    --success-color-ocean: #34d399;
+    --on-primary-color-ocean: #082f49;
+    --on-secondary-color-ocean: #0369a1;
+    --on-background-color-ocean: #38bdf8;
+    --on-surface-color-ocean: #38bdf8;
+    --text-color-ocean: #7dd3fc;
+    --text-secondary-ocean: #38bdf8;
+    --border-color-ocean: #0284c7;
+    --input-bg-ocean: #0c4a6e;
+    --card-shadow-ocean: 0 4px 12px rgba(56, 189, 248, 0.15);
+    --hover-bg-ocean: #0c4a6e;
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: var(--background-color-light);
-    color: var(--text-color-light);
-    transition: all 0.3s ease;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+    /* Tema Sunset Orange */
+    --primary-color-sunset: #fb923c;
+    --primary-variant-color-sunset: #ea580c;
+    --secondary-color-sunset: #ffedd5;
+    --background-color-sunset: #7c2d12;
+    --surface-color-sunset: #9a3412;
+    --error-color-sunset: #f87171;
+    --success-color-sunset: #34d399;
+    --on-primary-color-sunset: #431407;
+    --on-secondary-color-sunset: #ea580c;
+    --on-background-color-sunset: #fb923c;
+    --on-surface-color-sunset: #fb923c;
+    --text-color-sunset: #fdba74;
+    --text-secondary-sunset: #fb923c;
+    --border-color-sunset: #ea580c;
+    --input-bg-sunset: #9a3412;
+    --card-shadow-sunset: 0 4px 12px rgba(251, 146, 60, 0.15);
+    --hover-bg-sunset: #9a3412;
 
-/* Use as variáveis de tema claro por padrão */
-body {
-    --primary-color: var(--primary-color-light);
-    --primary-variant-color: var(--primary-variant-color-light);
-    --secondary-color: var(--secondary-color-light);
-    --background-color: var(--background-color-light);
-    --surface-color: var(--surface-color-light);
-    --error-color: var(--error-color-light);
-    --success-color: var(--success-color-light);
-    --on-primary-color: var(--on-primary-color-light);
-    --on-secondary-color: var(--on-secondary-color-light);
-    --on-background-color: var(--on-background-color-light);
-    --on-surface-color: var(--on-surface-color-light);
-    --text-color: var(--text-color-light);
-    --text-secondary: var(--text-secondary-light);
-    --border-color: var(--border-color-light);
-    --input-bg: var(--input-bg-light);
-    --card-shadow: var(--card-shadow-light);
-    --hover-bg: var(--hover-bg-light);
-}
-
-/* Tema escuro */
-body.dark-mode {
-    --primary-color: var(--primary-color-dark);
-    --primary-variant-color: var(--primary-variant-color-dark);
-    --secondary-color: var(--secondary-color-dark);
-    --background-color: var(--background-color-dark);
-    --surface-color: var(--surface-color-dark);
-    --error-color: var(--error-color-dark);
-    --success-color: var(--success-color-dark);
-    --on-primary-color: var(--on-primary-color-dark);
-    --on-secondary-color: var(--on-secondary-color-dark);
-    --on-background-color: var(--on-background-color-dark);
-    --on-surface-color: var(--on-surface-color-dark);
-    --text-color: var(--text-color-dark);
-    --text-secondary: var(--text-secondary-dark);
-    --border-color: var(--border-color-dark);
-    --input-bg: var(--input-bg-dark);
+    /* Tema Galaxy Night */
+    --primary-color-galaxy: #a78bfa;
+    --primary-variant-color-galaxy: #7c3aed;
+    --secondary-color-galaxy: #f3e8ff;
+    --background-color-galaxy: #2e1065;
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
 
