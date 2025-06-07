@@ -26,13 +26,30 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
+    const marioThemeButton = document.getElementById('mario-theme-toggle');
     if (themeToggleButton) {
         const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
         document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        document.body.classList.toggle('mario-mode', currentTheme === 'mario');
 
         themeToggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            if (document.body.classList.contains('mario-mode')) {
+                document.body.classList.remove('mario-mode');
+                document.body.classList.toggle('dark-mode');
+                const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+                localStorage.setItem('focusOnTheme', theme);
+            } else {
+                document.body.classList.toggle('dark-mode');
+                const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+                localStorage.setItem('focusOnTheme', theme);
+            }
+        });
+    }
+    if (marioThemeButton) {
+        marioThemeButton.addEventListener('click', () => {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.toggle('mario-mode');
+            const theme = document.body.classList.contains('mario-mode') ? 'mario' : 'light';
             localStorage.setItem('focusOnTheme', theme);
         });
     }

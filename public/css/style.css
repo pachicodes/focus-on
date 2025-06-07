@@ -40,6 +40,25 @@
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
+
+    /* Tema Mario Bros */
+    --primary-color-mario: #FF0000; /* vermelho Mario */
+    --primary-variant-color-mario: #0055FF; /* azul Mario */
+    --secondary-color-mario: #FFD700; /* amarelo moeda */
+    --background-color-mario: #1A1A2F; /* azul escuro do céu */
+    --surface-color-mario: #3B3B5B; /* azul mais claro */
+    --error-color-mario: #A0522D; /* marrom bloco */
+    --success-color-mario: #7CFC00; /* verde cano */
+    --on-primary-color-mario: #FFFFFF; /* texto branco */
+    --on-secondary-color-mario: #FF0000; /* texto vermelho */
+    --on-background-color-mario: #FFD700; /* texto amarelo */
+    --on-surface-color-mario: #FFFFFF; /* texto branco */
+    --text-color-mario: #FFFFFF; /* texto principal */
+    --text-secondary-mario: #FFD700; /* texto secundário amarelo */
+    --border-color-mario: #FFD700; /* borda amarela */
+    --input-bg-mario: #0055FF; /* input azul Mario */
+    --card-shadow-mario: 0 4px 12px rgba(255, 0, 0, 0.15);
+    --hover-bg-mario: #FFD70033; /* amarelo translúcido */
 }
 
 * {
@@ -101,6 +120,30 @@ body.dark-mode {
     --input-bg: var(--input-bg-dark);
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema Mario Bros */
+body.mario-mode {
+    --primary-color: var(--primary-color-mario);
+    --primary-variant-color: var(--primary-variant-color-mario);
+    --secondary-color: var(--secondary-color-mario);
+    --background-color: var(--background-color-mario);
+    --surface-color: var(--surface-color-mario);
+    --error-color: var(--error-color-mario);
+    --success-color: var(--success-color-mario);
+    --on-primary-color: var(--on-primary-color-mario);
+    --on-secondary-color: var(--on-secondary-color-mario);
+    --on-background-color: var(--on-background-color-mario);
+    --on-surface-color: var(--on-surface-color-mario);
+    --text-color: var(--text-color-mario);
+    --text-secondary: var(--text-secondary-mario);
+    --border-color: var(--border-color-mario);
+    --input-bg: var(--input-bg-mario);
+    --card-shadow: var(--card-shadow-mario);
+    --hover-bg: var(--hover-bg-mario);
 
     background-color: var(--background-color);
     color: var(--text-color);
