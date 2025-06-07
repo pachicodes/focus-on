@@ -36,7 +36,26 @@
     --input-bg-dark: #2c2c2c;
     --card-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.2);
     --hover-bg-dark: #252525;
-    
+
+    /* Tema Verde (Nature) */
+    --primary-color-green: #2e7d32;
+    --primary-variant-color-green: #1b5e20;
+    --secondary-color-green: #66bb6a;
+    --background-color-green: #f1f8e9;
+    --surface-color-green: #ffffff;
+    --error-color-green: #d32f2f;
+    --success-color-green: #388e3c;
+    --on-primary-color-green: #ffffff;
+    --on-secondary-color-green: #000000;
+    --on-background-color-green: #1b5e20;
+    --on-surface-color-green: #2e7d32;
+    --text-color-green: #1b5e20;
+    --text-secondary-green: #4caf50;
+    --border-color-green: #c8e6c9;
+    --input-bg-green: #e8f5e8;
+    --card-shadow-green: 0 4px 12px rgba(46, 125, 50, 0.1);
+    --hover-bg-green: #f3e5f5;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -101,6 +120,30 @@ body.dark-mode {
     --input-bg: var(--input-bg-dark);
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema Verde (Nature) */
+body.green-mode {
+    --primary-color: var(--primary-color-green);
+    --primary-variant-color: var(--primary-variant-color-green);
+    --secondary-color: var(--secondary-color-green);
+    --background-color: var(--background-color-green);
+    --surface-color: var(--surface-color-green);
+    --error-color: var(--error-color-green);
+    --success-color: var(--success-color-green);
+    --on-primary-color: var(--on-primary-color-green);
+    --on-secondary-color: var(--on-secondary-color-green);
+    --on-background-color: var(--on-background-color-green);
+    --on-surface-color: var(--on-surface-color-green);
+    --text-color: var(--text-color-green);
+    --text-secondary: var(--text-secondary-green);
+    --border-color: var(--border-color-green);
+    --input-bg: var(--input-bg-green);
+    --card-shadow: var(--card-shadow-green);
+    --hover-bg: var(--hover-bg-green);
 
     background-color: var(--background-color);
     color: var(--text-color);
@@ -484,61 +527,76 @@ button:active {
     background-color: var(--hover-bg-light);
 }
 
-/* Theme Toggle Button */
-#theme-toggle {
+/* Theme Selector */
+.theme-selector {
     position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 1000;
+}
+
+#theme-toggle {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: var(--surface-color);
     border: 1px solid var(--border-color);
     cursor: pointer;
-    z-index: 1000;
-    box-shadow: var(--card-shadow-light);
+    box-shadow: var(--card-shadow);
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-}
-
-.theme-toggle-icon {
     font-size: 1.4em;
-    position: absolute;
-    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-
-.light-icon {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dark-icon {
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-body.dark-mode #theme-toggle {
-    background-color: var(--surface-color-dark);
-    border-color: var(--border-color-dark);
-    box-shadow: var(--card-shadow-dark);
-}
-
-body.dark-mode .light-icon {
-    opacity: 0;
-    transform: translateY(-20px);
-}
-
-body.dark-mode .dark-icon {
-    opacity: 1;
-    transform: translateY(0);
+    color: var(--text-color);
 }
 
 #theme-toggle:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.theme-options {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    padding: 8px;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 120px;
+}
+
+.theme-options.show {
+    display: flex;
+}
+
+.theme-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.theme-option:hover {
+    background-color: var(--hover-bg);
+}
+
+.theme-option.active {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
 }
 
 /* Tarefas concluídas */

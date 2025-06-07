@@ -24,16 +24,70 @@ document.addEventListener('DOMContentLoaded', () => {
     // Contador de tarefas
     updateTasksCounter();
     
-    // Theme Toggler Logic
+    // Theme Selector Logic
     const themeToggleButton = document.getElementById('theme-toggle');
-    if (themeToggleButton) {
+    const themeOptions = document.getElementById('theme-options');
+    const themeOptionButtons = document.querySelectorAll('.theme-option');
+    
+    if (themeToggleButton && themeOptions) {
+        // Carregar tema salvo ou usar tema claro como padrão
         const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        applyTheme(currentTheme);
+        updateActiveThemeButton(currentTheme);
 
-        themeToggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('focusOnTheme', theme);
+        // Toggle do menu de temas
+        themeToggleButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            themeOptions.classList.toggle('show');
+        });
+
+        // Fechar menu ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.theme-selector')) {
+                themeOptions.classList.remove('show');
+            }
+        });
+
+        // Event listeners para as opções de tema
+        themeOptionButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const selectedTheme = button.getAttribute('data-theme');
+                applyTheme(selectedTheme);
+                updateActiveThemeButton(selectedTheme);
+                localStorage.setItem('focusOnTheme', selectedTheme);
+                themeOptions.classList.remove('show');
+            });
+        });
+    }
+
+    // Função para aplicar tema
+    function applyTheme(theme) {
+        // Remover todas as classes de tema
+        document.body.classList.remove('dark-mode', 'green-mode');
+        
+        // Aplicar o tema selecionado
+        switch(theme) {
+            case 'dark':
+                document.body.classList.add('dark-mode');
+                break;
+            case 'green':
+                document.body.classList.add('green-mode');
+                break;
+            case 'light':
+            default:
+                // Tema claro é o padrão, não precisa de classe
+                break;
+        }
+    }
+
+    // Função para atualizar botão ativo
+    function updateActiveThemeButton(activeTheme) {
+        themeOptionButtons.forEach(button => {
+            button.classList.remove('active');
+            if (button.getAttribute('data-theme') === activeTheme) {
+                button.classList.add('active');
+            }
         });
     }
     
