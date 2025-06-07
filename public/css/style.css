@@ -1,14 +1,14 @@
 :root {
     /* Tema Kawaii Rosinha */
     --primary-color-light: #ffb6d5; /* rosa claro */
-    --primary-variant-color-light: #ff69b4; /* rosa mais forte */
+    --primary-variant-color-light: #698cff; /* rosa mais forte */
     --secondary-color-light: #ffe0f7; /* rosa bebê */
     --background-color-light: #fff0fa; /* fundo rosinha pastel */
     --surface-color-light: #fff7fb; /* superfície ainda mais clara */
     --error-color-light: #ff6f91; /* rosa avermelhado */
     --success-color-light: #b5ead7; /* verde menta pastel */
     --on-primary-color-light: #fff0fa; /* texto sobre rosa */
-    --on-secondary-color-light: #ff69b4; /* texto sobre secundário */
+    --on-secondary-color-light: #69ffeb; /* texto sobre secundário */
     --on-background-color-light: #ff69b4; /* texto sobre fundo */
     --on-surface-color-light: #ff69b4; /* texto sobre superfície */
     --text-color-light: #e75480; /* rosa escuro para texto */
