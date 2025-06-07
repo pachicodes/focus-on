@@ -26,33 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
-    // Novo: Botão para alternar tema água
-    let waterThemeButton = document.getElementById('water-theme-toggle');
-    if (!waterThemeButton) {
-        waterThemeButton = document.createElement('button');
-        waterThemeButton.id = 'water-theme-toggle';
-        waterThemeButton.className = 'icon-button';
-        waterThemeButton.title = 'Alternar tema Água';
-        waterThemeButton.innerHTML = '💧';
-        themeToggleButton.parentNode.insertBefore(waterThemeButton, themeToggleButton.nextSibling);
-    }
 
     // Carregar tema salvo
     const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-    const currentWater = localStorage.getItem('focusOnWater') === 'true';
     document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-    document.body.classList.toggle('water-mode', currentWater);
 
     themeToggleButton.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
         localStorage.setItem('focusOnTheme', theme);
-    });
-
-    // Alternar tema água
-    waterThemeButton.addEventListener('click', () => {
-        const isWater = document.body.classList.toggle('water-mode');
-        localStorage.setItem('focusOnWater', isWater);
     });
     
     // Toggle para mostrar/esconder o campo de entrada de tarefas

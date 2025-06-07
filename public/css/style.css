@@ -97,44 +97,44 @@ body {
 
 /* Use as variáveis de tema claro por padrão */
 body {
-    --primary-color: var(--primary-color-light);
-    --primary-variant-color: var(--primary-variant-color-light);
-    --secondary-color: var(--secondary-color-light);
-    --background-color: var(--background-color-light);
-    --surface-color: var(--surface-color-light);
-    --error-color: var(--error-color-light);
-    --success-color: var(--success-color-light);
-    --on-primary-color: var(--on-primary-color-light);
-    --on-secondary-color: var(--on-secondary-color-light);
-    --on-background-color: var(--on-background-color-light);
-    --on-surface-color: var(--on-surface-color-light);
-    --text-color: var(--text-color-light);
-    --text-secondary: var(--text-secondary-light);
-    --border-color: var(--border-color-light);
-    --input-bg: var(--input-bg-light);
-    --card-shadow: var(--card-shadow-light);
-    --hover-bg: var(--hover-bg-light);
+    --primary-color: var(--primary-color-water-light);
+    --primary-variant-color: var(--primary-variant-color-water-light);
+    --secondary-color: var(--secondary-color-water-light);
+    --background-color: var(--background-color-water-light);
+    --surface-color: var(--surface-color-water-light);
+    --error-color: var(--error-color-water-light);
+    --success-color: var(--success-color-water-light);
+    --on-primary-color: var(--on-primary-color-water-light);
+    --on-secondary-color: var(--on-secondary-color-water-light);
+    --on-background-color: var(--on-background-color-water-light);
+    --on-surface-color: var(--on-surface-color-water-light);
+    --text-color: var(--text-color-water-light);
+    --text-secondary: var(--text-secondary-water-light);
+    --border-color: var(--border-color-water-light);
+    --input-bg: var(--input-bg-water-light);
+    --card-shadow: var(--card-shadow-water-light);
+    --hover-bg: var(--hover-bg-water-light);
 }
 
 /* Tema escuro */
 body.dark-mode {
-    --primary-color: var(--primary-color-dark);
-    --primary-variant-color: var(--primary-variant-color-dark);
-    --secondary-color: var(--secondary-color-dark);
-    --background-color: var(--background-color-dark);
-    --surface-color: var(--surface-color-dark);
-    --error-color: var(--error-color-dark);
-    --success-color: var(--success-color-dark);
-    --on-primary-color: var(--on-primary-color-dark);
-    --on-secondary-color: var(--on-secondary-color-dark);
-    --on-background-color: var(--on-background-color-dark);
-    --on-surface-color: var(--on-surface-color-dark);
-    --text-color: var(--text-color-dark);
-    --text-secondary: var(--text-secondary-dark);
-    --border-color: var(--border-color-dark);
-    --input-bg: var(--input-bg-dark);
-    --card-shadow: var(--card-shadow-dark);
-    --hover-bg: var(--hover-bg-dark);
+    --primary-color: var(--primary-color-water-dark);
+    --primary-variant-color: var(--primary-variant-color-water-dark);
+    --secondary-color: var(--secondary-color-water-dark);
+    --background-color: var(--background-color-water-dark);
+    --surface-color: var(--surface-color-water-dark);
+    --error-color: var(--error-color-water-dark);
+    --success-color: var(--success-color-water-dark);
+    --on-primary-color: var(--on-primary-color-water-dark);
+    --on-secondary-color: var(--on-secondary-color-water-dark);
+    --on-background-color: var(--on-background-color-water-dark);
+    --on-surface-color: var(--on-surface-color-water-dark);
+    --text-color: var(--text-color-water-dark);
+    --text-secondary: var(--text-secondary-water-dark);
+    --border-color: var(--border-color-water-dark);
+    --input-bg: var(--input-bg-water-dark);
+    --card-shadow: var(--card-shadow-water-dark);
+    --hover-bg: var(--hover-bg-water-dark);
 
     background-color: var(--background-color);
     color: var(--text-color);
