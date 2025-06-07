@@ -37,6 +37,101 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Roxo com Branco */
+    --primary-color-purple: #7c3aed;
+    --primary-variant-color-purple: #5b21b6;
+    --secondary-color-purple: #ede9fe;
+    --background-color-purple: #ffffff;
+    --surface-color-purple: #f3f0ff;
+    --error-color-purple: #f87171;
+    --success-color-purple: #34d399;
+    --on-primary-color-purple: #ffffff;
+    --on-secondary-color-purple: #7c3aed;
+    --on-background-color-purple: #7c3aed;
+    --on-surface-color-purple: #5b21b6;
+    --text-color-purple: #5b21b6;
+    --text-secondary-purple: #a78bfa;
+    --border-color-purple: #c4b5fd;
+    --input-bg-purple: #ede9fe;
+    --card-shadow-purple: 0 4px 12px rgba(124, 58, 237, 0.10);
+    --hover-bg-purple: #ede9fe;
+
+    /* Tema Mint Chocolate */
+    --primary-color-mint: #4ade80;
+    --primary-variant-color-mint: #22c55e;
+    --secondary-color-mint: #dcfce7;
+    --background-color-mint: #052e16;
+    --surface-color-mint: #064e3b;
+    --error-color-mint: #f87171;
+    --success-color-mint: #34d399;
+    --on-primary-color-mint: #052e16;
+    --on-secondary-color-mint: #065f46;
+    --on-background-color-mint: #4ade80;
+    --on-surface-color-mint: #4ade80;
+    --text-color-mint: #86efac;
+    --text-secondary-mint: #6ee7b7;
+    --border-color-mint: #059669;
+    --input-bg-mint: #065f46;
+    --card-shadow-mint: 0 4px 12px rgba(74, 222, 128, 0.15);
+    --hover-bg-mint: #064e3b;
+
+    /* Tema Ocean Wave */
+    --primary-color-ocean: #38bdf8;
+    --primary-variant-color-ocean: #0284c7;
+    --secondary-color-ocean: #e0f2fe;
+    --background-color-ocean: #082f49;
+    --surface-color-ocean: #0c4a6e;
+    --error-color-ocean: #f87171;
+    --success-color-ocean: #34d399;
+    --on-primary-color-ocean: #082f49;
+    --on-secondary-color-ocean: #0369a1;
+    --on-background-color-ocean: #38bdf8;
+    --on-surface-color-ocean: #38bdf8;
+    --text-color-ocean: #7dd3fc;
+    --text-secondary-ocean: #38bdf8;
+    --border-color-ocean: #0284c7;
+    --input-bg-ocean: #0c4a6e;
+    --card-shadow-ocean: 0 4px 12px rgba(56, 189, 248, 0.15);
+    --hover-bg-ocean: #0c4a6e;
+
+    /* Tema Sunset Orange */
+    --primary-color-sunset: #fb923c;
+    --primary-variant-color-sunset: #ea580c;
+    --secondary-color-sunset: #ffedd5;
+    --background-color-sunset: #7c2d12;
+    --surface-color-sunset: #9a3412;
+    --error-color-sunset: #f87171;
+    --success-color-sunset: #34d399;
+    --on-primary-color-sunset: #431407;
+    --on-secondary-color-sunset: #ea580c;
+    --on-background-color-sunset: #fb923c;
+    --on-surface-color-sunset: #fb923c;
+    --text-color-sunset: #fdba74;
+    --text-secondary-sunset: #fb923c;
+    --border-color-sunset: #ea580c;
+    --input-bg-sunset: #9a3412;
+    --card-shadow-sunset: 0 4px 12px rgba(251, 146, 60, 0.15);
+    --hover-bg-sunset: #9a3412;
+
+    /* Tema Galaxy Night */
+    --primary-color-galaxy: #a78bfa;
+    --primary-variant-color-galaxy: #7c3aed;
+    --secondary-color-galaxy: #f3e8ff;
+    --background-color-galaxy: #2e1065;
+    --surface-color-galaxy: #4c1d95;
+    --error-color-galaxy: #f87171;
+    --success-color-galaxy: #34d399;
+    --on-primary-color-galaxy: #2e1065;
+    --on-secondary-color-galaxy: #6d28d9;
+    --on-background-color-galaxy: #a78bfa;
+    --on-surface-color-galaxy: #a78bfa;
+    --text-color-galaxy: #c4b5fd;
+    --text-secondary-galaxy: #a78bfa;
+    --border-color-galaxy: #7c3aed;
+    --input-bg-galaxy: #4c1d95;
+    --card-shadow-galaxy: 0 4px 12px rgba(167, 139, 250, 0.15);
+    --hover-bg-galaxy: #4c1d95;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -106,713 +201,148 @@ body.dark-mode {
     color: var(--text-color);
 }
 
-
-/* Layout principal */
-.app-body {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/* Tema Roxo */
+body.purple-mode {
+    --primary-color: var(--primary-color-purple);
+    --primary-variant-color: var(--primary-variant-color-purple);
+    --secondary-color: var(--secondary-color-purple);
+    --background-color: var(--background-color-purple);
+    --surface-color: var(--surface-color-purple);
+    --error-color: var(--error-color-purple);
+    --success-color: var(--success-color-purple);
+    --on-primary-color: var(--on-primary-color-purple);
+    --on-secondary-color: var(--on-secondary-color-purple);
+    --on-background-color: var(--on-background-color-purple);
+    --on-surface-color: var(--on-surface-color-purple);
+    --text-color: var(--text-color-purple);
+    --text-secondary: var(--text-secondary-purple);
+    --border-color: var(--border-color-purple);
+    --input-bg: var(--input-bg-purple);
+    --card-shadow: var(--card-shadow-purple);
+    --hover-bg: var(--hover-bg-purple);
 }
 
-.app-header {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 20px 0;
+/* Tema Mint Chocolate */
+body.mint-mode {
+    --primary-color: var(--primary-color-mint);
+    --primary-variant-color: var(--primary-variant-color-mint);
+    --secondary-color: var(--secondary-color-mint);
+    --background-color: var(--background-color-mint);
+    --surface-color: var(--surface-color-mint);
+    --error-color: var(--error-color-mint);
+    --success-color: var(--success-color-mint);
+    --on-primary-color: var(--on-primary-color-mint);
+    --on-secondary-color: var(--on-secondary-color-mint);
+    --on-background-color: var(--on-background-color-mint);
+    --on-surface-color: var(--on-surface-color-mint);
+    --text-color: var(--text-color-mint);
+    --text-secondary: var(--text-secondary-mint);
+    --border-color: var(--border-color-mint);
+    --input-bg: var(--input-bg-mint);
+    --card-shadow: var(--card-shadow-mint);
+    --hover-bg: var(--hover-bg-mint);
 }
 
-.app-footer {
-    text-align: center;
-    margin-top: auto;
-    padding: 20px 0;
-    font-size: 0.9em;
-    color: var(--text-secondary-light);
+/* Tema Ocean Wave */
+body.ocean-mode {
+    --primary-color: var(--primary-color-ocean);
+    --primary-variant-color: var(--primary-variant-color-ocean);
+    --secondary-color: var(--secondary-color-ocean);
+    --background-color: var(--background-color-ocean);
+    --surface-color: var(--surface-color-ocean);
+    --error-color: var(--error-color-ocean);
+    --success-color: var(--success-color-ocean);
+    --on-primary-color: var(--on-primary-color-ocean);
+    --on-secondary-color: var(--on-secondary-color-ocean);
+    --on-background-color: var(--on-background-color-ocean);
+    --on-surface-color: var(--on-surface-color-ocean);
+    --text-color: var(--text-color-ocean);
+    --text-secondary: var(--text-secondary-ocean);
+    --border-color: var(--border-color-ocean);
+    --input-bg: var(--input-bg-ocean);
+    --card-shadow: var(--card-shadow-ocean);
+    --hover-bg: var(--hover-bg-ocean);
 }
 
-.cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
+/* Tema Sunset Orange */
+body.sunset-mode {
+    --primary-color: var(--primary-color-sunset);
+    --primary-variant-color: var(--primary-variant-color-sunset);
+    --secondary-color: var(--secondary-color-sunset);
+    --background-color: var(--background-color-sunset);
+    --surface-color: var(--surface-color-sunset);
+    --error-color: var(--error-color-sunset);
+    --success-color: var(--success-color-sunset);
+    --on-primary-color: var(--on-primary-color-sunset);
+    --on-secondary-color: var(--on-secondary-color-sunset);
+    --on-background-color: var(--on-background-color-sunset);
+    --on-surface-color: var(--on-surface-color-sunset);
+    --text-color: var(--text-color-sunset);
+    --text-secondary: var(--text-secondary-sunset);
+    --border-color: var(--border-color-sunset);
+    --input-bg: var(--input-bg-sunset);
+    --card-shadow: var(--card-shadow-sunset);
+    --hover-bg: var(--hover-bg-sunset);
 }
 
-/* Cards */
-.card {
-    background-color: var(--surface-color);
-    border-radius: var(--border-radius);
-    box-shadow: var(--card-shadow-light);
-    overflow: hidden;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    transform: translateY(0);
-    animation: fadeIn 0.5s ease-out;
+/* Tema Galaxy Night */
+body.galaxy-mode {
+    --primary-color: var(--primary-color-galaxy);
+    --primary-variant-color: var(--primary-variant-color-galaxy);
+    --secondary-color: var(--secondary-color-galaxy);
+    --background-color: var(--background-color-galaxy);
+    --surface-color: var(--surface-color-galaxy);
+    --error-color: var(--error-color-galaxy);
+    --success-color: var(--success-color-galaxy);
+    --on-primary-color: var(--on-primary-color-galaxy);
+    --on-secondary-color: var(--on-secondary-color-galaxy);
+    --on-background-color: var(--on-background-color-galaxy);
+    --on-surface-color: var(--on-surface-color-galaxy);
+    --text-color: var(--text-color-galaxy);
+    --text-secondary: var(--text-secondary-galaxy);
+    --border-color: var(--border-color-galaxy);
+    --input-bg: var(--input-bg-galaxy);
+    --card-shadow: var(--card-shadow-galaxy);
+    --hover-bg: var(--hover-bg-galaxy);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    border-bottom: 1px solid var(--border-color-light);
-}
-
-.card-title {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.card-icon {
-    font-size: 1.2em;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--primary-color-light);
-    color: var(--on-primary-color-light);
-    border-radius: 50%;
-}
-
-.card-footer {
-    border-top: 1px solid var(--border-color-light);
-    padding: 12px 16px;
-    font-size: 0.9em;
-    color: var(--text-secondary-light);
-}
-
-.subtitle {
-    color: var(--text-secondary-light);
-    font-size: 1.1em;
-    margin-top: 8px;
-}
-
-h1, h2 {
-    color: var(--primary-color);
-    margin-top: 0;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 10px;
-    font-size: 2.5em;
-}
-
-h2 {
-    border-bottom: 2px solid var(--secondary-color);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-}
-
-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-input[type="text"] {
-    width: calc(100% - 22px); /* Consider padding and border */
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    font-size: 1em;
-    background-color: var(--input-bg);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-}
-
-input[type="text"]:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px var(--primary-color-light);
-}
-
-body.dark-mode input[type="text"]:focus {
-    box-shadow: 0 0 0 2px var(--primary-color-dark);
-}
-
-
-button {
-    background-color: var(--primary-color);
-    color: var(--on-primary-color);
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-    margin-right: 5px; /* Espaçamento entre botões */
-}
-
-button:hover {
-    background-color: var(--primary-variant-color);
-    transform: translateY(-1px);
-}
-
-button:active {
-    transform: translateY(0);
-}
-
-/* Todo List Específico */
-.task-input-container {
-    display: flex;
-    padding: 0 16px 16px;
-    height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.task-input-container.active {
-    height: 50px;
-    opacity: 1;
-    padding: 4px 10px;
-
-}
-
-.task-input-container input[type="text"] {
-    flex-grow: 1;
-    margin-right: 10px;
-    padding: 10px 12px;
-    border: 1px solid var(--border-color);
-    border-radius: 20px;
-    background-color: var(--input-bg);
-    color: var(--text-color);
-    margin-top: 12px;
-}
-
-.add-task-button {
-    background-color: var(--primary-color);
-    color: var(--on-primary-color);
-    border: none;
-    border-radius: 20px;
-    padding: 8px 15px;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.tasks-list {
-    list-style-type: none;
-    padding: 0 16px;
-    margin-bottom: 16px;
-    overflow-y: auto;
-    max-height: 350px;
-}
-
-.tasks-list li {
-    padding: 12px 8px;
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.3s ease;
-    border-radius: 8px;
-}
-
-#tasks li:last-child {
-    border-bottom: none;
-}
-
-#tasks li:hover {
-    background-color: var(--input-bg); /* Um pouco de destaque no hover */
-}
-
-#tasks li button:hover {
-    border-width: 2px;  
-}
-
-/* Pomodoro Timer Específico */
-.timer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.timer-display {
-    font-size: 4em;
-    margin: 10px 0 20px;
-    font-weight: bold;
-    color: var(--primary-color);
-    font-family: 'Roboto Mono', monospace;
-}
-
-.timer-controls {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.timer-modes {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    padding: 10px 0;
-}
-
-.timer-mode-item {
-    padding: 8px 16px;
-    margin: 0 5px;
-    border-radius: 20px;
-    background-color: transparent;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 0.9em;
-    color: var(--text-secondary-light);
-}
-
-.timer-mode-item.active {
-    background-color: var(--primary-color);
-    color: var(--on-primary-color);
-}
-
-.timer-mode-item:hover:not(.active) {
-    background-color: var(--hover-bg-light);
-}
-
-/* Media Player Específico */
-.media-container {
-    padding: 16px;
-}
-
-.media-player {
-    position: relative;
-    width: 100%;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-}
-
-.media-player iframe {
-    border: none;
-    width: 100%;
-    border-radius: var(--border-radius);
-    display: block;
-}
-
-.media-notification {
-    position: fixed;
-    bottom: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: var(--surface-color);
-    color: var(--text-color);
-    padding: 12px 20px;
-    border-radius: 25px;
-    box-shadow: var(--card-shadow-light);
-    transition: all 0.3s ease;
-    z-index: 1000;
-}
-
-.media-notification.show {
-    bottom: 20px;
-}
-
-/* Botões */
-.icon-button {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-    color: var(--text-color-light);
-    transition: all 0.2s ease;
-}
-
-.icon-button:hover {
-    background-color: var(--hover-bg-light);
-    transform: translateY(-1px);
-}
-
-.primary-button {
-    background-color: var(--primary-color);
-    color: var(--on-primary-color);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.primary-button:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
-
-.secondary-button {
-    background-color: transparent;
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.secondary-button:hover {
-    background-color: var(--hover-bg-light);
-}
-
-/* Theme Toggle Button */
-#theme-toggle {
+/* Theme Toggle Buttons */
+#theme-toggle,
+#purple-theme-toggle,
+#mint-theme-toggle,
+#ocean-theme-toggle,
+#sunset-theme-toggle,
+#galaxy-theme-toggle {
     position: fixed;
     top: 20px;
-    right: 20px;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
+    background: none;
+    border: none;
     cursor: pointer;
-    z-index: 1000;
-    box-shadow: var(--card-shadow-light);
+    padding: 8px;
+    border-radius: 50%;
     transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+}
+
+#theme-toggle { right: 20px; }
+#purple-theme-toggle { right: 70px; }
+#mint-theme-toggle { right: 120px; }
+#ocean-theme-toggle { right: 170px; }
+#sunset-theme-toggle { right: 220px; }
+#galaxy-theme-toggle { right: 270px; }
+
+#theme-toggle:hover,
+#purple-theme-toggle:hover,
+#mint-theme-toggle:hover,
+#ocean-theme-toggle:hover,
+#sunset-theme-toggle:hover,
+#galaxy-theme-toggle:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-2px);
 }
 
 .theme-toggle-icon {
-    font-size: 1.4em;
-    position: absolute;
-    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
 }
 
-.light-icon {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dark-icon {
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-body.dark-mode #theme-toggle {
-    background-color: var(--surface-color-dark);
-    border-color: var(--border-color-dark);
-    box-shadow: var(--card-shadow-dark);
-}
-
-body.dark-mode .light-icon {
-    opacity: 0;
-    transform: translateY(-20px);
-}
-
-body.dark-mode .dark-icon {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#theme-toggle:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* Tarefas concluídas */
-.task-item.completed .task-text {
-    text-decoration: line-through;
-    color: var(--secondary-color);
-    opacity: 0.7;
-    transition: all 0.3s ease;
-}
-
-.task-item.completed {
-    background-color: rgba(3, 218, 198, 0.05);
-    border-left: 3px solid var(--success-color);
-}
-
-.task-item.completed .task-checkbox {
-    background-color: var(--success-color);
-    border-color: var(--success-color);
-}
-
-.task-item.completed .task-checkbox::after {
-    content: '✓';
-    color: white;
-    font-weight: bold;
-}
-
-/* Checkbox personalizado para marcar tarefas completas */
-.task-checkbox {
-    margin-right: 12px;
-    width: 22px;
-    height: 22px;
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    flex-shrink: 0;
-    position: relative;
-}
-
-.task-checkbox:hover {
-    transform: scale(1.15);
-    border-color: var(--secondary-color);
-}
-
-.task-checkbox.checked {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    transform: scale(1);
-}
-
-.task-checkbox::after {
-    content: '✓';
-    color: transparent;
-    font-size: 12px;
-    font-weight: bold;
-    transition: color 0.2s ease;
-}
-
-.task-checkbox.checked::after {
-    color: white;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .cards-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .app-header {
-        padding: 15px 0;
-    }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    .subtitle {
-        font-size: 1em;
-    }
-}
-
-/* Estilos específicos para extensão do Chrome */
-@media (max-width: 400px) {
-    body {
-        padding: 10px;
-    }
-    
-    .app-header {
-        margin-bottom: 15px;
-        padding: 10px 0;
-    }
-    
-    h1 {
-        font-size: 1.8em;
-        margin-bottom: 5px;
-    }
-    
-    .subtitle {
-        font-size: 0.9em;
-    }
-    
-    .cards-container {
-        gap: 15px;
-    }
-    
-    .timer-display {
-        font-size: 3em;
-    }
-    
-    .card-header {
-        padding: 12px;
-    }
-    
-    #theme-toggle {
-        top: 10px;
-        right: 10px;
-        font-size: 0.8em;
-    }
-    
-    .app-footer {
-        padding: 10px 0;
-        font-size: 0.8em;
-    }
-}
-
-/* Ajuste do layout das tarefas para incorporar checkbox */
-.task-item {
-    display: flex;
-    align-items: center;
-    padding: 12px 10px;
-    border-bottom: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.task-content {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    border-bottom: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    margin-bottom: 5px;
-}
-
-.task-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.task-item:hover {
-    background-color: var(--hover-bg);
-    transform: translateY(-2px);
-}
-
-.task-text {
-    cursor: pointer;
-    flex-grow: 1;
-    margin-right: 10px;
-    transition: all 0.3s ease;
-    word-break: break-word;
-}
-
-.task-buttons button, .edit-controls button {
-    margin-left: 5px;
-    font-size: 0.8em;
-    padding: 4px 8px;
-    border-radius: 4px;
-    background-color: transparent;
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
-
-.task-buttons button:hover, .edit-controls button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.edit-input-field {
-    flex-grow: 1;
-    padding: 8px;
-    margin-right: 10px; /* Espaço antes do botão Salvar */
-    border: 1px solid var(--primary-color);
-    border-radius: 4px;
-    background-color: var(--input-bg);
-    color: var(--text-color);
-}
-
-.edit-controls {
-    display: flex;
-    align-items: center;
-}
-
-/* Mensagem quando não há tarefas */
-.empty-tasks-message {
-    text-align: center;
-    color: var(--text-secondary);
-    padding: 30px 20px;
-    font-style: italic;
-}
-
-/* Botões de ação para tarefas */
-.task-buttons {
-    display: flex;
-    gap: 5px;
-}
-
-.task-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-    font-size: 1em;
-    transition: all 0.2s ease;
-    background-color: transparent;
-    color: var(--text-color);
-}
-
-.task-btn:hover {
-    background-color: var(--hover-bg);
-    transform: scale(1.1);
-}
-
-.edit-btn {
-    color: var(--secondary-color);
-    border-color: var(--secondary-color) !important;
-}
-
-.delete-btn {
-    color: var(--error-color);
-    border-color: var(--error-color) !important;
-    opacity: 0.7;
-}
-
-.delete-btn:hover {
-    opacity: 1;
-}
-
-.save-btn {
-    color: var(--success-color);
-    border-color: var(--success-color) !important;
-}
-
-.cancel-btn {
-    color: var(--text-secondary);
-}
-
-/* Estilo de edição de tarefas */
-.edit-controls {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.edit-input-field {
-    flex-grow: 1;
-    padding: 8px 12px;
-    margin-right: 10px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 20px;
-    background-color: var(--input-bg);
-    color: var(--text-color);
-}
+/* Layout principal */
