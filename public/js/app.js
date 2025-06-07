@@ -27,13 +27,52 @@ document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
     if (themeToggleButton) {
+        // Adiciona botão extra para o tema laranja
+        if (!document.getElementById('orange-theme-toggle')) {
+            const orangeBtn = document.createElement('button');
+            orangeBtn.id = 'orange-theme-toggle';
+            orangeBtn.title = 'Tema Laranja Calmo';
+            orangeBtn.style.marginLeft = '8px';
+            orangeBtn.innerHTML = '<span style="font-size:1.2em;">🧡</span>';
+            themeToggleButton.parentNode.insertBefore(orangeBtn, themeToggleButton.nextSibling);
+            orangeBtn.addEventListener('click', () => {
+                document.body.classList.remove('dark-mode');
+                document.body.classList.toggle('orange-mode');
+                let theme = 'light';
+                if (document.body.classList.contains('orange-mode')) theme = 'orange';
+                localStorage.setItem('focusOnTheme', theme);
+            });
+        }
+        // Lógica de seleção de tema
         const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
         document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        document.body.classList.toggle('orange-mode', currentTheme === 'orange');
 
         themeToggleButton.addEventListener('click', () => {
+            document.body.classList.remove('orange-mode');
             document.body.classList.toggle('dark-mode');
             const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
             localStorage.setItem('focusOnTheme', theme);
+        });
+    }
+    
+    // ComboBox de seleção de tema
+    const themeComboBox = document.getElementById('theme-combobox');
+    if (themeComboBox) {
+        // Aplica o tema salvo
+        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
+        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        document.body.classList.toggle('orange-mode', currentTheme === 'orange');
+        themeComboBox.value = currentTheme;
+
+        themeComboBox.addEventListener('change', (e) => {
+            document.body.classList.remove('dark-mode', 'orange-mode');
+            if (e.target.value === 'dark') {
+                document.body.classList.add('dark-mode');
+            } else if (e.target.value === 'orange') {
+                document.body.classList.add('orange-mode');
+            }
+            localStorage.setItem('focusOnTheme', e.target.value);
         });
     }
     

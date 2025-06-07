@@ -37,6 +37,25 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Pastel Laranja Calmo */
+    --primary-color-orange: #ffb87a; /* laranja pastel principal */
+    --primary-variant-color-orange: #ffad60; /* laranja mais forte */
+    --secondary-color-orange: #ffe5c2; /* bege/laranja bem claro */
+    --background-color-orange: #fff8f2; /* fundo laranja pastel bem suave */
+    --surface-color-orange: #fff3e6; /* superfície ainda mais clara */
+    --error-color-orange: #ffb3a7; /* coral suave para erros */
+    --success-color-orange: #c2efd4; /* verde menta pastel */
+    --on-primary-color-orange: #fff8f2; /* texto sobre laranja */
+    --on-secondary-color-orange: #ffad60; /* texto sobre secundário */
+    --on-background-color-orange: #ffad60; /* texto sobre fundo */
+    --on-surface-color-orange: #ffad60; /* texto sobre superfície */
+    --text-color-orange: #e67e22; /* laranja escuro para texto */
+    --text-secondary-orange: #bfa380; /* marrom claro, suave */
+    --border-color-orange: #ffd9b3; /* borda laranja clara */
+    --input-bg-orange: #fff1e0; /* input laranja pastel */
+    --card-shadow-orange: 0 4px 12px rgba(255, 184, 122, 0.15);
+    --hover-bg-orange: #ffe5c2;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -101,6 +120,30 @@ body.dark-mode {
     --input-bg: var(--input-bg-dark);
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema pastel laranja calmo */
+body.orange-mode {
+    --primary-color: var(--primary-color-orange);
+    --primary-variant-color: var(--primary-variant-color-orange);
+    --secondary-color: var(--secondary-color-orange);
+    --background-color: var(--background-color-orange);
+    --surface-color: var(--surface-color-orange);
+    --error-color: var(--error-color-orange);
+    --success-color: var(--success-color-orange);
+    --on-primary-color: var(--on-primary-color-orange);
+    --on-secondary-color: var(--on-secondary-color-orange);
+    --on-background-color: var(--on-background-color-orange);
+    --on-surface-color: var(--on-surface-color-orange);
+    --text-color: var(--text-color-orange);
+    --text-secondary: var(--text-secondary-orange);
+    --border-color: var(--border-color-orange);
+    --input-bg: var(--input-bg-orange);
+    --card-shadow: var(--card-shadow-orange);
+    --hover-bg: var(--hover-bg-orange);
 
     background-color: var(--background-color);
     color: var(--text-color);
@@ -539,6 +582,39 @@ body.dark-mode .dark-icon {
 #theme-toggle:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para o comboBox de tema no topo direito */
+#theme-combobox {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    width: 48px;
+    height: 44px;
+    background: var(--surface-color);
+    border: 1.5px solid var(--border-color);
+    border-radius: 2px !important;
+    box-shadow: var(--card-shadow);
+    color: var(--primary-color);
+    font-size: 1.5em;
+    text-align: center;
+    padding-left: 8px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s, border 0.3s, box-shadow 0.3s;
+    appearance: none;
+}
+
+#theme-combobox:hover, #theme-combobox:focus {
+    background: var(--hover-bg);
+    border-color: var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.10);
+}
+
+#theme-combobox option {
+    color: var(--primary-color);
+    background: var(--surface-color);
 }
 
 /* Tarefas concluídas */
