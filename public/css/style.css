@@ -1,55 +1,62 @@
+/* Ativando somente o tema Harry Potter */
 :root {
-    /* Tema Kawaii Rosinha */
-    --primary-color-light: #ffb6d5; /* rosa claro */
-    --primary-variant-color-light: #ff69b4; /* rosa mais forte */
-    --secondary-color-light: #ffe0f7; /* rosa bebê */
-    --background-color-light: #fff0fa; /* fundo rosinha pastel */
-    --surface-color-light: #fff7fb; /* superfície ainda mais clara */
-    --error-color-light: #ff6f91; /* rosa avermelhado */
-    --success-color-light: #b5ead7; /* verde menta pastel */
-    --on-primary-color-light: #fff0fa; /* texto sobre rosa */
-    --on-secondary-color-light: #ff69b4; /* texto sobre secundário */
-    --on-background-color-light: #ff69b4; /* texto sobre fundo */
-    --on-surface-color-light: #ff69b4; /* texto sobre superfície */
-    --text-color-light: #e75480; /* rosa escuro para texto */
-    --text-secondary-light: #b48ec7; /* lilás clarinho */
-    --border-color-light: #ffd6ec; /* borda rosinha */
-    --input-bg-light: #ffeaf6; /* input rosinha */
-    --card-shadow-light: 0 4px 12px rgba(255, 182, 213, 0.15);
-    --hover-bg-light: #ffe0f7;
+    /* Removendo variáveis de outros temas */
+    --primary-color-light: initial;
+    --primary-variant-color-light: initial;
+    --secondary-color-light: initial;
+    --background-color-light: initial;
+    --surface-color-light: initial;
+    --error-color-light: initial;
+    --success-color-light: initial;
+    --on-primary-color-light: initial;
+    --on-secondary-color-light: initial;
+    --on-background-color-light: initial;
+    --on-surface-color-light: initial;
+    --text-color-light: initial;
+    --text-secondary-light: initial;
+    --border-color-light: initial;
+    --input-bg-light: initial;
+    --card-shadow-light: initial;
+    --hover-bg-light: initial;
 
-    /* Tema Kawaii Rosinha Escuro */
-    --primary-color-dark: #ff69b4;
-    --primary-variant-color-dark: #e75480;
-    --secondary-color-dark: #b48ec7;
-    --background-color-dark: #2d142c;
-    --surface-color-dark: #3e1f47;
-    --error-color-dark: #ff6f91;
-    --success-color-dark: #b5ead7;
-    --on-primary-color-dark: #fff0fa;
-    --on-secondary-color-dark: #fff0fa;
-    --on-background-color-dark: #ffe0f7;
-    --on-surface-color-dark: #ffe0f7;
-    --text-color-dark: #ffe0f7;
-    --text-secondary-dark: #ffd6ec;
-    --border-color-dark: #b48ec7;
-    --input-bg-dark: #4a274a;
-    --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
-    --hover-bg-dark: #4a274a;
-    
-    /* Tamanhos */
-    --border-radius: 12px;
-    --card-spacing: 16px;
+    --primary-color-dark: initial;
+    --primary-variant-color-dark: initial;
+    --secondary-color-dark: initial;
+    --background-color-dark: initial;
+    --surface-color-dark: initial;
+    --error-color-dark: initial;
+    --success-color-dark: initial;
+    --on-primary-color-dark: initial;
+    --on-secondary-color-dark: initial;
+    --on-background-color-dark: initial;
+    --on-surface-color-dark: initial;
+    --text-color-dark: initial;
+    --text-secondary-dark: initial;
+    --border-color-dark: initial;
+    --input-bg-dark: initial;
+    --card-shadow-dark: initial;
+    --hover-bg-dark: initial;
+
+    /* Mantendo variáveis do tema Harry Potter */
+    --hp-primary-color: #740001; /* Vermelho Gryffindor */
+    --hp-secondary-color: #d3a625; /* Dourado Gryffindor */
+    --hp-background-color: #2a2a2a; /* Fundo escuro */
+    --hp-text-color: #ffffff; /* Texto branco */
+    --hp-accent-color: #4a4e69; /* Acento roxo */
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Aplicando somente o tema Harry Potter */
+body {
+    background-color: var(--hp-background-color);
+    color: var(--hp-text-color);
+    font-family: 'Lumos', sans-serif; /* Fonte temática */
+    background-image: url('https://unsplash.com/pt-br/fotografias/um-castelo-iluminado-a-noite-RCmd5PyG85Q'); /* Wallpaper Harry Potter */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
     background-color: var(--background-color-light);
@@ -60,52 +67,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-/* Use as variáveis de tema claro por padrão */
-body {
-    --primary-color: var(--primary-color-light);
-    --primary-variant-color: var(--primary-variant-color-light);
-    --secondary-color: var(--secondary-color-light);
-    --background-color: var(--background-color-light);
-    --surface-color: var(--surface-color-light);
-    --error-color: var(--error-color-light);
-    --success-color: var(--success-color-light);
-    --on-primary-color: var(--on-primary-color-light);
-    --on-secondary-color: var(--on-secondary-color-light);
-    --on-background-color: var(--on-background-color-light);
-    --on-surface-color: var(--on-surface-color-light);
-    --text-color: var(--text-color-light);
-    --text-secondary: var(--text-secondary-light);
-    --border-color: var(--border-color-light);
-    --input-bg: var(--input-bg-light);
-    --card-shadow: var(--card-shadow-light);
-    --hover-bg: var(--hover-bg-light);
-}
-
-/* Tema escuro */
-body.dark-mode {
-    --primary-color: var(--primary-color-dark);
-    --primary-variant-color: var(--primary-variant-color-dark);
-    --secondary-color: var(--secondary-color-dark);
-    --background-color: var(--background-color-dark);
-    --surface-color: var(--surface-color-dark);
-    --error-color: var(--error-color-dark);
-    --success-color: var(--success-color-dark);
-    --on-primary-color: var(--on-primary-color-dark);
-    --on-secondary-color: var(--on-secondary-color-dark);
-    --on-background-color: var(--on-background-color-dark);
-    --on-surface-color: var(--on-surface-color-dark);
-    --text-color: var(--text-color-dark);
-    --text-secondary: var(--text-secondary-dark);
-    --border-color: var(--border-color-dark);
-    --input-bg: var(--input-bg-dark);
-    --card-shadow: var(--card-shadow-dark);
-    --hover-bg: var(--hover-bg-dark);
-
-    background-color: var(--background-color);
-    color: var(--text-color);
-}
-
 
 /* Layout principal */
 .app-body {
@@ -604,6 +565,58 @@ body.dark-mode .dark-icon {
     color: white;
 }
 
+/* Tema Harry Potter */
+body.hp-theme {
+  background-color: var(--hp-background-color);
+  color: var(--hp-text-color);
+  font-family: 'Lumos', sans-serif; /* Fonte temática */
+  background-image: url('https://unsplash.com/pt-br/fotografias/um-castelo-iluminado-a-noite-RCmd5PyG85Q'); /* URL de exemplo para o wallpaper */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+button.hp-theme {
+  background-color: var(--hp-primary-color);
+  color: var(--hp-text-color);
+  border: 2px solid var(--hp-secondary-color);
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button.hp-theme:hover {
+  background-color: var(--hp-secondary-color);
+  color: var(--hp-primary-color);
+}
+
+/* Adicionando wallpaper inspirado no teto do castelo de Hogwarts */
+body.hp-theme {
+  background-image: url('https://unsplash.com/pt-br/fotografias/um-castelo-iluminado-a-noite-RCmd5PyG85Q'); /* URL de exemplo para o wallpaper */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Estilizando elementos específicos */
+.todo-list.hp-theme {
+  border: 2px solid var(--hp-accent-color);
+  background-color: var(--hp-primary-color);
+  color: var(--hp-text-color);
+}
+
+.pomodoro-timer.hp-theme {
+  background-color: var(--hp-secondary-color);
+  color: var(--hp-primary-color);
+  border: 2px solid var(--hp-accent-color);
+}
+
+.music-player.hp-theme {
+  background-color: var(--hp-accent-color);
+  color: var(--hp-text-color);
+  border: 2px solid var(--hp-primary-color);
+}
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
     .cards-container {
@@ -815,4 +828,62 @@ body.dark-mode .dark-icon {
     border-radius: 20px;
     background-color: var(--input-bg);
     color: var(--text-color);
+}
+
+/* Adicionando melhorias visuais inspiradas em Harry Potter */
+
+/* Fonte temática */
+@font-face {
+    font-family: 'HarryP';
+    src: url('/icons/harryp.ttf') format('truetype'); /* Certifique-se de adicionar o arquivo de fonte */
+}
+
+body {
+    font-family: 'HarryP', 'Lumos', sans-serif;
+}
+
+/* Cursor personalizado */
+body {
+    cursor: url('/icons/wand-cursor.png'), auto; /* Certifique-se de adicionar o arquivo de cursor */
+}
+
+/* Efeitos de hover mágicos */
+button:hover {
+    box-shadow: 0 0 10px var(--hp-secondary-color), 0 0 20px var(--hp-primary-color);
+    transform: scale(1.1);
+}
+
+/* Bordas com estilo pergaminho */
+.card {
+    border: 2px solid #d3a625;
+    background-image: url('/icons/pergaminho-textura.jpg'); /* Certifique-se de adicionar a textura */
+    background-size: cover;
+}
+
+/* Fundo animado com estrelas */
+body.hp-theme {
+    background-image: url('/icons/stars-animation.gif'); /* Certifique-se de adicionar o GIF */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Botões com efeitos de feitiço */
+button:active {
+    animation: spellEffect 0.5s ease-out;
+}
+
+@keyframes spellEffect {
+    0% {
+        box-shadow: 0 0 10px var(--hp-secondary-color), 0 0 20px var(--hp-primary-color);
+    }
+    100% {
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+/* Ícones temáticos */
+.task-item.completed::before {
+    content: url('/icons/golden-snitch.png'); /* Certifique-se de adicionar o ícone */
+    margin-right: 10px;
 }

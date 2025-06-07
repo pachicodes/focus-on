@@ -72,3 +72,21 @@ function updateTasksCounter() {
 
 // Função global para ser chamada do todoList.js quando tarefas são atualizadas
 window.updateTasksCounter = updateTasksCounter;
+
+// Função para alternar para o tema Harry Potter
+function toggleHarryPotterTheme() {
+  const body = document.body;
+  if (body.classList.contains('hp-theme')) {
+    body.classList.remove('hp-theme');
+  } else {
+    body.classList.add('hp-theme');
+  }
+}
+
+// Adicionando botão para alternar tema Harry Potter
+const hpThemeButton = document.createElement('button');
+hpThemeButton.textContent = '⚡ Tema Harry Potter';
+hpThemeButton.classList.add('theme-toggle', 'hp-theme');
+hpThemeButton.addEventListener('click', toggleHarryPotterTheme);
+
+document.body.appendChild(hpThemeButton);
