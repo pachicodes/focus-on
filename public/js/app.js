@@ -25,35 +25,50 @@ document.addEventListener('DOMContentLoaded', () => {
     updateTasksCounter();
     
     // Theme Toggler Logic
-    const themeToggleButton = document.getElementById('theme-toggle');
-    const purpleThemeButton = document.getElementById('purple-theme-toggle');
+    const themes = {
+        dark: { button: 'theme-toggle', class: 'dark-mode' },
+        purple: { button: 'purple-theme-toggle', class: 'purple-mode' },
+        mint: { button: 'mint-theme-toggle', class: 'mint-mode' },
+        ocean: { button: 'ocean-theme-toggle', class: 'ocean-mode' },
+        sunset: { button: 'sunset-theme-toggle', class: 'sunset-mode' },
+        galaxy: { button: 'galaxy-theme-toggle', class: 'galaxy-mode' }
+    };
     
-    if (themeToggleButton && purpleThemeButton) {
-        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-        
-        // Set initial theme
-        if (currentTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-        } else if (currentTheme === 'purple') {
-            document.body.classList.add('purple-mode');
-        }
-
-        // Light/Dark theme toggle
-        themeToggleButton.addEventListener('click', () => {
-            document.body.classList.remove('purple-mode');
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('focusOnTheme', theme);
-        });
-
-        // Purple theme toggle
-        purpleThemeButton.addEventListener('click', () => {
-            document.body.classList.remove('dark-mode');
-            document.body.classList.toggle('purple-mode');
-            const theme = document.body.classList.contains('purple-mode') ? 'purple' : 'light';
-            localStorage.setItem('focusOnTheme', theme);
-        });
+    // Get all theme buttons
+    const themeButtons = Object.fromEntries(
+        Object.entries(themes).map(([theme, config]) => [
+            theme,
+            document.getElementById(config.button)
+        ])
+    );
+    
+    // Set initial theme
+    const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
+    if (currentTheme !== 'light') {
+        document.body.classList.add(themes[currentTheme].class);
     }
+
+    // Add click handlers for all theme buttons
+    Object.entries(themes).forEach(([themeName, config]) => {
+        const button = themeButtons[themeName];
+        if (button) {
+            button.addEventListener('click', () => {
+                // Remove all theme classes
+                Object.values(themes).forEach(t => {
+                    document.body.classList.remove(t.class);
+                });
+
+                // Toggle current theme
+                const isCurrentTheme = document.body.classList.contains(config.class);
+                const newTheme = isCurrentTheme ? 'light' : themeName;
+                
+                if (newTheme !== 'light') {
+                    document.body.classList.add(config.class);
+                }
+                localStorage.setItem('focusOnTheme', newTheme);
+            });
+        }
+    });
     
     // Toggle para mostrar/esconder o campo de entrada de tarefas
     const addTaskButton = document.getElementById('show-add-task');
