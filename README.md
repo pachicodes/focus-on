@@ -1,4 +1,4 @@
-# Focus On
+# Focus On Lucas
 
 > 🎯 **Projeto Workshop**: Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)
 
