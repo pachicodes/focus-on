@@ -37,6 +37,44 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Hello Kitty */
+    --primary-color-hellokitty: #ff69b4; /* rosa Hello Kitty */
+    --primary-variant-color-hellokitty: #ff1493; /* rosa mais vibrante */
+    --secondary-color-hellokitty: #ffffff; /* branco característico da Hello Kitty */
+    --background-color-hellokitty: #fff0f5; /* rosa claríssimo */
+    --surface-color-hellokitty: #ffffff; /* branco puro */
+    --error-color-hellokitty: #ff1493; /* rosa escuro */
+    --success-color-hellokitty: #ff69b4; /* rosa Hello Kitty */
+    --on-primary-color-hellokitty: #ffffff; /* texto em branco */
+    --on-secondary-color-hellokitty: #ff69b4; /* texto em rosa */
+    --on-background-color-hellokitty: #ff69b4; /* texto em rosa */
+    --on-surface-color-hellokitty: #ff69b4; /* texto em rosa */
+    --text-color-hellokitty: #ff1493; /* texto principal em rosa escuro */
+    --text-secondary-hellokitty: #ffb6c1; /* rosa claro para texto secundário */
+    --border-color-hellokitty: #ffc0cb; /* rosa pastel para bordas */
+    --input-bg-hellokitty: #fff0f5; /* rosa claríssimo */
+    --card-shadow-hellokitty: 0 4px 12px rgba(255, 105, 180, 0.2);
+    --hover-bg-hellokitty: #ffe4e1; /* rosa misty */
+
+    /* Tema Smurfs */
+    --primary-color-smurfs: #0096ff; /* azul smurf */
+    --primary-variant-color-smurfs: #005fa3; /* azul escuro */
+    --secondary-color-smurfs: #ffffff; /* branco */
+    --background-color-smurfs: #e0f7ff; /* azul clarinho */
+    --surface-color-smurfs: #f4fbff; /* quase branco azulado */
+    --error-color-smurfs: #ff6f91; /* mantém rosa para erros */
+    --success-color-smurfs: #b5ead7; /* verde menta pastel */
+    --on-primary-color-smurfs: #ffffff; /* texto em branco */
+    --on-secondary-color-smurfs: #0096ff; /* texto em azul */
+    --on-background-color-smurfs: #005fa3; /* texto em azul escuro */
+    --on-surface-color-smurfs: #0096ff; /* texto em azul */
+    --text-color-smurfs: #005fa3; /* texto principal azul escuro */
+    --text-secondary-smurfs: #7ecbff; /* azul claro para texto secundário */
+    --border-color-smurfs: #7ecbff; /* azul claro para bordas */
+    --input-bg-smurfs: #e0f7ff; /* azul clarinho */
+    --card-shadow-smurfs: 0 4px 12px rgba(0, 150, 255, 0.15);
+    --hover-bg-smurfs: #b3e6ff; /* azul mais forte */
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -106,6 +144,106 @@ body.dark-mode {
     color: var(--text-color);
 }
 
+/* Tema Hello Kitty */
+body.hellokitty-mode {
+    --primary-color: var(--primary-color-hellokitty);
+    --primary-variant-color: var(--primary-variant-color-hellokitty);
+    --secondary-color: var(--secondary-color-hellokitty);
+    --background-color: var(--background-color-hellokitty);
+    --surface-color: var(--surface-color-hellokitty);
+    --error-color: var(--error-color-hellokitty);
+    --success-color: var(--success-color-hellokitty);
+    --on-primary-color: var(--on-primary-color-hellokitty);
+    --on-secondary-color: var(--on-secondary-color-hellokitty);
+    --on-background-color: var(--on-background-color-hellokitty);
+    --on-surface-color: var(--on-surface-color-hellokitty);
+    --text-color: var(--text-color-hellokitty);
+    --text-secondary: var(--text-secondary-hellokitty);
+    --border-color: var(--border-color-hellokitty);
+    --input-bg: var(--input-bg-hellokitty);
+    --card-shadow: var(--card-shadow-hellokitty);
+    --hover-bg: var(--hover-bg-hellokitty);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema Smurfs */
+body.smurfs-mode {
+    --primary-color: var(--primary-color-smurfs);
+    --primary-variant-color: var(--primary-variant-color-smurfs);
+    --secondary-color: var(--secondary-color-smurfs);
+    --background-color: var(--background-color-smurfs);
+    --surface-color: var(--surface-color-smurfs);
+    --error-color: var(--error-color-smurfs);
+    --success-color: var(--success-color-smurfs);
+    --on-primary-color: var(--on-primary-color-smurfs);
+    --on-secondary-color: var(--on-secondary-color-smurfs);
+    --on-background-color: var(--on-background-color-smurfs);
+    --on-surface-color: var(--on-surface-color-smurfs);
+    --text-color: var(--text-color-smurfs);
+    --text-secondary: var(--text-secondary-smurfs);
+    --border-color: var(--border-color-smurfs);
+    --input-bg: var(--input-bg-smurfs);
+    --card-shadow: var(--card-shadow-smurfs);
+    --hover-bg: var(--hover-bg-smurfs);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.hellokitty-mode .card {
+    position: relative;
+    border: 2px solid var(--border-color);
+}
+
+body.hellokitty-mode .card::before {
+    content: "🎀";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 20px;
+    transform: rotate(30deg);
+}
+
+body.smurfs-mode .card {
+    border: 2px solid var(--border-color);
+    position: relative;
+}
+body.smurfs-mode .card::before {
+    content: "🧢";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 20px;
+    transform: rotate(-20deg);
+}
+body.smurfs-mode .card-title::after {
+    content: "💧";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--primary-color-smurfs);
+}
+body.smurfs-mode .primary-button {
+    background: linear-gradient(45deg, var(--primary-color-smurfs), var(--primary-variant-color-smurfs));
+    border: none;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 150, 255, 0.2);
+}
+body.smurfs-mode .primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 150, 255, 0.3);
+}
+body.smurfs-mode #theme-toggle {
+    border-color: var(--primary-color-smurfs);
+    background-color: var(--surface-color-smurfs);
+}
+body.smurfs-mode #theme-toggle:hover {
+    box-shadow: 0 0 15px rgba(0, 150, 255, 0.3);
+}
 
 /* Layout principal */
 .app-body {
@@ -489,46 +627,48 @@ button:active {
     position: fixed;
     top: 20px;
     right: 20px;
-    width: 44px;
-    height: 44px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
+    background: var(--surface-color);
+    border: 2px solid var(--border-color);
     cursor: pointer;
-    z-index: 1000;
-    box-shadow: var(--card-shadow-light);
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    padding: 0;
     overflow: hidden;
 }
 
-.theme-toggle-icon {
-    font-size: 1.4em;
-    position: absolute;
-    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+#theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
 }
 
+.theme-toggle-icon {
+    position: absolute;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Ícone do tema claro */
 .light-icon {
     opacity: 1;
     transform: translateY(0);
 }
 
+body.dark-mode .light-icon,
+body.hellokitty-mode .light-icon {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+/* Ícone do tema escuro */
 .dark-icon {
     opacity: 0;
     transform: translateY(20px);
-}
-
-body.dark-mode #theme-toggle {
-    background-color: var(--surface-color-dark);
-    border-color: var(--border-color-dark);
-    box-shadow: var(--card-shadow-dark);
-}
-
-body.dark-mode .light-icon {
-    opacity: 0;
-    transform: translateY(-20px);
 }
 
 body.dark-mode .dark-icon {
@@ -536,283 +676,79 @@ body.dark-mode .dark-icon {
     transform: translateY(0);
 }
 
-#theme-toggle:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+body.hellokitty-mode .dark-icon {
+    opacity: 0;
+    transform: translateY(-20px);
 }
 
-/* Tarefas concluídas */
-.task-item.completed .task-text {
-    text-decoration: line-through;
-    color: var(--secondary-color);
-    opacity: 0.7;
+/* Ícone do tema Hello Kitty */
+.hellokitty-icon {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+body.hellokitty-mode .hellokitty-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ícone do tema Smurfs */
+.smurfs-icon {
+    opacity: 0;
+    transform: translateY(20px);
+    position: absolute;
+    font-size: 20px;
     transition: all 0.3s ease;
 }
-
-.task-item.completed {
-    background-color: rgba(3, 218, 198, 0.05);
-    border-left: 3px solid var(--success-color);
+body.smurfs-mode .smurfs-icon {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.task-item.completed .task-checkbox {
-    background-color: var(--success-color);
-    border-color: var(--success-color);
+/* Animações especiais para o tema Hello Kitty */
+body.hellokitty-mode #theme-toggle {
+    border-color: var(--primary-color-hellokitty);
+    background-color: var(--surface-color-hellokitty);
 }
 
-.task-item.completed .task-checkbox::after {
-    content: '✓';
-    color: white;
-    font-weight: bold;
+body.hellokitty-mode #theme-toggle:hover {
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
 }
 
-/* Checkbox personalizado para marcar tarefas completas */
-.task-checkbox {
-    margin-right: 12px;
-    width: 22px;
-    height: 22px;
-    border: 2px solid var(--primary-color);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-    flex-shrink: 0;
+/* Decorações adicionais para o tema Hello Kitty */
+body.hellokitty-mode .card-title {
     position: relative;
 }
 
-.task-checkbox:hover {
-    transform: scale(1.15);
-    border-color: var(--secondary-color);
+body.hellokitty-mode .card-title::after {
+    content: "❤";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--primary-color-hellokitty);
 }
 
-.task-checkbox.checked {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
-    transform: scale(1);
-}
-
-.task-checkbox::after {
-    content: '✓';
-    color: transparent;
-    font-size: 12px;
-    font-weight: bold;
-    transition: color 0.2s ease;
-}
-
-.task-checkbox.checked::after {
-    color: white;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .cards-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .app-header {
-        padding: 15px 0;
-    }
-    
-    h1 {
-        font-size: 2em;
-    }
-    
-    .subtitle {
-        font-size: 1em;
-    }
-}
-
-/* Estilos específicos para extensão do Chrome */
-@media (max-width: 400px) {
-    body {
-        padding: 10px;
-    }
-    
-    .app-header {
-        margin-bottom: 15px;
-        padding: 10px 0;
-    }
-    
-    h1 {
-        font-size: 1.8em;
-        margin-bottom: 5px;
-    }
-    
-    .subtitle {
-        font-size: 0.9em;
-    }
-    
-    .cards-container {
-        gap: 15px;
-    }
-    
-    .timer-display {
-        font-size: 3em;
-    }
-    
-    .card-header {
-        padding: 12px;
-    }
-    
-    #theme-toggle {
-        top: 10px;
-        right: 10px;
-        font-size: 0.8em;
-    }
-    
-    .app-footer {
-        padding: 10px 0;
-        font-size: 0.8em;
-    }
-}
-
-/* Ajuste do layout das tarefas para incorporar checkbox */
-.task-item {
-    display: flex;
-    align-items: center;
-    padding: 12px 10px;
-    border-bottom: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-}
-
-.task-content {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.task-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px;
-    border-bottom: 1px solid var(--border-color);
-    transition: all 0.3s ease;
-    margin-bottom: 5px;
-}
-
-.task-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-}
-
-.task-item:hover {
-    background-color: var(--hover-bg);
-    transform: translateY(-2px);
-}
-
-.task-text {
-    cursor: pointer;
-    flex-grow: 1;
-    margin-right: 10px;
-    transition: all 0.3s ease;
-    word-break: break-word;
-}
-
-.task-buttons button, .edit-controls button {
-    margin-left: 5px;
-    font-size: 0.8em;
-    padding: 4px 8px;
-    border-radius: 4px;
-    background-color: transparent;
-    border: 1px solid var(--border-color);
-    color: var(--text-color);
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
-
-.task-buttons button:hover, .edit-controls button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.edit-input-field {
-    flex-grow: 1;
-    padding: 8px;
-    margin-right: 10px; /* Espaço antes do botão Salvar */
-    border: 1px solid var(--primary-color);
-    border-radius: 4px;
-    background-color: var(--input-bg);
-    color: var(--text-color);
-}
-
-.edit-controls {
-    display: flex;
-    align-items: center;
-}
-
-/* Mensagem quando não há tarefas */
-.empty-tasks-message {
-    text-align: center;
-    color: var(--text-secondary);
-    padding: 30px 20px;
-    font-style: italic;
-}
-
-/* Botões de ação para tarefas */
-.task-buttons {
-    display: flex;
-    gap: 5px;
-}
-
-.task-btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body.hellokitty-mode .primary-button {
+    background: linear-gradient(45deg, var(--primary-color-hellokitty), var(--primary-variant-color-hellokitty));
     border: none;
-    cursor: pointer;
-    font-size: 1em;
-    transition: all 0.2s ease;
-    background-color: transparent;
-    color: var(--text-color);
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
 }
 
-.task-btn:hover {
-    background-color: var(--hover-bg);
-    transform: scale(1.1);
+body.hellokitty-mode .primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
 }
 
-.edit-btn {
-    color: var(--secondary-color);
-    border-color: var(--secondary-color) !important;
+/* Animação de brilho para elementos no tema Hello Kitty */
+@keyframes sparkle {
+    0% { filter: brightness(1); }
+    50% { filter: brightness(1.2); }
+    100% { filter: brightness(1); }
 }
 
-.delete-btn {
-    color: var(--error-color);
-    border-color: var(--error-color) !important;
-    opacity: 0.7;
-}
-
-.delete-btn:hover {
-    opacity: 1;
-}
-
-.save-btn {
-    color: var(--success-color);
-    border-color: var(--success-color) !important;
-}
-
-.cancel-btn {
-    color: var(--text-secondary);
-}
-
-/* Estilo de edição de tarefas */
-.edit-controls {
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-
-.edit-input-field {
-    flex-grow: 1;
-    padding: 8px 12px;
-    margin-right: 10px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 20px;
-    background-color: var(--input-bg);
-    color: var(--text-color);
+body.hellokitty-mode .card:hover {
+    animation: sparkle 2s infinite;
 }

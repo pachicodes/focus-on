@@ -26,14 +26,40 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
+    const smurfsThemeBtn = document.getElementById('smurfs-theme-btn');
     if (themeToggleButton) {
         const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-
+        document.body.classList.remove('dark-mode', 'hellokitty-mode', 'smurfs-mode');
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        } else if (currentTheme === 'hellokitty') {
+            document.body.classList.add('hellokitty-mode');
+        } else if (currentTheme === 'smurfs') {
+            document.body.classList.add('smurfs-mode');
+        }
         themeToggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('focusOnTheme', theme);
+            if (document.body.classList.contains('dark-mode')) {
+                document.body.classList.remove('dark-mode');
+                document.body.classList.add('hellokitty-mode');
+                localStorage.setItem('focusOnTheme', 'hellokitty');
+            } else if (document.body.classList.contains('hellokitty-mode')) {
+                document.body.classList.remove('hellokitty-mode');
+                document.body.classList.add('smurfs-mode');
+                localStorage.setItem('focusOnTheme', 'smurfs');
+            } else if (document.body.classList.contains('smurfs-mode')) {
+                document.body.classList.remove('smurfs-mode');
+                localStorage.setItem('focusOnTheme', 'light');
+            } else {
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('focusOnTheme', 'dark');
+            }
+        });
+    }
+    if (smurfsThemeBtn) {
+        smurfsThemeBtn.addEventListener('click', () => {
+            document.body.classList.remove('dark-mode', 'hellokitty-mode', 'smurfs-mode');
+            document.body.classList.add('smurfs-mode');
+            localStorage.setItem('focusOnTheme', 'smurfs');
         });
     }
     
