@@ -49,6 +49,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    
+    // Adicionando lógica para alternar para o tema Star Wars
+    const starWarsThemeButton = document.getElementById('starwars-theme-toggle');
+    if (starWarsThemeButton) {
+        starWarsThemeButton.addEventListener('click', () => {
+            document.body.className = ''; // Remove todas as classes de tema
+            document.body.classList.add('starwars-mode');
+            localStorage.setItem('focusOnTheme', 'starwars');
+        });
+    }
 });
 
 // Função para atualizar o contador de tarefas

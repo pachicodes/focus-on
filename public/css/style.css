@@ -37,6 +37,25 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Star Wars */
+    --primary-color-starwars: #ffcc00; /* amarelo Star Wars */
+    --primary-variant-color-starwars: #ffe680; /* amarelo claro */
+    --secondary-color-starwars: #000000; /* preto absoluto */
+    --background-color-starwars: #1a1a1a; /* cinza escuro */
+    --surface-color-starwars: #333333; /* cinza médio */
+    --error-color-starwars: #ff4c4c; /* vermelho Sith */
+    --success-color-starwars: #4caf50; /* verde Jedi */
+    --on-primary-color-starwars: #000000; /* texto sobre amarelo */
+    --on-secondary-color-starwars: #ffcc00; /* texto sobre preto */
+    --on-background-color-starwars: #ffe680; /* texto sobre fundo */
+    --on-surface-color-starwars: #ffe680; /* texto sobre superfície */
+    --text-color-starwars: #ffe680; /* texto principal */
+    --text-secondary-starwars: #b3b3b3; /* texto secundário */
+    --border-color-starwars: #4d4d4d; /* borda cinza */
+    --input-bg-starwars: #262626; /* input cinza escuro */
+    --card-shadow-starwars: 0 4px 12px rgba(255, 204, 0, 0.25);
+    --hover-bg-starwars: #4d4d4d; /* hover cinza */
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -815,4 +834,267 @@ body.dark-mode .dark-icon {
     border-radius: 20px;
     background-color: var(--input-bg);
     color: var(--text-color);
+}
+
+/* Estilos para o tema Star Wars */
+body.star-wars {
+    --primary-color: var(--primary-color-starwars);
+    --primary-variant-color: var(--primary-variant-color-starwars);
+    --secondary-color: var(--secondary-color-starwars);
+    --background-color: var(--background-color-starwars);
+    --surface-color: var(--surface-color-starwars);
+    --error-color: var(--error-color-starwars);
+    --success-color: var(--success-color-starwars);
+    --on-primary-color: var(--on-primary-color-starwars);
+    --on-secondary-color: var(--on-secondary-color-starwars);
+    --on-background-color: var(--on-background-color-starwars);
+    --on-surface-color: var(--on-surface-color-starwars);
+    --text-color: var(--text-color-starwars);
+    --text-secondary: var(--text-secondary-starwars);
+    --border-color: var(--border-color-starwars);
+    --input-bg: var(--input-bg-starwars);
+    --card-shadow: var(--card-shadow-starwars);
+    --hover-bg: var(--hover-bg-starwars);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.star-wars .app-header,
+body.star-wars .app-footer {
+    color: var(--text-color);
+}
+
+body.star-wars h1, body.star-wars h2 {
+    color: var(--primary-color);
+}
+
+body.star-wars .card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+}
+
+body.star-wars .card-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.star-wars .card-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+body.star-wars input[type="text"] {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+body.star-wars input[type="text"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color-starwars);
+}
+
+body.star-wars button {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+body.star-wars button:hover {
+    background-color: var(--primary-variant-color);
+    transform: translateY(-1px);
+}
+
+body.star-wars .task-item {
+    background-color: rgba(255, 204, 0, 0.1);
+    border-left: 3px solid var(--primary-color);
+}
+
+body.star-wars .task-item.completed {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-left: 3px solid var(--success-color);
+}
+
+body.star-wars .task-checkbox {
+    border: 2px solid var(--primary-color);
+}
+
+body.star-wars .task-checkbox:hover {
+    border-color: var(--secondary-color);
+}
+
+body.star-wars .task-checkbox.checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+body.star-wars .task-checkbox::after {
+    color: transparent;
+}
+
+body.star-wars .task-checkbox.checked::after {
+    color: white;
+}
+
+body.star-wars .icon-button {
+    color: var(--text-color);
+}
+
+body.star-wars .primary-button {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+}
+
+body.star-wars .secondary-button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+body.star-wars #theme-toggle {
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+}
+
+body.star-wars #theme-toggle:hover {
+    background-color: var(--hover-bg-starwars);
+}
+
+/* Estilos adicionais para o tema Star Wars */
+body.star-wars {
+    --primary-color: var(--primary-color-starwars);
+    --primary-variant-color: var(--primary-variant-color-starwars);
+    --secondary-color: var(--secondary-color-starwars);
+    --background-color: var(--background-color-starwars);
+    --surface-color: var(--surface-color-starwars);
+    --error-color: var(--error-color-starwars);
+    --success-color: var(--success-color-starwars);
+    --on-primary-color: var(--on-primary-color-starwars);
+    --on-secondary-color: var(--on-secondary-color-starwars);
+    --on-background-color: var(--on-background-color-starwars);
+    --on-surface-color: var(--on-surface-color-starwars);
+    --text-color: var(--text-color-starwars);
+    --text-secondary: var(--text-secondary-starwars);
+    --border-color: var(--border-color-starwars);
+    --input-bg: var(--input-bg-starwars);
+    --card-shadow: var(--card-shadow-starwars);
+    --hover-bg: var(--hover-bg-starwars);
+}
+
+body.star-wars .app-body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+body.star-wars .app-header {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+}
+
+body.star-wars .app-footer {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+}
+
+body.star-wars h1, body.star-wars h2 {
+    color: var(--primary-color);
+}
+
+body.star-wars .card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+}
+
+body.star-wars .card-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.star-wars .card-footer {
+    border-top: 1px solid var(--border-color);
+}
+
+body.star-wars input[type="text"] {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+body.star-wars input[type="text"]:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color-starwars);
+}
+
+body.star-wars button {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+body.star-wars button:hover {
+    background-color: var(--primary-variant-color);
+    transform: translateY(-1px);
+}
+
+body.star-wars .task-item {
+    background-color: rgba(255, 204, 0, 0.1);
+    border-left: 3px solid var(--primary-color);
+}
+
+body.star-wars .task-item.completed {
+    background-color: rgba(76, 175, 80, 0.1);
+    border-left: 3px solid var(--success-color);
+}
+
+body.star-wars .task-checkbox {
+    border: 2px solid var(--primary-color);
+}
+
+body.star-wars .task-checkbox:hover {
+    border-color: var(--secondary-color);
+}
+
+body.star-wars .task-checkbox.checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+body.star-wars .task-checkbox::after {
+    color: transparent;
+}
+
+body.star-wars .task-checkbox.checked::after {
+    color: white;
+}
+
+body.star-wars .icon-button {
+    color: var(--text-color);
+}
+
+body.star-wars .primary-button {
+    background-color: var(--primary-color);
+    color: var(--on-primary-color);
+}
+
+body.star-wars .secondary-button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+body.star-wars #theme-toggle {
+    background-color: var(--surface-color);
+    border-color: var(--border-color);
+}
+
+body.star-wars #theme-toggle:hover {
+    background-color: var(--hover-bg-starwars);
 }
