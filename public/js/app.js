@@ -37,6 +37,37 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     
+    // Blue Theme Toggler Logic
+    const blueThemeToggleButton = document.getElementById('blue-theme-toggle');
+    if (blueThemeToggleButton) {
+        // Aplica o tema azul salvo ao carregar
+        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
+        if (currentTheme === 'blue-light') {
+            document.body.classList.add('blue-light-mode');
+            document.body.classList.remove('blue-dark-mode');
+            document.body.classList.remove('dark-mode');
+        } else if (currentTheme === 'blue-dark') {
+            document.body.classList.add('blue-dark-mode');
+            document.body.classList.remove('blue-light-mode');
+            document.body.classList.remove('dark-mode');
+        }
+
+        blueThemeToggleButton.addEventListener('click', () => {
+            // Alterna entre azul claro e azul escuro
+            if (document.body.classList.contains('blue-light-mode')) {
+                document.body.classList.remove('blue-light-mode');
+                document.body.classList.add('blue-dark-mode');
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('focusOnTheme', 'blue-dark');
+            } else {
+                document.body.classList.add('blue-light-mode');
+                document.body.classList.remove('blue-dark-mode');
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('focusOnTheme', 'blue-light');
+            }
+        });
+    }
+
     // Toggle para mostrar/esconder o campo de entrada de tarefas
     const addTaskButton = document.getElementById('show-add-task');
     const taskInputContainer = document.getElementById('task-input');
@@ -72,3 +103,31 @@ function updateTasksCounter() {
 
 // Função global para ser chamada do todoList.js quando tarefas são atualizadas
 window.updateTasksCounter = updateTasksCounter;
+
+// Ajuste para garantir que só um tema esteja ativo
+if (themeToggleButton) {
+    themeToggleButton.addEventListener('click', () => {
+        document.body.classList.remove('blue-light-mode');
+        document.body.classList.remove('blue-dark-mode');
+    });
+}
+
+// Ao carregar, aplicar o tema salvo corretamente
+const savedTheme = localStorage.getItem('focusOnTheme');
+if (savedTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    document.body.classList.remove('blue-light-mode');
+    document.body.classList.remove('blue-dark-mode');
+} else if (savedTheme === 'blue-light') {
+    document.body.classList.add('blue-light-mode');
+    document.body.classList.remove('dark-mode');
+    document.body.classList.remove('blue-dark-mode');
+} else if (savedTheme === 'blue-dark') {
+    document.body.classList.add('blue-dark-mode');
+    document.body.classList.remove('dark-mode');
+    document.body.classList.remove('blue-light-mode');
+} else {
+    document.body.classList.remove('dark-mode');
+    document.body.classList.remove('blue-light-mode');
+    document.body.classList.remove('blue-dark-mode');
+}

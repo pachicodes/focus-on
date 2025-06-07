@@ -37,6 +37,44 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Azul Claro */
+    --primary-color-blue-light: #2196f3; /* azul principal */
+    --primary-variant-color-blue-light: #1565c0; /* azul escuro */
+    --secondary-color-blue-light: #90caf9; /* azul claro */
+    --background-color-blue-light: #e3f2fd; /* fundo azul bem claro */
+    --surface-color-blue-light: #f5faff; /* superfície azul clara */
+    --error-color-blue-light: #e57373; /* vermelho suave */
+    --success-color-blue-light: #b9f6ca; /* verde menta pastel */
+    --on-primary-color-blue-light: #e3f2fd; /* texto sobre azul */
+    --on-secondary-color-blue-light: #1565c0; /* texto sobre secundário */
+    --on-background-color-blue-light: #1565c0; /* texto sobre fundo */
+    --on-surface-color-blue-light: #1565c0; /* texto sobre superfície */
+    --text-color-blue-light: #0d223a; /* azul bem escuro para texto */
+    --text-secondary-blue-light: #2196f3; /* azul médio */
+    --border-color-blue-light: #90caf9; /* borda azul claro */
+    --input-bg-blue-light: #eaf4fb; /* input azul claro */
+    --card-shadow-blue-light: 0 4px 12px rgba(33, 150, 243, 0.15);
+    --hover-bg-blue-light: #e3f2fd;
+
+    /* Tema Azul Escuro */
+    --primary-color-blue-dark: #1565c0;
+    --primary-variant-color-blue-dark: #0d223a;
+    --secondary-color-blue-dark: #1976d2;
+    --background-color-blue-dark: #0d223a;
+    --surface-color-blue-dark: #102840;
+    --error-color-blue-dark: #e57373;
+    --success-color-blue-dark: #b9f6ca;
+    --on-primary-color-blue-dark: #e3f2fd;
+    --on-secondary-color-blue-dark: #e3f2fd;
+    --on-background-color-blue-dark: #90caf9;
+    --on-surface-color-blue-dark: #90caf9;
+    --text-color-blue-dark: #e3f2fd;
+    --text-secondary-blue-dark: #90caf9;
+    --border-color-blue-dark: #1976d2;
+    --input-bg-blue-dark: #102840;
+    --card-shadow-blue-dark: 0 4px 12px rgba(33, 150, 243, 0.25);
+    --hover-bg-blue-dark: #1976d2;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -101,6 +139,54 @@ body.dark-mode {
     --input-bg: var(--input-bg-dark);
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema azul claro */
+body.blue-light-mode {
+    --primary-color: var(--primary-color-blue-light);
+    --primary-variant-color: var(--primary-variant-color-blue-light);
+    --secondary-color: var(--secondary-color-blue-light);
+    --background-color: var(--background-color-blue-light);
+    --surface-color: var(--surface-color-blue-light);
+    --error-color: var(--error-color-blue-light);
+    --success-color: var(--success-color-blue-light);
+    --on-primary-color: var(--on-primary-color-blue-light);
+    --on-secondary-color: var(--on-secondary-color-blue-light);
+    --on-background-color: var(--on-background-color-blue-light);
+    --on-surface-color: var(--on-surface-color-blue-light);
+    --text-color: var(--text-color-blue-light);
+    --text-secondary: var(--text-secondary-blue-light);
+    --border-color: var(--border-color-blue-light);
+    --input-bg: var(--input-bg-blue-light);
+    --card-shadow: var(--card-shadow-blue-light);
+    --hover-bg: var(--hover-bg-blue-light);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema azul escuro */
+body.blue-dark-mode {
+    --primary-color: var(--primary-color-blue-dark);
+    --primary-variant-color: var(--primary-variant-color-blue-dark);
+    --secondary-color: var(--secondary-color-blue-dark);
+    --background-color: var(--background-color-blue-dark);
+    --surface-color: var(--surface-color-blue-dark);
+    --error-color: var(--error-color-blue-dark);
+    --success-color: var(--success-color-blue-dark);
+    --on-primary-color: var(--on-primary-color-blue-dark);
+    --on-secondary-color: var(--on-secondary-color-blue-dark);
+    --on-background-color: var(--on-background-color-blue-dark);
+    --on-surface-color: var(--on-surface-color-blue-dark);
+    --text-color: var(--text-color-blue-dark);
+    --text-secondary: var(--text-secondary-blue-dark);
+    --border-color: var(--border-color-blue-dark);
+    --input-bg: var(--input-bg-blue-dark);
+    --card-shadow: var(--card-shadow-blue-dark);
+    --hover-bg: var(--hover-bg-blue-dark);
 
     background-color: var(--background-color);
     color: var(--text-color);
