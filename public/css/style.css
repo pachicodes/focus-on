@@ -1,41 +1,41 @@
 :root {
-    /* Tema Kawaii Rosinha */
-    --primary-color-light: #ffb6d5; /* rosa claro */
-    --primary-variant-color-light: #ff69b4; /* rosa mais forte */
-    --secondary-color-light: #ffe0f7; /* rosa bebê */
-    --background-color-light: #fff0fa; /* fundo rosinha pastel */
-    --surface-color-light: #fff7fb; /* superfície ainda mais clara */
-    --error-color-light: #ff6f91; /* rosa avermelhado */
-    --success-color-light: #b5ead7; /* verde menta pastel */
-    --on-primary-color-light: #fff0fa; /* texto sobre rosa */
-    --on-secondary-color-light: #ff69b4; /* texto sobre secundário */
-    --on-background-color-light: #ff69b4; /* texto sobre fundo */
-    --on-surface-color-light: #ff69b4; /* texto sobre superfície */
-    --text-color-light: #e75480; /* rosa escuro para texto */
-    --text-secondary-light: #b48ec7; /* lilás clarinho */
-    --border-color-light: #ffd6ec; /* borda rosinha */
-    --input-bg-light: #ffeaf6; /* input rosinha */
-    --card-shadow-light: 0 4px 12px rgba(255, 182, 213, 0.15);
-    --hover-bg-light: #ffe0f7;
+    /* Tema Azul Claro */
+    --primary-color-light: #3b82f6; /* azul principal */
+    --primary-variant-color-light: #2563eb; /* azul mais forte */
+    --secondary-color-light: #60a5fa; /* azul secundário */
+    --background-color-light: #f0f9ff; /* fundo azul bem claro */
+    --surface-color-light: #f8fafc; /* superfície branca azulada */
+    --error-color-light: #ef4444; /* vermelho para erros */
+    --success-color-light: #10b981; /* verde para sucesso */
+    --on-primary-color-light: #ffffff; /* texto sobre azul */
+    --on-secondary-color-light: #1e40af; /* texto sobre secundário */
+    --on-background-color-light: #1e3a8a; /* texto sobre fundo */
+    --on-surface-color-light: #1e3a8a; /* texto sobre superfície */
+    --text-color-light: #1e40af; /* azul escuro para texto */
+    --text-secondary-light: #64748b; /* cinza azulado */
+    --border-color-light: #bfdbfe; /* borda azul clara */
+    --input-bg-light: #f8fafc; /* input com fundo claro */
+    --card-shadow-light: 0 4px 12px rgba(59, 130, 246, 0.15);
+    --hover-bg-light: #dbeafe;
 
-    /* Tema Kawaii Rosinha Escuro */
-    --primary-color-dark: #ff69b4;
-    --primary-variant-color-dark: #e75480;
-    --secondary-color-dark: #b48ec7;
-    --background-color-dark: #2d142c;
-    --surface-color-dark: #3e1f47;
-    --error-color-dark: #ff6f91;
-    --success-color-dark: #b5ead7;
-    --on-primary-color-dark: #fff0fa;
-    --on-secondary-color-dark: #fff0fa;
-    --on-background-color-dark: #ffe0f7;
-    --on-surface-color-dark: #ffe0f7;
-    --text-color-dark: #ffe0f7;
-    --text-secondary-dark: #ffd6ec;
-    --border-color-dark: #b48ec7;
-    --input-bg-dark: #4a274a;
-    --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
-    --hover-bg-dark: #4a274a;
+    /* Tema Azul Escuro */
+    --primary-color-dark: #3b82f6;
+    --primary-variant-color-dark: #2563eb;
+    --secondary-color-dark: #60a5fa;
+    --background-color-dark: #0f172a;
+    --surface-color-dark: #1e293b;
+    --error-color-dark: #ef4444;
+    --success-color-dark: #10b981;
+    --on-primary-color-dark: #ffffff;
+    --on-secondary-color-dark: #f0f9ff;
+    --on-background-color-dark: #f0f9ff;
+    --on-surface-color-dark: #f0f9ff;
+    --text-color-dark: #f0f9ff;
+    --text-secondary-dark: #94a3b8;
+    --border-color-dark: #1e3a8a;
+    --input-bg-dark: #1e293b;
+    --card-shadow-dark: 0 4px 12px rgba(59, 130, 246, 0.25);
+    --hover-bg-dark: #1e3a8a;
     
     /* Tamanhos */
     --border-radius: 12px;
@@ -52,13 +52,19 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: var(--background-color-light);
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
     color: var(--text-color-light);
     transition: all 0.3s ease;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+/* Para o modo escuro */
+body.dark-mode {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #3b82f6 100%);
+    color: var(--text-color);
 }
 
 /* Use as variáveis de tema claro por padrão */
