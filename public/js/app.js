@@ -1,54 +1,98 @@
 // Main application logic
-console.log("app.js loaded");
+const APP = {
+    // Configurações da aplicação
+    config: {
+        themes: ['light', 'dark', 'legends'],
+        defaultTheme: 'light',
+        storageKey: 'focusOnTheme'
+    },
 
-// Sem imports - os componentes são carregados diretamente pelo HTML
+    // Estado da aplicação
+    state: {
+        initialized: false
+    },
 
-document.addEventListener('DOMContentLoaded', () => {
     // Inicialização dos componentes
-    // Verifica se cada componente foi inicializado corretamente
-    if (typeof initTodoList === 'function' && !window.todoListInitialized) {
-        initTodoList();
-        window.todoListInitialized = true;
-    }
-    
-    if (typeof initPomodoroTimer === 'function' && !window.pomodoroTimerInitialized) {
-        initPomodoroTimer();
-        window.pomodoroTimerInitialized = true;
-    }
-    
-    if (typeof initMediaEmbed === 'function' && !window.mediaEmbedInitialized) {
-        initMediaEmbed();
-        window.mediaEmbedInitialized = true;
-    }
-    
-    // Contador de tarefas
-    updateTasksCounter();
-    
-    // Theme Toggler Logic
-    const themeToggleButton = document.getElementById('theme-toggle');
-    if (themeToggleButton) {
-        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+    initComponents() {
+        const components = [
+            { init: initTodoList, key: 'todoListInitialized' },
+            { init: initPomodoroTimer, key: 'pomodoroTimerInitialized' },
+            { init: initMediaEmbed, key: 'mediaEmbedInitialized' }
+        ];
 
-        themeToggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('focusOnTheme', theme);
-        });
-    }
-    
-    // Toggle para mostrar/esconder o campo de entrada de tarefas
-    const addTaskButton = document.getElementById('show-add-task');
-    const taskInputContainer = document.getElementById('task-input');
-    
-    if (addTaskButton && taskInputContainer) {
-        addTaskButton.addEventListener('click', () => {
-            taskInputContainer.classList.toggle('active');
-            if (taskInputContainer.classList.contains('active')) {
-                document.getElementById('task').focus();
+        components.forEach(({ init, key }) => {
+            if (typeof init === 'function' && !window[key]) {
+                init();
+                window[key] = true;
             }
         });
+    },
+
+    // Inicialização do tema
+    initTheme() {
+        const themeToggleButton = document.getElementById('theme-toggle');
+        if (!themeToggleButton) return;
+
+        const currentTheme = localStorage.getItem(this.config.storageKey) || this.config.defaultTheme;
+        this.applyTheme(currentTheme);
+        
+        themeToggleButton.addEventListener('click', () => this.cycleTheme());
+    },
+
+    // Aplica um tema específico
+    applyTheme(theme) {
+        document.body.classList.remove(...this.config.themes.map(t => `${t}-theme`), 'dark-mode');
+        if (theme === 'dark') {
+            document.body.classList.add('dark-mode');
+        } else if (theme !== 'light') {
+            document.body.classList.add(`${theme}-theme`);
+        }
+        localStorage.setItem(this.config.storageKey, theme);
+    },
+
+    // Alterna entre os temas em ciclo
+    cycleTheme() {
+        const currentTheme = localStorage.getItem(this.config.storageKey) || this.config.defaultTheme;
+        const currentIndex = this.config.themes.indexOf(currentTheme);
+        const nextIndex = (currentIndex + 1) % this.config.themes.length;
+        const nextTheme = this.config.themes[nextIndex];
+        
+        this.applyTheme(nextTheme);
+    },
+
+    // Inicialização da interface do usuário
+    initUI() {
+        const addTaskButton = document.getElementById('show-add-task');
+        const taskInputContainer = document.getElementById('task-input');
+        
+        if (addTaskButton && taskInputContainer) {
+            addTaskButton.addEventListener('click', () => {
+                taskInputContainer.classList.toggle('active');
+                if (taskInputContainer.classList.contains('active')) {
+                    document.getElementById('task')?.focus();
+                }
+            });
+        }
+    },
+
+    // Inicialização da aplicação
+    init() {
+        if (this.state.initialized) return;
+        
+        this.initComponents();
+        this.initTheme();
+        this.initUI();
+        updateTasksCounter();
+        
+        this.state.initialized = true;
     }
+};
+
+// Inicialização quando o DOM estiver pronto
+document.addEventListener('DOMContentLoaded', () => {
+    APP.init();
+    
+    // A inicialização é feita pelo objeto APP
 });
 
 // Função para atualizar o contador de tarefas

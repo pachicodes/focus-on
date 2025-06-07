@@ -37,6 +37,25 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Legends of Tomorrow */
+    --primary-color-legends: #c4a747; /* dourado waverider */
+    --primary-variant-color-legends: #8b7355; /* dourado escuro */
+    --secondary-color-legends: #4682b4; /* azul do tempo */
+    --background-color-legends: #1a2634; /* azul escuro temporal */
+    --surface-color-legends: #243447; /* azul médio */
+    --error-color-legends: #dc3545; /* vermelho de alerta */
+    --success-color-legends: #28a745; /* verde de sucesso */
+    --on-primary-color-legends: #ffffff; /* texto sobre dourado */
+    --on-secondary-color-legends: #ffffff; /* texto sobre azul */
+    --on-background-color-legends: #e0e0e0; /* texto sobre fundo */
+    --on-surface-color-legends: #ffffff; /* texto sobre superfície */
+    --text-color-legends: #e0e0e0; /* texto principal */
+    --text-secondary-legends: #a0a0a0; /* texto secundário */
+    --border-color-legends: #364759; /* borda azul escuro */
+    --input-bg-legends: #2a3f5f; /* fundo do input */
+    --card-shadow-legends: 0 4px 12px rgba(196, 167, 71, 0.2);
+    --hover-bg-legends: #2a3f5f;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -101,6 +120,30 @@ body.dark-mode {
     --input-bg: var(--input-bg-dark);
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema Legends of Tomorrow */
+body.legends-theme {
+    --primary-color: var(--primary-color-legends);
+    --primary-variant-color: var(--primary-variant-color-legends);
+    --secondary-color: var(--secondary-color-legends);
+    --background-color: var(--background-color-legends);
+    --surface-color: var(--surface-color-legends);
+    --error-color: var(--error-color-legends);
+    --success-color: var(--success-color-legends);
+    --on-primary-color: var(--on-primary-color-legends);
+    --on-secondary-color: var(--on-secondary-color-legends);
+    --on-background-color: var(--on-background-color-legends);
+    --on-surface-color: var(--on-surface-color-legends);
+    --text-color: var(--text-color-legends);
+    --text-secondary: var(--text-secondary-legends);
+    --border-color: var(--border-color-legends);
+    --input-bg: var(--input-bg-legends);
+    --card-shadow: var(--card-shadow-legends);
+    --hover-bg: var(--hover-bg-legends);
 
     background-color: var(--background-color);
     color: var(--text-color);
