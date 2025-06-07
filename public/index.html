@@ -8,10 +8,12 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 <body class="app-body">
-    <button id="theme-toggle" aria-label="Alternar entre tema claro e escuro">
-        <span class="theme-toggle-icon light-icon">☀️</span>
-        <span class="theme-toggle-icon dark-icon">🌙</span>
-    </button>
+    <!-- ComboBox de seleção de tema -->
+    <select id="theme-combobox" aria-label="Selecionar tema" style="position: fixed; top: 20px; right: 20px; z-index: 1001; width: 48px; height: 44px; background: transparent; border: none; cursor: pointer; outline: none;">
+        <option value="light" aria-label="Tema Claro">☀️</option>
+        <option value="dark" aria-label="Tema Escuro">🌙</option>
+        <option value="orange" aria-label="Tema Laranja">🍊</option>
+    </select>
     
     <header class="app-header">
         <h1>Focus On</h1>
