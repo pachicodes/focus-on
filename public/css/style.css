@@ -37,6 +37,25 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Roxo com Branco */
+    --primary-color-purple: #7c3aed;
+    --primary-variant-color-purple: #5b21b6;
+    --secondary-color-purple: #ede9fe;
+    --background-color-purple: #ffffff;
+    --surface-color-purple: #f3f0ff;
+    --error-color-purple: #f87171;
+    --success-color-purple: #34d399;
+    --on-primary-color-purple: #ffffff;
+    --on-secondary-color-purple: #7c3aed;
+    --on-background-color-purple: #7c3aed;
+    --on-surface-color-purple: #5b21b6;
+    --text-color-purple: #5b21b6;
+    --text-secondary-purple: #a78bfa;
+    --border-color-purple: #c4b5fd;
+    --input-bg-purple: #ede9fe;
+    --card-shadow-purple: 0 4px 12px rgba(124, 58, 237, 0.10);
+    --hover-bg-purple: #ede9fe;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -106,6 +125,26 @@ body.dark-mode {
     color: var(--text-color);
 }
 
+/* Tema Roxo */
+body.purple-mode {
+    --primary-color: var(--primary-color-purple);
+    --primary-variant-color: var(--primary-variant-color-purple);
+    --secondary-color: var(--secondary-color-purple);
+    --background-color: var(--background-color-purple);
+    --surface-color: var(--surface-color-purple);
+    --error-color: var(--error-color-purple);
+    --success-color: var(--success-color-purple);
+    --on-primary-color: var(--on-primary-color-purple);
+    --on-secondary-color: var(--on-secondary-color-purple);
+    --on-background-color: var(--on-background-color-purple);
+    --on-surface-color: var(--on-surface-color-purple);
+    --text-color: var(--text-color-purple);
+    --text-secondary: var(--text-secondary-purple);
+    --border-color: var(--border-color-purple);
+    --input-bg: var(--input-bg-purple);
+    --card-shadow: var(--card-shadow-purple);
+    --hover-bg: var(--hover-bg-purple);
+}
 
 /* Layout principal */
 .app-body {
@@ -485,60 +524,33 @@ button:active {
 }
 
 /* Theme Toggle Button */
-#theme-toggle {
+#theme-toggle,
+#purple-theme-toggle {
     position: fixed;
     top: 20px;
-    right: 20px;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
+    background: none;
+    border: none;
     cursor: pointer;
-    z-index: 1000;
-    box-shadow: var(--card-shadow-light);
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+#theme-toggle {
+    right: 20px;
+}
+
+#purple-theme-toggle {
+    right: 70px;
+}
+
+#theme-toggle:hover,
+#purple-theme-toggle:hover {
+    background-color: var(--hover-bg);
 }
 
 .theme-toggle-icon {
-    font-size: 1.4em;
-    position: absolute;
-    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-
-.light-icon {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dark-icon {
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-body.dark-mode #theme-toggle {
-    background-color: var(--surface-color-dark);
-    border-color: var(--border-color-dark);
-    box-shadow: var(--card-shadow-dark);
-}
-
-body.dark-mode .light-icon {
-    opacity: 0;
-    transform: translateY(-20px);
-}
-
-body.dark-mode .dark-icon {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#theme-toggle:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    font-size: 1.5rem;
 }
 
 /* Tarefas concluídas */

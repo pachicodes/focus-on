@@ -26,13 +26,31 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
-    if (themeToggleButton) {
+    const purpleThemeButton = document.getElementById('purple-theme-toggle');
+    
+    if (themeToggleButton && purpleThemeButton) {
         const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        
+        // Set initial theme
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        } else if (currentTheme === 'purple') {
+            document.body.classList.add('purple-mode');
+        }
 
+        // Light/Dark theme toggle
         themeToggleButton.addEventListener('click', () => {
+            document.body.classList.remove('purple-mode');
             document.body.classList.toggle('dark-mode');
             const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('focusOnTheme', theme);
+        });
+
+        // Purple theme toggle
+        purpleThemeButton.addEventListener('click', () => {
+            document.body.classList.remove('dark-mode');
+            document.body.classList.toggle('purple-mode');
+            const theme = document.body.classList.contains('purple-mode') ? 'purple' : 'light';
             localStorage.setItem('focusOnTheme', theme);
         });
     }
