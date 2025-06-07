@@ -29,10 +29,28 @@ document.addEventListener('DOMContentLoaded', () => {
     if (themeToggleButton) {
         const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
         document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        document.body.classList.toggle('bege-mode', currentTheme === 'bege');
+        document.body.classList.toggle('ti-mode', currentTheme === 'ti');
 
         themeToggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+            // Alterna entre light, dark, bege e ti
+            let theme = localStorage.getItem('focusOnTheme') || 'light';
+            if (theme === 'light') {
+                document.body.classList.remove('dark-mode', 'bege-mode', 'ti-mode');
+                document.body.classList.add('dark-mode');
+                theme = 'dark';
+            } else if (theme === 'dark') {
+                document.body.classList.remove('dark-mode', 'bege-mode', 'ti-mode');
+                document.body.classList.add('bege-mode');
+                theme = 'bege';
+            } else if (theme === 'bege') {
+                document.body.classList.remove('dark-mode', 'bege-mode', 'ti-mode');
+                document.body.classList.add('ti-mode');
+                theme = 'ti';
+            } else {
+                document.body.classList.remove('dark-mode', 'bege-mode', 'ti-mode');
+                theme = 'light';
+            }
             localStorage.setItem('focusOnTheme', theme);
         });
     }

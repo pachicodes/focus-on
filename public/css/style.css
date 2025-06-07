@@ -37,6 +37,44 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Rosa e Bege */
+    --primary-color-bege: #f5e6ca; /* bege claro */
+    --primary-variant-color-bege: #e7cba9; /* bege médio */
+    --secondary-color-bege: #ffd1dc; /* rosa bebê */
+    --background-color-bege: #fff8f0; /* fundo bege pastel */
+    --surface-color-bege: #fff3e6; /* superfície bege clara */
+    --error-color-bege: #e57373; /* vermelho suave */
+    --success-color-bege: #b5ead7; /* verde menta pastel */
+    --on-primary-color-bege: #b76e79; /* texto sobre bege */
+    --on-secondary-color-bege: #b76e79; /* texto sobre rosa bebê */
+    --on-background-color-bege: #b76e79; /* texto sobre fundo */
+    --on-surface-color-bege: #b76e79; /* texto sobre superfície */
+    --text-color-bege: #b76e79; /* rosa queimado para texto */
+    --text-secondary-bege: #c9a7a6; /* bege rosado clarinho */
+    --border-color-bege: #f7d6c1; /* borda bege rosada */
+    --input-bg-bege: #fff3e6; /* input bege claro */
+    --card-shadow-bege: 0 4px 12px rgba(245, 230, 202, 0.15);
+    --hover-bg-bege: #ffe5ec;
+
+    /* Tema Mulheres em TI (Agent.com) */
+    --primary-color-ti: #a259c6; /* roxo vibrante */
+    --primary-variant-color-ti: #f672a7; /* rosa forte */
+    --secondary-color-ti: #ffe5ec; /* rosa claro */
+    --background-color-ti: #f7f3fa; /* fundo lilás pastel */
+    --surface-color-ti: #fffafd; /* superfície quase branca */
+    --error-color-ti: #e57373; /* vermelho suave */
+    --success-color-ti: #b5ead7; /* verde menta pastel */
+    --on-primary-color-ti: #fffafd; /* texto sobre roxo */
+    --on-secondary-color-ti: #a259c6; /* texto sobre rosa claro */
+    --on-background-color-ti: #a259c6; /* texto sobre fundo */
+    --on-surface-color-ti: #a259c6; /* texto sobre superfície */
+    --text-color-ti: #a259c6; /* roxo para texto */
+    --text-secondary-ti: #f672a7; /* rosa para detalhes */
+    --border-color-ti: #e0c3fc; /* borda lilás */
+    --input-bg-ti: #f7e6fa; /* input lilás claro */
+    --card-shadow-ti: 0 4px 12px rgba(162, 89, 198, 0.10);
+    --hover-bg-ti: #fbe7ff;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -101,6 +139,54 @@ body.dark-mode {
     --input-bg: var(--input-bg-dark);
     --card-shadow: var(--card-shadow-dark);
     --hover-bg: var(--hover-bg-dark);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema bege */
+body.bege-mode {
+    --primary-color: var(--primary-color-bege);
+    --primary-variant-color: var(--primary-variant-color-bege);
+    --secondary-color: var(--secondary-color-bege);
+    --background-color: var(--background-color-bege);
+    --surface-color: var(--surface-color-bege);
+    --error-color: var(--error-color-bege);
+    --success-color: var(--success-color-bege);
+    --on-primary-color: var(--on-primary-color-bege);
+    --on-secondary-color: var(--on-secondary-color-bege);
+    --on-background-color: var(--on-background-color-bege);
+    --on-surface-color: var(--on-surface-color-bege);
+    --text-color: var(--text-color-bege);
+    --text-secondary: var(--text-secondary-bege);
+    --border-color: var(--border-color-bege);
+    --input-bg: var(--input-bg-bege);
+    --card-shadow: var(--card-shadow-bege);
+    --hover-bg: var(--hover-bg-bege);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Tema Mulheres em TI (Agent.com) */
+body.ti-mode {
+    --primary-color: var(--primary-color-ti);
+    --primary-variant-color: var(--primary-variant-color-ti);
+    --secondary-color: var(--secondary-color-ti);
+    --background-color: var(--background-color-ti);
+    --surface-color: var(--surface-color-ti);
+    --error-color: var(--error-color-ti);
+    --success-color: var(--success-color-ti);
+    --on-primary-color: var(--on-primary-color-ti);
+    --on-secondary-color: var(--on-secondary-color-ti);
+    --on-background-color: var(--on-background-color-ti);
+    --on-surface-color: var(--on-surface-color-ti);
+    --text-color: var(--text-color-ti);
+    --text-secondary: var(--text-secondary-ti);
+    --border-color: var(--border-color-ti);
+    --input-bg: var(--input-bg-ti);
+    --card-shadow: var(--card-shadow-ti);
+    --hover-bg: var(--hover-bg-ti);
 
     background-color: var(--background-color);
     color: var(--text-color);
@@ -518,6 +604,24 @@ button:active {
 .dark-icon {
     opacity: 0;
     transform: translateY(20px);
+}
+
+.ti-icon {
+    opacity: 0;
+    transform: translateY(20px);
+    color: #a259c6;
+    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+body.ti-mode .light-icon,
+body.ti-mode .dark-icon {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+body.ti-mode .ti-icon {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 body.dark-mode #theme-toggle {
