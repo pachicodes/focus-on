@@ -26,14 +26,22 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Theme Toggler Logic
     const themeToggleButton = document.getElementById('theme-toggle');
+    const themeList = [
+        { key: 'light', className: '' },
+        { key: 'dark', className: 'dark-mode' },
+        { key: 'tech-light', className: 'tech-light' }
+    ];
+    let currentThemeIndex = 0;
     if (themeToggleButton) {
-        const currentTheme = localStorage.getItem('focusOnTheme') || 'light';
-        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        let savedTheme = localStorage.getItem('focusOnTheme') || 'light';
+        currentThemeIndex = themeList.findIndex(t => t.key === savedTheme);
+        if (currentThemeIndex === -1) currentThemeIndex = 0;
+        document.body.className = 'app-body ' + (themeList[currentThemeIndex].className);
 
         themeToggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-            localStorage.setItem('focusOnTheme', theme);
+            currentThemeIndex = (currentThemeIndex + 1) % themeList.length;
+            document.body.className = 'app-body ' + (themeList[currentThemeIndex].className);
+            localStorage.setItem('focusOnTheme', themeList[currentThemeIndex].key);
         });
     }
     

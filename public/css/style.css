@@ -37,6 +37,25 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Tech Pastel Claro */
+    --primary-color-tech-light: #b3e5fc; /* azul claro tech */
+    --primary-variant-color-tech-light: #00bcd4; /* azul vibrante tech */
+    --secondary-color-tech-light: #e1f5fe; /* azul bebê tech */
+    --background-color-tech-light: #f5faff; /* fundo azul pastel tech */
+    --surface-color-tech-light: #e3f2fd; /* superfície azul clarinha */
+    --error-color-tech-light: #ff8a80; /* vermelho tech suave */
+    --success-color-tech-light: #b9f6ca; /* verde tech pastel */
+    --on-primary-color-tech-light: #ffffff; /* texto sobre azul */
+    --on-secondary-color-tech-light: #00bcd4; /* texto sobre secundário */
+    --on-background-color-tech-light: #00bcd4; /* texto sobre fundo */
+    --on-surface-color-tech-light: #00bcd4; /* texto sobre superfície */
+    --text-color-tech-light: #00796b; /* verde azulado tech */
+    --text-secondary-tech-light: #607d8b; /* cinza azulado tech */
+    --border-color-tech-light: #b3e5fc; /* borda azul tech */
+    --input-bg-tech-light: #e1f5fe; /* input azul tech */
+    --card-shadow-tech-light: 0 4px 12px rgba(179, 229, 252, 0.15);
+    --hover-bg-tech-light: #e1f5fe;
+
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
@@ -106,6 +125,139 @@ body.dark-mode {
     color: var(--text-color);
 }
 
+/* Tema Tech Pastel Claro */
+body.tech-light {
+    --primary-color: var(--primary-color-tech-light);
+    --primary-variant-color: var(--primary-variant-color-tech-light);
+    --secondary-color: var(--secondary-color-tech-light);
+    --background-color: var(--background-color-tech-light);
+    --surface-color: var(--surface-color-tech-light);
+    --error-color: var(--error-color-tech-light);
+    --success-color: var(--success-color-tech-light);
+    --on-primary-color: var(--on-primary-color-tech-light);
+    --on-secondary-color: var(--on-secondary-color-tech-light);
+    --on-background-color: var(--on-background-color-tech-light);
+    --on-surface-color: var(--on-surface-color-tech-light);
+    --text-color: var(--text-color-tech-light);
+    --text-secondary: var(--text-secondary-tech-light);
+    --border-color: var(--border-color-tech-light);
+    --input-bg: var(--input-bg-tech-light);
+    --card-shadow: var(--card-shadow-tech-light);
+    --hover-bg: var(--hover-bg-tech-light);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+/* --- Melhorias para o tema tech-light: visual tech, feminino e inspirador --- */
+body.tech-light {
+    /* Gradiente de fundo sutil tech */
+    background: linear-gradient(135deg, #f5faff 0%, #e3f2fd 100%);
+}
+
+body.tech-light .card {
+    /* Glow azul tech */
+    box-shadow: 0 4px 24px 0 rgba(0,188,212,0.18), 0 1.5px 8px 0 #b3e5fc;
+    border: 1.5px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+body.tech-light .card::before {
+    /* Detalhe decorativo tech: linhas/circuitos femininos */
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 6px;
+    background: repeating-linear-gradient(90deg, #00bcd4 0 8px, transparent 8px 16px), repeating-linear-gradient(90deg, #b3e5fc 0 2px, transparent 2px 8px);
+    opacity: 0.18;
+    z-index: 1;
+}
+
+body.tech-light .card-title {
+    /* Ícone tech feminino: cor destaque */
+    color: #00bcd4;
+    font-family: 'Fira Mono', 'Roboto Mono', monospace, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+body.tech-light h1, body.tech-light h2 {
+    font-family: 'Fira Mono', 'Roboto Mono', monospace, sans-serif;
+    color: #00bcd4;
+    letter-spacing: 1px;
+}
+
+body.tech-light .primary-button, body.tech-light .add-task-button {
+    box-shadow: 0 0 8px 0 #b3e5fc;
+    border: 1.5px solid #00bcd4;
+    font-weight: 600;
+    background: linear-gradient(90deg, #b3e5fc 60%, #e1f5fe 100%);
+    color: #00796b;
+}
+
+body.tech-light .primary-button:hover, body.tech-light .add-task-button:hover {
+    background: #00bcd4;
+    color: #fff;
+    box-shadow: 0 0 16px 0 #00bcd4;
+    border-color: #00bcd4;
+}
+
+body.tech-light .icon-button {
+    color: #00bcd4;
+    border: 1.5px solid #b3e5fc;
+    background: #e1f5fe;
+}
+
+body.tech-light .icon-button:hover {
+    background: #b3e5fc;
+    color: #fff;
+    box-shadow: 0 0 8px #00bcd4;
+}
+
+body.tech-light .task-checkbox {
+    border-color: #00bcd4;
+}
+
+body.tech-light .task-checkbox.checked {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+
+body.tech-light .task-item.completed {
+    border-left: 3px solid #b9f6ca;
+    background: rgba(0,188,212,0.07);
+}
+
+body.tech-light .app-header .subtitle {
+    color: #607d8b;
+    font-style: italic;
+    font-size: 1.15em;
+}
+
+body.tech-light .tech-women-title {
+    display: inline-block;
+    font-family: 'Fira Mono', 'Roboto Mono', monospace, sans-serif;
+    color: #00bcd4;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #b3e5fc 60%, #ffb6d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+body.tech-light .tech-women-phrase {
+    color: #ff69b4;
+    font-style: italic;
+    font-size: 1.15em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 8px;
+    background: linear-gradient(90deg, #b3e5fc 60%, #ffb6d5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
 
 /* Layout principal */
 .app-body {
@@ -520,10 +672,9 @@ button:active {
     transform: translateY(20px);
 }
 
-body.dark-mode #theme-toggle {
-    background-color: var(--surface-color-dark);
-    border-color: var(--border-color-dark);
-    box-shadow: var(--card-shadow-dark);
+.tech-icon {
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 body.dark-mode .light-icon {
@@ -532,6 +683,26 @@ body.dark-mode .light-icon {
 }
 
 body.dark-mode .dark-icon {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.dark-mode .tech-icon {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+body.tech-light .light-icon {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+body.tech-light .dark-icon {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+body.tech-light .tech-icon {
     opacity: 1;
     transform: translateY(0);
 }
@@ -815,4 +986,28 @@ body.dark-mode .dark-icon {
     border-radius: 20px;
     background-color: var(--input-bg);
     color: var(--text-color);
+}
+
+body.tech-light .tech-circuit-svg {
+    display: block;
+    margin: 0 auto 8px auto;
+    max-width: 180px;
+    width: 100%;
+    height: 28px;
+    filter: drop-shadow(0 2px 8px #b3e5fc88);
+    opacity: 0.95;
+    transition: opacity 0.3s;
+}
+
+body.tech-light .tech-circuit-svg rect {
+    transition: fill 0.3s;
+}
+
+body.tech-light .tech-circuit-svg circle {
+    transition: fill 0.3s, stroke 0.3s;
+}
+
+body.tech-light .tech-circuit-svg:hover {
+    opacity: 1;
+    filter: drop-shadow(0 4px 16px #00bcd4cc);
 }
