@@ -37,6 +37,82 @@
     --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
     --hover-bg-dark: #4a274a;
     
+    /* Tema Azul Pastel Claro */
+    --primary-color-blue-light: #a3c9f9; /* azul claro */
+    --primary-variant-color-blue-light: #5b9bd5; /* azul médio */
+    --secondary-color-blue-light: #e3f0ff; /* azul bebê */
+    --background-color-blue-light: #f0f6ff; /* fundo azul pastel */
+    --surface-color-blue-light: #f7faff; /* superfície ainda mais clara */
+    --error-color-blue-light: #ff6f91; /* rosa avermelhado (mantido) */
+    --success-color-blue-light: #b5ead7; /* verde menta pastel (mantido) */
+    --on-primary-color-blue-light: #f0f6ff; /* texto sobre azul */
+    --on-secondary-color-blue-light: #5b9bd5; /* texto sobre secundário */
+    --on-background-color-blue-light: #5b9bd5; /* texto sobre fundo */
+    --on-surface-color-blue-light: #5b9bd5; /* texto sobre superfície */
+    --text-color-blue-light: #2d5c88; /* azul escuro para texto */
+    --text-secondary-blue-light: #7fa6c7; /* azul acinzentado */
+    --border-color-blue-light: #b3d1f7; /* borda azul pastel */
+    --input-bg-blue-light: #eaf2fb; /* input azul claro */
+    --card-shadow-blue-light: 0 4px 12px rgba(163, 201, 249, 0.15);
+    --hover-bg-blue-light: #e3f0ff;
+
+    /* Tema Azul Pastel Escuro */
+    --primary-color-blue-dark: #5b9bd5;
+    --primary-variant-color-blue-dark: #2d5c88;
+    --secondary-color-blue-dark: #7fa6c7;
+    --background-color-blue-dark: #1a2636;
+    --surface-color-blue-dark: #22304a;
+    --error-color-blue-dark: #ff6f91;
+    --success-color-blue-dark: #b5ead7;
+    --on-primary-color-blue-dark: #f0f6ff;
+    --on-secondary-color-blue-dark: #f0f6ff;
+    --on-background-color-blue-dark: #e3f0ff;
+    --on-surface-color-blue-dark: #e3f0ff;
+    --text-color-blue-dark: #e3f0ff;
+    --text-secondary-blue-dark: #b3d1f7;
+    --border-color-blue-dark: #7fa6c7;
+    --input-bg-blue-dark: #2d3a54;
+    --card-shadow-blue-dark: 0 4px 12px rgba(163, 201, 249, 0.25);
+    --hover-bg-blue-dark: #2d3a54;
+    
+    /* Tema Curtindo a Vida Adoidado (Ferris Bueller) - Claro */
+    --primary-color-bueller-light: #e53935; /* vermelho esportivo */
+    --primary-variant-color-bueller-light: #1565c0; /* azul vibrante */
+    --secondary-color-bueller-light: #fff176; /* amarelo vibrante */
+    --background-color-bueller-light: #fffbe6; /* fundo amarelo claro */
+    --surface-color-bueller-light: #ffffff; /* branco para superfícies */
+    --error-color-bueller-light: #d32f2f;
+    --success-color-bueller-light: #43a047;
+    --on-primary-color-bueller-light: #fffbe6; /* texto sobre vermelho */
+    --on-secondary-color-bueller-light: #222; /* texto sobre amarelo */
+    --on-background-color-bueller-light: #222; /* texto sobre fundo */
+    --on-surface-color-bueller-light: #222; /* texto sobre superfícies */
+    --text-color-bueller-light: #222; /* preto para texto */
+    --text-secondary-bueller-light: #1565c0; /* azul para detalhes */
+    --border-color-bueller-light: #e53935; /* vermelho para bordas */
+    --input-bg-bueller-light: #fffde7; /* amarelo bem claro */
+    --card-shadow-bueller-light: 0 4px 12px rgba(229, 57, 53, 0.15);
+    --hover-bg-bueller-light: #fff17633;
+
+    /* Tema Curtindo a Vida Adoidado (Ferris Bueller) - Escuro */
+    --primary-color-bueller-dark: #e53935;
+    --primary-variant-color-bueller-dark: #fff176;
+    --secondary-color-bueller-dark: #1565c0;
+    --background-color-bueller-dark: #222;
+    --surface-color-bueller-dark: #2d2d2d;
+    --error-color-bueller-dark: #d32f2f;
+    --success-color-bueller-dark: #43a047;
+    --on-primary-color-bueller-dark: #fffbe6;
+    --on-secondary-color-bueller-dark: #fffbe6;
+    --on-background-color-bueller-dark: #fff176;
+    --on-surface-color-bueller-dark: #fff176;
+    --text-color-bueller-dark: #fffbe6;
+    --text-secondary-bueller-dark: #fff176;
+    --border-color-bueller-dark: #e53935;
+    --input-bg-bueller-dark: #333;
+    --card-shadow-bueller-dark: 0 4px 12px rgba(229, 57, 53, 0.25);
+    --hover-bg-bueller-dark: #e5393533;
+    
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;

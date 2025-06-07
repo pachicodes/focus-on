@@ -2,7 +2,9 @@
 
 > 🎯 **Projeto Workshop**: Contribuindo com Open Source com a ajuda do GitHub Copilot (Agent Mode)
 
-Uma aplicação web projetada para ajudar os usuários a aumentar a produtividade e manter o foco através de um conjunto de ferramentas simples e eficazes. Este app combina uma lista de tarefas, um timer Pomodoro e um player de música lofi embutido, tudo em uma interface limpa e moderna com opções de modo claro e escuro.
+Uma aplicação web projetada para ajudar os usuários a aumentar a produtividade e manter o foco através de um conjunto de ferramentas simples e eficazes. Este app combina uma lista de tarefas, um timer Pomodoro e um player de música lofi embutido, tudo em uma interface limpa e moderna com opções de modo claro, escuro e temas personalizáveis (ex: Rosinha, Azul Pastel).
+
+**Agora você pode escolher entre diferentes temas de cor nas configurações do app!**
 
 **Este projeto é usado como exemplo prático para ensinar contribuições Open Source com GitHub Copilot Agent.**
 
@@ -25,7 +27,7 @@ Este projeto foi especialmente preparado para o workshop **"Contribuindo com Ope
 - **📝 Lista de Tarefas**: Adicione, gerencie e acompanhe suas tarefas facilmente.
 - **🍅 Timer Pomodoro**: Trabalhe em intervalos focados de 25 minutos com pausas curtas, personalizável para seu fluxo de trabalho.
 - **🎧 Player de Música Lofi**: Incorpore suas playlists favoritas do Spotify (ou outras mídias) para criar uma atmosfera relaxante de trabalho.
-- **☀️/🌙 Modo Claro e Escuro**: Alterne entre temas claro e escuro para conforto visual ideal a qualquer hora do dia.
+- **☀️/🌙 Temas Personalizáveis**: Alterne entre temas claro, escuro, Rosinha, Azul Pastel ou Curtindo a Vida Adoidado para conforto visual ideal a qualquer hora do dia.
 - **🎨 Interface Moderna**: Interface de usuário esteticamente agradável e intuitiva.
 
 ## Tecnologias Utilizadas
@@ -57,7 +59,7 @@ focus-on/
 
 ## Como Usar
 
-- **Alternar Tema**: Clique no botão "☀️/🌙" (Alternar Tema), geralmente localizado no canto superior direito da página, para alternar entre os modos claro e escuro.
+- **Alternar Tema**: Clique no botão "☀️/🌙" (Alternar Tema), geralmente localizado no canto superior direito da página, para alternar entre os modos claro e escuro. Agora também há um menu suspenso para escolher entre os temas de cor disponíveis (Rosinha, Azul Pastel ou Curtindo a Vida Adoidado).
 - **Gerenciar Tarefas**: Na seção "Lista de Tarefas", digite sua tarefa no campo de entrada e clique no botão "Adicionar Tarefa".
 - **Usar Timer Pomodoro**: Na seção "Timer Pomodoro", clique em "Iniciar" para começar uma sessão de foco. Use os botões "Pausar" e "Reiniciar" conforme necessário.
 - **Ouvir Música**: O player de mídia incorporado na seção "Música Lofi" deve estar pronto para reproduzir.
