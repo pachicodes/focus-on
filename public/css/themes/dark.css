@@ -1,0 +1,14 @@
+:root[data-theme="dark"] {
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --background-color: #121212;
+    --card-background: #1e1e1e;
+    --text-color: #ffffff;
+    --border-color: #333333;
+    --success-color: #00e676;
+    --hover-color: rgba(187, 134, 252, 0.1);
+    --button-text: #121212;
+    --input-background: #2d2d2d;
+    --input-text: #ffffff;
+    --input-border: #404040;
+}

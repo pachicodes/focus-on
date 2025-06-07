@@ -485,60 +485,44 @@ button:active {
 }
 
 /* Theme Toggle Button */
-#theme-toggle {
+.theme-toggle {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 44px;
-    height: 44px;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    background-color: var(--surface-color);
-    border: 1px solid var(--border-color);
+    border: 2px solid var(--border-color);
+    background-color: var(--card-background);
+    color: var(--text-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    z-index: 1000;
-    box-shadow: var(--card-shadow-light);
-    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-color: var(--primary-color);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
 }
 
 .theme-toggle-icon {
-    font-size: 1.4em;
-    position: absolute;
-    transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
-}
-
-.light-icon {
-    opacity: 1;
-    transform: translateY(0);
+    font-size: 1.5rem;
+    line-height: 1;
+    transition: all 0.3s ease;
 }
 
 .dark-icon {
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-body.dark-mode #theme-toggle {
-    background-color: var(--surface-color-dark);
-    border-color: var(--border-color-dark);
-    box-shadow: var(--card-shadow-dark);
-}
-
-body.dark-mode .light-icon {
-    opacity: 0;
-    transform: translateY(-20px);
-}
-
-body.dark-mode .dark-icon {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#theme-toggle:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    display: none;
 }
 
 /* Tarefas concluídas */
