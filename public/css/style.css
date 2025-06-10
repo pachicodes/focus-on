@@ -1,41 +1,41 @@
 :root {
-    /* Tema Claro */
-    --primary-color-light: #6200ee;
-    --primary-variant-color-light: #3700b3;
-    --secondary-color-light: #03dac6;
-    --background-color-light: #f5f7fa;
-    --surface-color-light: #ffffff;
-    --error-color-light: #b00020;
-    --success-color-light: #4caf50;
-    --on-primary-color-light: #ffffff;
-    --on-secondary-color-light: #000000;
-    --on-background-color-light: #000000;
-    --on-surface-color-light: #000000;
-    --text-color-light: #333;
-    --text-secondary-light: #666;
-    --border-color-light: #e0e0e0;
-    --input-bg-light: #f5f5f5;
-    --card-shadow-light: 0 4px 12px rgba(0, 0, 0, 0.05);
-    --hover-bg-light: #f9f9f9;
+    /* Tema Kawaii Rosinha */
+    --primary-color-light: #ffb6d5; /* rosa claro */
+    --primary-variant-color-light: #ff69b4; /* rosa mais forte */
+    --secondary-color-light: #ffe0f7; /* rosa bebê */
+    --background-color-light: #fff0fa; /* fundo rosinha pastel */
+    --surface-color-light: #fff7fb; /* superfície ainda mais clara */
+    --error-color-light: #ff6f91; /* rosa avermelhado */
+    --success-color-light: #b5ead7; /* verde menta pastel */
+    --on-primary-color-light: #fff0fa; /* texto sobre rosa */
+    --on-secondary-color-light: #ff69b4; /* texto sobre secundário */
+    --on-background-color-light: #ff69b4; /* texto sobre fundo */
+    --on-surface-color-light: #ff69b4; /* texto sobre superfície */
+    --text-color-light: #e75480; /* rosa escuro para texto */
+    --text-secondary-light: #b48ec7; /* lilás clarinho */
+    --border-color-light: #ffd6ec; /* borda rosinha */
+    --input-bg-light: #ffeaf6; /* input rosinha */
+    --card-shadow-light: 0 4px 12px rgba(255, 182, 213, 0.15);
+    --hover-bg-light: #ffe0f7;
 
-    /* Tema Escuro */
-    --primary-color-dark: #bb86fc;
-    --primary-variant-color-dark: #3700b3;
-    --secondary-color-dark: #03dac6;
-    --background-color-dark: #121212;
-    --surface-color-dark: #1e1e1e;
-    --error-color-dark: #cf6679;
-    --success-color-dark: #81c784;
-    --on-primary-color-dark: #000000;
-    --on-secondary-color-dark: #000000;
-    --on-background-color-dark: #e0e0e0;
-    --on-surface-color-dark: #e0e0e0;
-    --text-color-dark: #f5f5f5;
-    --text-secondary-dark: #a0a0a0;
-    --border-color-dark: #333333;
-    --input-bg-dark: #2c2c2c;
-    --card-shadow-dark: 0 4px 12px rgba(0, 0, 0, 0.2);
-    --hover-bg-dark: #252525;
+    /* Tema Kawaii Rosinha Escuro */
+    --primary-color-dark: #ff69b4;
+    --primary-variant-color-dark: #e75480;
+    --secondary-color-dark: #b48ec7;
+    --background-color-dark: #2d142c;
+    --surface-color-dark: #3e1f47;
+    --error-color-dark: #ff6f91;
+    --success-color-dark: #b5ead7;
+    --on-primary-color-dark: #fff0fa;
+    --on-secondary-color-dark: #fff0fa;
+    --on-background-color-dark: #ffe0f7;
+    --on-surface-color-dark: #ffe0f7;
+    --text-color-dark: #ffe0f7;
+    --text-secondary-dark: #ffd6ec;
+    --border-color-dark: #b48ec7;
+    --input-bg-dark: #4a274a;
+    --card-shadow-dark: 0 4px 12px rgba(255, 182, 213, 0.25);
+    --hover-bg-dark: #4a274a;
 
     /* Tema Verde (Nature) */
     --primary-color-green: #2e7d32;
@@ -55,7 +55,6 @@
     --input-bg-green: #e8f5e8;
     --card-shadow-green: 0 4px 12px rgba(46, 125, 50, 0.1);
     --hover-bg-green: #f3e5f5;
-
     /* Tamanhos */
     --border-radius: 12px;
     --card-spacing: 16px;
