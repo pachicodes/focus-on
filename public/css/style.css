@@ -1,22 +1,22 @@
 :root {
-    /* Tema Kawaii Rosinha */
-    --primary-color-light: #ffb6d5; /* rosa claro */
-    --primary-variant-color-light: #ff69b4; /* rosa mais forte */
-    --secondary-color-light: #ffe0f7; /* rosa bebê */
-    --background-color-light: #fff0fa; /* fundo rosinha pastel */
-    --surface-color-light: #fff7fb; /* superfície ainda mais clara */
-    --error-color-light: #ff6f91; /* rosa avermelhado */
+    /* Tema Kawaii Verde & Roxo Pastel */
+    --primary-color-light: #b5ead7; /* verde menta pastel */
+    --primary-variant-color-light: #a3c9a8; /* verde pastel mais escuro */
+    --secondary-color-light: #d1c4e9; /* roxo lavanda pastel */
+    --background-color-light: #f3f0ff; /* fundo roxinho pastel */
+    --surface-color-light: #f8faff; /* superfície bem clara */
+    --error-color-light: #e1bee7; /* roxo claro para erro (kawaii) */
     --success-color-light: #b5ead7; /* verde menta pastel */
-    --on-primary-color-light: #fff0fa; /* texto sobre rosa */
-    --on-secondary-color-light: #ff69b4; /* texto sobre secundário */
-    --on-background-color-light: #ff69b4; /* texto sobre fundo */
-    --on-surface-color-light: #ff69b4; /* texto sobre superfície */
-    --text-color-light: #e75480; /* rosa escuro para texto */
-    --text-secondary-light: #b48ec7; /* lilás clarinho */
-    --border-color-light: #ffd6ec; /* borda rosinha */
-    --input-bg-light: #ffeaf6; /* input rosinha */
-    --card-shadow-light: 0 4px 12px rgba(255, 182, 213, 0.15);
-    --hover-bg-light: #ffe0f7;
+    --on-primary-color-light: #f3f0ff; /* texto sobre verde */
+    --on-secondary-color-light: #b39ddb; /* texto sobre roxo */
+    --on-background-color-light: #7e57c2; /* texto sobre fundo */
+    --on-surface-color-light: #9575cd; /* texto sobre superfície */
+    --text-color-light: #7e57c2; /* roxo médio para texto */
+    --text-secondary-light: #81c784; /* verde clarinho para detalhes */
+    --border-color-light: #e1bee7; /* borda roxinha */
+    --input-bg-light: #e8f5e9; /* input verde pastel */
+    --card-shadow-light: 0 4px 12px rgba(179, 157, 219, 0.15);
+    --hover-bg-light: #e1bee7;
 
     /* Tema Kawaii Rosinha Escuro */
     --primary-color-dark: #ff69b4;
